@@ -2,4 +2,4 @@
 layout: default
 ---
 
-<h1 style="color: #cc0000;">Contacto page</h1>
+<h1 style="color: #cc0000;">Contactasfdafo page</h1>
