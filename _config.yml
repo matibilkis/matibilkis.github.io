@@ -1,9 +1,9 @@
 title: Matias Bikis
-navbar_title: 
+navbar_title:
 author:
   name: Matias Bilkis # Your name
   email: matiasbilkis[]@gmail.com
-url: "https://jekyll-academic.netlify.app" # The base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.matiasbilkis.com" # The base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # The subpath of your site, e.g. /blog
 
 
