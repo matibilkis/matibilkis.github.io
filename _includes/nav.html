@@ -5,7 +5,8 @@
         {% if site.navbar_title %}
           {{ site.navbar_title | replace: ' ', "&nbsp;" | replace: "-", "&nbsp;"}}
         {% else %}
-          {{ site.title | replace: ' ', "&nbsp;"}}
+          <!-- {{ site.title | replace: ' ', "&nbsp;"}} -->
+          {{}}
         {% endif %}
       </a>
     </li>
