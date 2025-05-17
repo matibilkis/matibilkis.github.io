@@ -16,12 +16,12 @@ I am very enthusiastic in developing new narratives that help us elucidate inter
 <hr>
 <hr>
 
-<b> Short bio: </b> <i>Matías Bilkis es licenciado en física (UNLP), doctor en física (Grup d'Informació Quàntica - Universitat Autònoma de Barcelona), co-fundador y director del Grupo de Quantum Machine Learning del Centro de Visión por Computador (QML-CVC) y responsable de artes & física cuántica de la Cátedra UAB-Cruilla. Su investigación ocurre en el campo interdisciplinar, en áreas tales como la física cuántica, la inteligencia artificial y la tecnología como elemento de inovación social. </i>
+<!-- <b> Short bio: </b> <i>Matías Bilkis es licenciado en física (UNLP), doctor en física (Grup d'Informació Quàntica - Universitat Autònoma de Barcelona), co-fundador y director del Grupo de Quantum Machine Learning del Centro de Visión por Computador (QML-CVC) y responsable de artes & física cuántica de la Cátedra UAB-Cruilla. Su investigación ocurre en el campo interdisciplinar, en áreas tales como la física cuántica, la inteligencia artificial y la tecnología como elemento de inovación social. </i> -->
 <hr>
 
-<!--
+
 <b> Short bio: </b> <i>Matías Bilkis holds a degree in physics (UNLP), a PhD in physics (Grup d'Informació Quàntica - Universitat Autònoma de Barcelona), co-founder and director of the Quantum Machine Learning Group at the Center for Computer Vision (QML-CVC), and is responsible for arts & quantum physics at the UAB-Cruilla Chair. His research takes place in interdisciplinary fields, in areas such as quantum physics, artificial intelligence, and technology as an element of social innovation.
-<hr> -->
+<hr>
 
 <!--
 <div class="bio-container">
