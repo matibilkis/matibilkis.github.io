@@ -3,7 +3,7 @@ navbar_title:
 author:
   name: Matias Bilkis # Your name
   email: matiasbilkis[]@gmail.com
-url: "https://www.matiasbilkis.com" # The base hostname & protocol for your site, e.g. http://example.com
+url: ""
 baseurl: "" # The subpath of your site, e.g. /blog
 
 # _config.yml
