@@ -6,7 +6,10 @@ author:
 url: "https://www.matiasbilkis.com" # The base hostname & protocol for your site, e.g. http://example.com
 baseurl: "" # The subpath of your site, e.g. /blog
 
-
+# _config.yml
+bio:
+  en: "**Quantum Research Leader**..."
+  es: "**Líder en Investigación Cuántica**..."
 
 jekyllacademic:
   homepage_title: "Matias Bilkis " # Your homepage title
