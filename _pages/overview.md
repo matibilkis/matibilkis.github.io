@@ -11,7 +11,7 @@ I studied physics in La Plata, and moved to Barcelona back in 2018 to do a PhD i
 
 I have co-created and lead the Quantum Machine Learning Group, at the Computer Vision Center of Barcelona (QML-CVC).The QML-CVC is an interdisciplinary research group, working with physicists, computer scientists, artists, psychologists and more! We like to study different frameworks in quantum physics under which the quantum AI symbiosis takes place, with a strong focus on evaluating the social impact of quantum tech.
 
-I am very enthusiastic in developing new narratives that help us elucidate interdisciplinary research directions, so as to unveiling its potential in citizen engagement for political causes. As part of this, I collaborate with Cátedra UAB-Cruilla, I strongly participate in outreach activities & talks, and also been teaching "Social Innovation" subject in the AI degree at UAB.
+I am enthusiastic in developing new narratives that help us elucidate interdisciplinary research directions, so as to unveiling its potential in citizen engagement for political causes. As part of this, I collaborate with Cátedra UAB-Cruilla, I strongly participate in outreach activities & talks, and also been teaching "Social Innovation" subject in the AI degree at UAB.
 
 <hr>
 <hr>
