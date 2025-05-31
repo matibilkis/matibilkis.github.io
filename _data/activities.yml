@@ -1,0 +1,82 @@
+
+- type: talk
+  title: "Charla LIFIA"
+  event: "RIPAISC seminar"
+  year: 2024
+  month: 12
+  day: 14
+  location: "La Plata, Argentina"
+  description: "Presentación del Dr. Matías Bilkis, líder del grupo de Quantum Machine Learning, del Computer Vision Center de Barcelona, en el marco de su visita al Centro de Investigación LIFIA, de la Facultad de Informática, de la Universidad Nacional de La Plata (Argentina), en diciembre 2024."
+  abstract: "Empezaremos esta charla revisando tres escenarios diferentes en donde el machine learning logra un punto de encuentro con las tecnologías cuánticas. Cada uno de estos «use-cases» nos servirá como excusa para explicar distintas características de los sistemas cuánticos y las dificultades que se aparecen a la hora de intentar manipularlos. Continuaremos presentando nuestro grupo emergente (QML-CVC), haciendo un raconto de nuestra experiencia y exponiendo nuestras líneas de investigación. Concluiremos compartiendo una serie de retos y desafíos que nuestro grupo se propone afrontar en la proximidad, y que en el contexto de esta charla han de ser considerados como una invitación a pensar y colaborar en el desarrollo del aprendizaje automático cuántico."
+  links:
+    - name: video
+      url: "https://www.youtube.com/watch?v=ajyC4ASmHdg"
+
+
+- type: talk
+  title: "Charla en Universidad de San Andrés"
+  event: "Presentación quantum physics, machine learning y desafíos de quantum tech en Argentina"
+  year: 2025
+  month: 05
+  day: 22
+  location: "San Fernando, Argentina"
+  description: "It's an emerging engineering department, and quite a beautiful place by the rio de la Plata!"
+  links:
+    - name: venue
+      url: "https://udesa.edu.ar/departamento-de-ingenieria"
+
+
+- type: talk
+  title: "Decision-making in quantum environments: from model-free to model-aware learning of quantum controls"
+  event: "PhD Defense"
+  year: 2023
+  month: 6
+  day: 13
+  location: "GIQ, Barcelona, Spain"
+  description: "I defended my PhD thesis! The tribunal was composed by Roberta Zambrini, Zoe Holmes and Gael Sentís. I could not be more grateful with all of them for the amazing feedback I received, and the 4 hours of slowly grill ^^"
+  links:
+    - name: Photos
+      url: "https://www.instagram.com/p/CtcstJMItko/?img_index=1"
+    - name: Thesis.pdf
+      url: https://drive.google.com/file/d/1se8t7J-68Yr_K-4lq_TZO94QsO3_eEjR/view
+    - name: Online repository from UAB
+      url: https://portalrecerca.uab.cat/en/studentTheses/decision-making-in-quantum-environments-from-model-free-to-model-
+
+
+- type: panel
+  title: "Panel organizer & coordinator: what happens after the PhD in physics? Perspectives from industry, academia and high-schools."
+  event: "Tadef - UAB || physics PhD students annual meeting"
+  year: 2022
+  month: 4
+  day: 27
+  location: "UAB, Spain"
+  description: "I organized a panel to discuss the different roads a doctor in physics can take. The panel was composed by Dr. Gael Sentís (from the academia), Dr. Arnau Riera (from high-school) and Dr. Alex Monrás (from industry), and moderated by me. Notably, by 2024 they all ended up somehow linked to industry."
+
+
+- type: panel
+  title: ""
+  event: "Mesa redonda || Tecnologías  Cuánticas: Oportunidades de cooperación entre el sector privado y el sistema público de CyT en Argentina"
+  year: 2025
+  month: 4
+  day: 11
+  location: "La Plata, Argentina"
+  description: "En el marco del 7mo encuentro CUANTOS, organicé una mesa redonda para discutir las potenciales colaboraciones público-privadas en tecnologías cuánticas en Argentina. Invité a Julio Cella de IBM, a Alejandro Fernandez de la Red Iberoamericana de Ingenieria de Software Cuántico y a Nicolás Rendtoff de la Secretaría de Ciencia y Técnica de UNLP"
+  links:
+    - name: CUANTOS 7
+      url: https://www.fisica.org.ar/2025/02/26/septima-escuela-y-taller-argentino-de-cuantica-cuantos-7/
+    - name: video
+      url: https://www.youtube.com/watch?v=qciOSnGgIEk&t=6s
+
+# #
+# # - type: podcast
+# #   title: "Decoding Quantum Creativity"
+# #   show: "Future Tech Podcast"
+# #   year: 2024
+# #   url: "https://spotify.com/xyz"
+# #   description: "Discussing quantum neural networks and generative art."
+# #
+# # - type: media
+# #   title: "The Quantum Artist"
+# #   publisher: "Wired Magazine"
+# #   year: 2024
+# #   url: "https://wired.com/xyz"
