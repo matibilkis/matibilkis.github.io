@@ -40,7 +40,7 @@ supported_languages: [en, es]
 <!--
  align-items: center; -->
  <div style="display: flex;">
-   <img src="assets/images/mati_web.png" alt="Matías Bilkis" style="width: 100px; height: 100px; object-fit: cover; border-radius: 2%; margin-right: -120px;" />
+   <!-- <img src="assets/images/mati_web.png" alt="Matías Bilkis" style="width: 100px; height: 100px; object-fit: cover; border-radius: 2%; margin-right: -120px;" /> -->
    <h1 style="color: #cc0000; font-size: 2.5em; margin: -4;"><b>Matías Bilkis - PhD</b></h1>
 </div>
 
