@@ -66,6 +66,185 @@
       url: https://www.fisica.org.ar/2025/02/26/septima-escuela-y-taller-argentino-de-cuantica-cuantos-7/
     - name: video
       url: https://www.youtube.com/watch?v=qciOSnGgIEk&t=6s
+#
+- type: panel
+  title: "Taller de ciencias para niños y adolescentes"
+  event: "Science workshop for kids and teenagers"
+  year: 2020
+  month: 8
+  day: 11
+  location: "Max Nordau La Plata, Argentina"
+  description: "Actividad de educación no formal, con la intención de (i) motivar la curiosidad por la experimentación y la ciencia en niños de 3-8 años, y (ii) discutir el rol de la responsabilidad a la hora de comunicar resultados científicos en pre-adolescentes (10-14) años."
+  links:
+    - name: Max Nordau La Plata
+      url: https://www.maxnordau.com.ar/
+    - name: Algunas fotos :)
+      url: https://photos.google.com/share/AF1QipOA_nERwahJ_DdOepkLStFgqcJlsoNv1aZpZ3zXYW0Jvs7oMQXwVN8PcPxu0BHz2g?key=dlNUcGY1dVprZDNyQ2ZHSzBTRE1nZ2M4UFZ5amxB
+
+#
+- type: poster
+  title: "Toulouse School on Machine Learning for Quantum Many-Body Physics"
+  event: ""
+  year: 2022
+  month: 4
+  day: 4
+  location: "Toulouse"
+  description: "I presented a poster showing my work on NISQ computing, and learned a lot about quantum neural states, machine-learning for many-body physics and made a lot of cool and smart friends :)"
+  links:
+    - name: Conference website
+      url: https://mlqmb.sciencesconf.org/
+
+
+- type: poster
+  title: "Quantum characterization and control of quantum complex systems"
+  event: ""
+  year: 2022
+  month: 9
+  day: 19
+  location: "Como Lake, Italy"
+  description: "I participated in this school which I consider one of the coolest scientific events I ever joined. Among the speakers there was Roberta Zambrini (who would later be a tribunal member of my PhD thesis!), Klaus Molmer and Sabrina Maniscalco. I presented a poster on parameter estimation in continously-monitored quantum systems."
+  links:
+    - name: Conference website
+      url: https://www.quantiki.org/conference/quantum-characterization-and-control-quantum-complex-systems-171-lake-como-school
+
+
+- type: talk
+  title: "Mestizajes"
+  event: "Encuentro internacional sobre Ciencia, Arte y Literatura"
+  year: 2021
+  month: 9
+  day: 19
+  location: "DIPC, Donosti, Spain"
+  description: "Este es un proyecto maravilloso, liderado por Diego Schwartz, donde se discute el ecotono: aquel espacio donde las fronteras entre ciencia y arte se vifuminan. En este encuentro en particular, se discutieron aproximaciones a la belleza. Tuve el honor de dar una charla, contando mi perspectiva de cómo es la investigación en física teórica, lo errático del que-hacer científico, y cómo podemos abordar y contar esto a través de agentes autónomos de IA que intentan hacer música."
+  links:
+    - name: Proyecto mestizajes
+      url: https://www.mestizajes.es/Proyectos/Conferencias/Presentacion/Presentacion.html
+    - name: My talk
+      url: https://www.youtube.com/watch?v=IWFlugoLHFU&t=13110s
+
+- type: talk
+  title: "Sonar i+d"
+  event: " AI & Music S+T+ARTS Festival - Hackthon Outcomes presentations "
+  year: 2021
+  month: 10
+  day: 29
+  location: "CCCB, Barcelona, Spain"
+  description: "This is the outcome of a hackaton i won, organized by a satellite event of the Sonar festival. The goal was to approach music with AI tools, and my team developed an approach (based on my work on RL for quantum device calibration) for making music in a live coding platform. Crucially, we tackled autonomous innovation, and we created an AI orchesta capable of improvising. I even brought my guitar on scene, it was a very cool experience!"
+  links:
+    - name: AI + music STARTS
+      url: https://aimusicfestival.eu/
+    - name: My talk
+      url: https://www.youtube.com/watch?v=Y1urPDJekxY
+    - name: github repo
+      url: hackaton_AI_music
+
+
+- type: poster
+  title: "Collaborative and generative AI"
+  event: " ELLIS summer school "
+  year: 2024
+  month: 7
+  day: 1
+  location: "Aalto University, Helsinski, Finland"
+  description: "This tackled human-in-the-loop machine learning, human modeling, and generative models, and we discussed about generative models in interactive human-AI systems. I presented our QML-CVC group, and discussed opportunities for collaborative quantum machine learning. It was quite interesting."
+  links:
+    - name: Program
+      url: https://fcai.fi/ellis-summer-school-2024/home
+    - name: My poster
+      url: https://drive.google.com/file/d/1pzNvczRQxwBAnYtZGqaNSp097LoQvZLC/view?usp=sharing
+
+
+- type: talk
+  title: "QTML 2023"
+  event: "Quantum techniques in machine learning"
+  year: 2023
+  month: 11
+  day: 19
+  location: "CERN, Geneve, Switzerland"
+  description: "An annual conference on quantum machine learning. I gave a talk presenting our approach for machine learning equations of motion in quantum sensing scenarios. The venue was super cool, at the core of CERN!"
+  links:
+    - name: Conference website
+      url: https://qtml-2023.web.cern.ch/
+    - name: my slides
+      url: https://docs.google.com/presentation/d/1UTV4tKmNrmDpL25u-HE-E99L_eMAEP_83__dAO3mmpk/edit?usp=sharing
+
+
+
+- type: talk
+  title: "Intellligència artificial i computació quàntica: quina és la promesa quàntica?"
+  event: "ExperimentAI (outreach program)"
+  year: 2023
+  month: 10
+  day: 30
+  location: "Biblioteca Camp de l'Arpa, Barcelona, Spain"
+  description: "This was an outreach talk in a library in Barcelona, where ~60 people (random citizens, not scientists) were present. Abstract: 'En aquesta xerrada intentarem contrarestar l'aclaparadora i nociva propaganda de l’anomenada supremacia quàntica. Primerament farem una posada en comú sobre què intenta descriure la física quàntica i exemplificarem certs fenòmens quàntics. Després, discutirem sobre una nova classe de tecnologies que aprofiten aquests fenòmens quàntics i posarem l'accent en quin és l'estat actual. Finalment, parlarem de la intel·ligència artificial quàntica, la qual, tot i tenir un nom cinematogràfic, és una àrea de recerca molt innovadora que planteja desafiaments tant per als investigadors com per a la societat. En aquest context, aquesta xerrada és una invitació a col·laborar juntament amb l'audiència per pensar en un concepte d'intel·ligència artificial que no només sigui quàntica, sinó també acceptable.'"
+  links:
+    - name: Announcement 1
+      url: https://www.cvc.uab.es/blog/2023/10/06/cicle-de-conferencies-intelligencia-artificial-revelant-impactes-socials/
+    - name: Announcement 2
+      url: https://www.barcelona.cat/infobarcelona/es/la-semana-de-la-ciencia-en-bibliotecas-de-barcelona-2_1338470.html
+    - name: Slides
+      url: https://docs.google.com/presentation/d/1e44X9T2RG4BAwwCrZe1PveFzeT8UoYrQ3b6hj3k0UUQ/edit?usp=sharing
+
+
+
+- type: talk
+  title: "Group presentation: QML-CVC"
+  event: "Quick-off talk & introduction to quantum machine learning"
+  year: 2023
+  month: 10
+  day: 14
+  location: "Computer Vision Center, Barcelona, Spain"
+  description: "This was the formal presentation of the group I've created with Fernando Vilariño at the computer vision center. The event was very nice, a record number of attendants for CVC standards, and Artur Garcia from BSC and Qilimanjaro gave a talk as well. I presented my background and our plans for the group, and in the afternoon I also gave a hands-on QML tutorial."
+  links:
+    - name: Announcement
+      url: https://www.cvc.uab.es/blog/2023/10/17/quantum-machine-learning-cvc-seminar/
+    - name: Recording
+      url: https://www.cvc.uab.es/cvctv/?id=372
+    - name: QML hands-on tutorial
+      url: github.com/matibilkis/qml-day
+
+- type: talk
+  title: "Group presentation: QML-CVC"
+  event: "Quick-off talk & introduction to quantum machine learning"
+  year: 2024
+  month: 10
+  day: 16
+  location: "Autonomous University of Barcelona, Barcelona, Spain"
+  description: "This was the formal presentation of the Cátedra UAB-Cruilla, which is an initiative for the study of AI impact in the fields of ars. As the name suggest, this initiative is a public-private one, with the participation of the biggest stakeholder of musical industry in Barcelona (Festival Cruilla). In here, I gave a short talk about the possibilities that our QML-CVC group could offer to the transdisciplinary research, and also to logistics & optimization in the festival."
+  links:
+    - name: Announcement
+      url: https://www.uab.cat/web/sala-de-prensa/detalle-noticia/la-uab-y-el-festival-cru-lla-se-unen-para-llevar-inteligencia-artificial-innovadora-etica-y-sostenible-a-los-espectaculos-artisticos-1345830290069.html?detid=1345929483865
+    - name: Chair UAB Cruilla website
+      url: https://catedrauabcruilla.cvc.uab.es/
+
+- type: talk
+  title: "Max Planck Institute: 2nd Workshop on Machine Learning for Quantum Technology"
+  event: "Talk about automatic recalibration of quantum devices by reinforcement learning"
+  year: 2024
+  month: 11
+  day: 5
+  location: "Erlangen, Germany"
+  description: "This meeting was about the use of classical ML/AI techniques to advance the development of quantum technologies in a broad sense. Some examples would be analyzing quantum measurements, estimating the parameters of quantum devices, discovering new quantum experimental setups, protocols, and feedback strategies, and generally improving aspects of quantum computing, quantum communication, and quantum simulation."
+  links:
+    - name: webiste
+      url: https://indico.mpl.mpg.de/event/18/
+    - name: My slides
+      url: https://docs.google.com/presentation/d/1N2Ppl-4_Qo1fSJCJZ6yTyzhFU1umW8LA0SHPW0gLawA/edit?usp=sharing
+    - name: paper
+      url: https://arxiv.org/abs/2404.10726
+
+- type: panel
+  title: "Programa de radio"
+  event: " #LaCúpula Investigación científica en Argentina con Fiorela Ghilini y Matias Bilkis "
+  year: 2023
+  month: 12
+  day: 19
+  location: "Radio Provincia, La Plata, Argentina"
+  description: "Una entrevista que nos hicieron con Fio sobre el rol y la importancia de la ciencia en el país y en el mundo. Estuvo lindo!"
+  links:
+    - name: Recording
+      url: https://www.youtube.com/watch?v=VCAmamiu0JY
 
 # #
 # # - type: podcast

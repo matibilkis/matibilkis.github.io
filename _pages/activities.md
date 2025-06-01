@@ -15,6 +15,7 @@ permalink: /activities/
           {% when 'talk' %}🎤 Talk
           {% when 'panel' %}💬 Panel
           {% when 'podcast' %}🎙️ Interview
+          {% when 'poster' %} 🪧 Poster presentation
         {% endcase %}
       </span>
     </div>
