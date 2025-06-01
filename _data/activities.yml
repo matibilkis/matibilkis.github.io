@@ -246,7 +246,70 @@
     - name: Recording
       url: https://www.youtube.com/watch?v=VCAmamiu0JY
 
+- type: talk
+  title: "Reinforcement-learning calibration of coherent-state receivers on variable-loss optical channels"
+  event: "IEEE Information Theory Workshop (ITW)  "
+  year: 2021
+  month: 10
+  day: 21
+  location: "Kanazawa, Japan"
+  description: "I gave a talk at this info theory workshop, explaining our work on how to calibrate an stochastic device out of trial and errors and do not wait an eternity until succes."
+  links:
+    - name: Proceedings
+      url: https://ieeexplore.ieee.org/document/9611396
+    - name: Arxiv repo
+      url: https://arxiv.org/abs/2203.09807
 # #
+
+
+- type: talk
+  title: "Machine learning unkown quantum circuits"
+  event: "MLQ2021: Machine Learning for Quantum "
+  year: 2021
+  month: 3
+  day: 5
+  location: "Online conference, organized by Oxford, UK"
+  description: "A conference tackling (1) how can a quantum sensor optimally extract information about its environment? (2) how to achieve fully automatic calibration and operation in multi-qubit circuits, (3) how can ML improve performance of quantum algorithms for quantum chemistry? I presented VANs algorithm, linked to the three of them!"
+  links:
+    - name: Website
+      url: https://qpl.eps.hw.ac.uk/?page_id=1256
+    - name: Arxiv repo
+      url: https://arxiv.org/abs/2103.06712
+    - name: recording
+      url: https://youtu.be/CJ8v9h9H9rY?list=PLgZAMvRfxX8VfVosu1TdAlGLi7KWgH5RX&t=2905
+# #
+
+
+- type: talk
+  title: "Real-time calibration of a quantum receiver"
+  event: "QTurn conference "
+  year: 2020
+  month: 11
+  day: 23
+  location: "Online conference, organized by a lot of my superheroes :)"
+  description: "AQ-turn is a unique international quantum information workshop series. Our core mission is to foster an inclusive community and highlight outstanding research that may be under-appreciated in other high-impact venues due to systemic biases. As researchers who value the power of education and collaboration, we aim to facilitate a dialogue in the community over issues that affect us as a society, collectively making progress to resolve them. For this reason, Q-turn holds an awareness program in addition to the focused quantum science program. Q-turn's awareness program promotes diversity, equity, inclusion, intersectionality, responsible research, workers' rights, as well as physical and mental health in quantum science and technology. Q-turn's quantum science program highlights top-quality work on quantum information technology and foundations. Researchers in these fields and intersecting ones are welcome to submit their work."
+  links:
+    - name: Website
+      url: https://www.easychair.org/cfp/Q-Turn2020
+    - name: whitepaper QTurn
+      url: https://arxiv.org/abs/2202.06867
+
+- type: talk
+  title: "Los Alamos National Lab"
+  event: "Quantum computing Summer school"
+  year: 2020
+  month: 08
+  day: 23
+  location: "Los Alamos, New Mexico, USA"
+  description: "I was a fellow in one of the most selectives and important quantum computing summer school. In this talk I internally presented my results on ML quantum circuits to the other fellows. School speakers were: Tameem Albash (U New Mexico), Juan Miguel Arrazola (Xanadu), Robin Blume-Kohout (Sandia), Thomas Bromley (Xanadu), Elizabeth Crosson (U New Mexico), Bill Fefferman (U Chicago), Jay Gambetta (IBM), Sonika Johri (IonQ), Mikhail Lukin (Harvard), Eleanor Rieffel (NASA), Maria Schuld (Xanadu), Graeme Smith (U Colorado), Wim van Dam (UCSB / QCWare), Nathan Wiebe (U Toronto)."
+  links:
+    - name: Website
+      url: https://www.lanl.gov/engage/collaboration/internships/summer-schools/quantumschool/quantum-previous
+    - name: VAns publication
+      url: https://link.springer.com/article/10.1007/s42484-023-00132-1
+
+# #
+
 # # - type: podcast
 # #   title: "Decoding Quantum Creativity"
 # #   show: "Future Tech Podcast"
