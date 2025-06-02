@@ -308,7 +308,93 @@
     - name: VAns publication
       url: https://link.springer.com/article/10.1007/s42484-023-00132-1
 
+
+- type: talk
+  title: "A semi-agnostic ansatz with variable structure for quantum machine learning"
+  event: "Fermilab seminars"
+  year: 2022
+  month: 25
+  day: 07
+  location: "Fermilab, USA"
+  description: "I was invited by Judah to talk about VAns."
+
+
+- type: talk
+  title: " Real-time calibration of coherent-state detectors: learning by trial and error"
+  event: "CTP Quantum Information Days"
+  year: 2022
+  month: 25
+  day: 07
+  location: "Center for Theoretical Physics PAS (Warsaw, Poland)"
+  description: "Real-time calibration of coherent-state detectors: learning by trial and error. We cast the discrimination of two coherent states of light as a reinforcement learning problem, in which an agent has to choose among a large number of configurations of a receiver composed of simple linear optics elements, on/off photodetectors and feedback, all within reach of current technology. The agent, though completely ignorant about the receiver, is asked to find its optimal configuration by repeating the experiment a finite number of times, based only on the information obtained from the photodetectors and on the correctness of its guess. Despite the fact that the quantum signals are not perfectly distinguishable and therefore an optimal configuration may lead to an incorrect guess (no reward), we construct agents that can both discover near-optimal configurations and achieve high real-time success rate, even in the presence of several noise-sources."
+  links:
+    - name: "Paper"
+      url: https://journals.aps.org/prresearch/pdf/10.1103/PhysRevResearch.2.033295
+    - name: "Talk recording"
+      url: "https://www.youtube.com/watch?v=Qp1r0dJ1BQ0"
+
+- type: talk
+  title: "Real-time calibration of coherent-state detectors: learning by trial and error."
+  event: "giqfo seminars"
+  year: 2020
+  month: 02
+  day: 14
+  location: "ICFO, Castelldefelds, Spain"
+  description: "We cast the discrimination of two coherent states of light as a reinforcement learning problem, in which an agent has to choose among a large number of configurations of a receiver composed of simple linear optics elements, on/off photodetectors and feedback, all within reach of current technology. The agent, though completely ignorant about the receiver, is asked to find its optimal configuration by repeating the experiment a finite number of times, based only on the information obtained from the photodetectors and on the correctness of its guess. Despite the fact that the quantum signals are not perfectly distinguishable and therefore an optimal configuration may lead to an incorrect guess (no reward), we construct agents that can both discover near-optimal configurations and achieve high real-time success rate, even in the presence of several noise-sources."
+
 # #
+
+- type: poster
+  title: "Quantum machine learning."
+  event: "  worshop"
+  year: 2019
+  month: 10
+  day: 20
+  location: "ICFO, Castelldefelds, Spain"
+  description: ""
+  links:
+    - name: "website"
+      url: "https://www.icfo.eu/event/7/quantum-machine-learning-workshop-/"
+
+
+- type: poster
+  title: "Quantum Communication and Computation with Continuous Variables"
+  event: "Masterclass, QMATH"
+  year: 2019
+  month: 06
+  day: 21
+  location: "QMATH, Copenhaguen, Denmark"
+  description: "Amazing event with super heroes researchers (among them Holevo!!). I presented a humble poster :)"
+  links:
+    - name: "website"
+      url: "https://www.icfo.eu/event/7/quantum-machine-learning-workshop-/"
+
+
+- type: talk
+  title: "Conditional quantum entropy & quantum discord"
+  event: "giq seminars"
+  year: 2018
+  month: 10
+  day: 21
+  location: "UAB, Barcelona, Spain"
+  description: "We examine, in correlated mixed states of qudit-qubit systems, the set of all conditional qubit states that can be reached after local measurements at the qudit based on rank-1 projectors. While for a similar measurement at the qubit, the conditional post-measurement qudit states lie on the surface of an ellipsoid, for a measurement at the qudit we show that the set of post-measurement qubit states can form more complex solid regions. In particular, we show the emergence, for some classes of mixed states, of sets which are the convex hull of solid ellipsoids and which may lead to cone-like and triangle-like shapes in limit cases. We also analyze the associated measurement dependent conditional entropy, providing a full analytic determination of its minimum and of the minimizing local measurement at the qudit for the previous states. Separable rank-2 mixtures are also discussed. "
+  links:
+    - name: "paper"
+      url: "https://journals.aps.org/pra/abstract/10.1103/PhysRevA.99.062119"
+    - name: "ice-cream quantum states"
+      url: "https://drive.google.com/file/d/1Nt0BiwlhLRZA5HoOFCjkAxX7M3_n55pl/view?usp=sharing"
+
+- type: talk
+  title: "Entropía condicional y correlaciones cuánticas"
+  event: "defensa de tesis de licenciatura"
+  year: 2018
+  month: 03
+  day: 22
+  location: "La Plata, Argentina"
+  description: "En esta tesis se ha examinado el problema de la caracterización de medidas locales en un sistema cuántico bipartito correlacionado, y cómo esta medida afecta al sistema remoto. Hemos visto que el estado remoto luego de la medida queda determinado por el tensor de correlación, y por supuesto por la medida local efectuada. Mientras que en el caso de estados puros el estado remoto luego de la medida es siempre puro -aunque dependiente de la medida- esto no es cierto en el caso de estados mixtos, donde el estado remoto permanece en general mixto, e incluso su grado de pureza depende de la medida efectuada. Cabe señalar que estas correlaciones no implican ninguna comunicación super-lumínica. La entropía condicional del estado remoto depende así de la medida efectuada, y su mínimo tiene significados e implicancias importantes. En primer lugar, la entropía condicional mínima determina la discordia cuántica, que es una medida de correlaciones cuánticas más allá del entrelazamiento para estados mixtos, y que coincide con la entropía de entrelazamiento en estados puros. En segundo lugar esta entropía condicional mínima determina el entrelazamiento de uno de los subsistemas con un tercer sistema que purifica el conjunto. La entropía condicional mínima puede utilizarse pues para la determinación del entrelazamiento."
+  links:
+    - name: "my licenciate thesis"
+      url: "http://sedici.unlp.edu.ar/handle/10915/67996"
 
 # # - type: podcast
 # #   title: "Decoding Quantum Creativity"
