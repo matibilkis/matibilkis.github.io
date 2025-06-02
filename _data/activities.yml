@@ -17,13 +17,29 @@
   title: "Charla en Universidad de San Andrés"
   event: "Presentación quantum physics, machine learning y desafíos de quantum tech en Argentina"
   year: 2025
-  month: 05
+  month: 5
   day: 22
   location: "San Fernando, Argentina"
-  description: "It's an emerging engineering department, and quite a beautiful place by the rio de la Plata!"
+  description: "Talk at an emerging engineering department, a beautiful place by the rio de la Plata!"
   links:
-    - name: venue
+    - name: Udesa
       url: "https://udesa.edu.ar/departamento-de-ingenieria"
+
+
+- type: talk
+  title: "QML, society and more"
+  event: "Genesis of tomorrow, podcast interview"
+  year: 2024
+  month: 5
+  day: 22
+  location: "Genesis of tomorrow"
+  description: "This is an amazing initiative, check out Bhavyadhirr's youtube channel. It was my first podcast interview, so listen with love and patience."
+  links:
+    - name: recording
+      url: "https://www.youtube.com/watch?v=Sw5D5f6_ygI&t=10s"
+
+    - name: YouTube channel
+      url: "https://www.youtube.com/@GenesisofTomorrow"
 
 
 - type: talk
@@ -33,7 +49,7 @@
   month: 6
   day: 13
   location: "GIQ, Barcelona, Spain"
-  description: "I defended my PhD thesis! The tribunal was composed by Roberta Zambrini, Zoe Holmes and Gael Sentís. I could not be more grateful with all of them for the amazing feedback I received, and the 4 hours of slowly grill ^^"
+  description: "I defended my PhD thesis! The tribunal was composed by Roberta Zambrini, Zoe Holmes and Gael Sentís. I could not be more grateful with all of them for the amazing feedback I received, and the 4 hours of slow grill ^^"
   links:
     - name: Photos
       url: "https://www.instagram.com/p/CtcstJMItko/?img_index=1"
@@ -54,8 +70,8 @@
 
 
 - type: panel
-  title: ""
-  event: "Mesa redonda || Tecnologías  Cuánticas: Oportunidades de cooperación entre el sector privado y el sistema público de CyT en Argentina"
+  title: "Tecnologías  Cuánticas: Oportunidades de cooperación entre el sector privado y el sistema público de CyT en Argentina"
+  event: "Mesa redonda, CUANTOS 7"
   year: 2025
   month: 4
   day: 11
@@ -395,16 +411,3 @@
   links:
     - name: "my licenciate thesis"
       url: "http://sedici.unlp.edu.ar/handle/10915/67996"
-
-# # - type: podcast
-# #   title: "Decoding Quantum Creativity"
-# #   show: "Future Tech Podcast"
-# #   year: 2024
-# #   url: "https://spotify.com/xyz"
-# #   description: "Discussing quantum neural networks and generative art."
-# #
-# # - type: media
-# #   title: "The Quantum Artist"
-# #   publisher: "Wired Magazine"
-# #   year: 2024
-# #   url: "https://wired.com/xyz"
