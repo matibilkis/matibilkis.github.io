@@ -5,7 +5,7 @@ permalink: /activities/
 ---
 
 <div class="activities-list">
-{% assign sorted_activities = site.data.activities | sort:"day" | sort: "month"| sort: "year" | reverse  %}
+{% assign sorted_activities = site.data.activities | sort:"year" | reverse  %}
 {% for activity in sorted_activities %}
   <div class="activity-item">
     <p class="activity-title {{ activity.type }}">
