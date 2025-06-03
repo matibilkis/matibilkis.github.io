@@ -41,10 +41,10 @@ supported_languages: [en, es]
  align-items: center; -->
  <div style="display: flex;">
    <!-- <img src="assets/images/mati_web.png" alt="Matías Bilkis" style="width: 100px; height: 100px; object-fit: cover; border-radius: 2%; margin-right: -120px;" /> -->
-   <h1 style="color: #cc0000; font-size: 2.5em; margin: -4;"><b>Matías Bilkis - PhD</b></h1>
+   <h1 style="color: #cc0000; font-size: 2.5em; margin: -4;"><b>Matías Bilkis, PhD</b></h1>
 </div>
 
-   <b> Short bio: </b> <i>Matías Bilkis holds a degree in physics (UNLP), a PhD in physics (Grup d'Informació Quàntica - Universitat Autònoma de Barcelona), co-founder and director of the Quantum Machine Learning Group at the Center for Computer Vision (QML-CVC). His research takes place in interdisciplinary fields, in areas such as quantum physics, artificial intelligence, and technology as an element of social innovation.
+   <b> Short bio: </b> <i>MB holds a degree in physics (UNLP), a PhD in physics (Grup d'Informació Quàntica - Universitat Autònoma de Barcelona), co-founder and director of the Quantum Machine Learning Group at the Center for Computer Vision (QML-CVC). His research takes place in interdisciplinary fields, in areas such as quantum physics, artificial intelligence, and technology as an element of social innovation.
 
  <hr>
  <p>

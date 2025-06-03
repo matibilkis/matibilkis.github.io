@@ -18,14 +18,40 @@ permalink: /activities/
       <b>{{ activity.title }}</b> <br>
     {{ activity.day}}/{{ activity.month}}/{{ activity.year}} • {{ activity.location }}
 <br>
-      {% for link in activity.links %}
-        <a href="{{ link.url }}" target="_blank">{{ link.name }}</a>
-        {% unless forloop.last %} || {% endunless %}
-      {% endfor %}
-    </p>        
+  <div class="activity-item">
+    {% for link in activity.links %}
+      <a href="{{ link.url }}" target="_blank">{{ link.name }}</a>
+      {% unless forloop.last %} || {% endunless %}
+    {% endfor %}
+  {% if activity.description %}
+    <button class="dropdown-btn" onclick="toggleDescription(this)">Show Description ▼</button>
+    <div class="activity-description" style="display:none;">
+      {{ activity.description }}
+    </div>
+  {% endif %}
+  </div>
       <hr>
 {% endfor %}
 </div>
+
+<script>
+function toggleDescription(btn) {
+  // Find the next .activity-description element after the button
+  let desc = btn.nextElementSibling;
+  if (!desc || !desc.classList.contains("activity-description")) {
+    // fallback, looks for the nearest activity-description in the parent
+    desc = btn.parentElement.querySelector(".activity-description");
+  }
+  if (desc.style.display === "none" || desc.style.display === "") {
+    desc.style.display = "block";
+    btn.textContent = "Hide Description ▲";
+  } else {
+    desc.style.display = "none";
+    btn.textContent = "Show Description ▼";
+  }
+}
+
+</script>
 
 
 <!-- <div class="activity-header">
@@ -45,19 +71,22 @@ permalink: /activities/
 .activities-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 1.2rem;
+  gap: .3rem;
   justify-content: flex-start;
   font-size: 0.93rem; /* Smaller base font size */
+}
+.activity-description {
+  margin: 0;
+  padding: 0;
 }
 .activity-card {
   background: #f8fafd;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-  padding: 1.1rem 1.2rem 1rem 1.2rem;
   min-width: 290px;
   max-width: 355px;
   flex: 1 1 320px;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.1rem;
   border-left: 4px solid #b3c6ff;
   transition: box-shadow 0.2s;
 }
@@ -68,10 +97,10 @@ permalink: /activities/
 .activity-card-header {
   display: flex;
   align-items: center;
-  gap: 0.6rem;
+  gap: 0.0rem;
   font-size: 1.05rem;
   font-weight: 500;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.1rem;
 }
 .activity-type {
   font-size: 0.7rem;
@@ -85,12 +114,12 @@ permalink: /activities/
 .activity-meta {
   color: #4d5c7d;
   font-size: 0.97rem;
-  margin-bottom: 0.38rem;
+  margin-bottom: 0.0rem;
 }
 .activity-description {
   font-size: 0.6rem;
   color: #444;
-  margin-bottom: 0.28rem;
+  margin-bottom: 0.1rem;
 }
 .activity-links a {
     font-weight: bold;
@@ -99,4 +128,31 @@ permalink: /activities/
   color: #3562a8;
   text-decoration: underline;
 }
+.dropdown-btn {
+  background: #e6efff;
+  border: none;
+  color: #355fa8;
+  padding: 3px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 0.87em;
+  margin-top: 0px;
+}
+.dropdown-btn:hover {
+  background: #dde8ff;
+}
+.activity-description {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-size: 0.92em;
+  color: #444;
+  transition: all 0.4s;
+  display: none; /* or block/inline if toggled */
+}
+.activity-title, .activity-meta, .activity-links {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+
 </style>
