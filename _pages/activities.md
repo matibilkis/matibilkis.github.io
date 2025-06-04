@@ -3,42 +3,38 @@ title: My Activities
 layout: default
 permalink: /activities/
 ---
-
 <div class="activities-list">
-{% assign sorted_activities = site.data.activities | sort:"year" | reverse  %}
+{% assign sorted_activities = site.data.activities | sort:"year" | reverse %}
 {% for activity in sorted_activities %}
-  <div class="activity-item">
-    <p class="activity-title {{ activity.type }}">
-      <!-- {% case activity.type %}
-        {% when 'talk' %}🎤
-        {% when 'panel' %}💬
-        {% when 'podcast' %}🎙️
-        {% when 'poster' %} 🪧
-      {% endcase %} -->
-      <b>{{ activity.title }}</b> <br>
-    {{ activity.day}}/{{ activity.month}}/{{ activity.year}} • {{ activity.location }}
-
-  <div class="activity-item">
-    {% for link in activity.links %}
-      <a href="{{ link.url }}" target="_blank">{{ link.name }}</a>
-      {% unless forloop.last %} || {% endunless %}
-    {% endfor %}
-  {% if activity.description %}
-    <button class="dropdown-btn" onclick="toggleDescription(this)">more ▼</button>
-    <div class="activity-description" style="display:none;">
-      {{ activity.description }}
+  <div class="activity-card{% if activity.type == 'leader' %} leader{% endif %}">
+    <div class="activity-card-header">
+      <span class="activity-title"><b>{{ activity.title }}</b></span>
     </div>
-  {% endif %}
+    <div class="activity-meta">
+      <span class="activity-date">{{ activity.day }}/{{ activity.month }}/{{ activity.year }}</span>
+      <span class="activity-location">• {{ activity.location }}</span>
+    </div>
+    {% if activity.links and activity.links.size > 0 %}
+      <div class="activity-links">
+        {% for link in activity.links %}
+          <a href="{{ link.url }}" target="_blank">{{ link.name }}</a>{% unless forloop.last %} <span class="link-sep">|</span> {% endunless %}
+        {% endfor %}
+      </div>
+    {% endif %}
+    {% if activity.description %}
+      <button class="dropdown-btn" onclick="toggleDescription(this)">more ▼</button>
+      <div class="activity-description" style="display:none;">
+        {{ activity.description }}
+      </div>
+    {% endif %}
   </div>
-      <hr>
 {% endfor %}
+</div>
 
 <script>
 function toggleDescription(btn) {
-  // Find the next .activity-description element after the button
   let desc = btn.nextElementSibling;
   if (!desc || !desc.classList.contains("activity-description")) {
-    // fallback, looks for the nearest activity-description in the parent
     desc = btn.parentElement.querySelector(".activity-description");
   }
   if (desc.style.display === "none" || desc.style.display === "") {
@@ -49,109 +45,135 @@ function toggleDescription(btn) {
     btn.textContent = "more ▼";
   }
 }
-
 </script>
 
-
-<!-- <div class="activity-header">
-  <span class="activity-date">{{ activity.date | date: "%b %Y" }}</span>
-</div>
-
-{% if activity.description %}
-<p class="activity-description">
-  {{ activity.description }}
-</p>
-{% endif %} -->
-
-
-
-
 <style>
+body { background: #f6f7fa; }
+
+.section-title {
+  font-size: 2rem;
+  color: #223568;
+  margin-top: 24px;
+  margin-bottom: 36px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
 .activities-list {
   display: flex;
-  flex-wrap: wrap;
-  gap: .3rem;
-  justify-content: flex-start;
-  font-size: 0.93rem; /* Smaller base font size */
+  flex-direction: column;
+  gap: 32px;
+  max-width: 780px;
+  margin: 0 auto 40px auto;
 }
-.activity-description {
-  margin: 0;
-  padding: 0;
-}
+
 .activity-card {
-  background: #f8fafd;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-  min-width: 290px;
-  max-width: 355px;
-  flex: 1 1 320px;
-  margin-bottom: 0.1rem;
-  border-left: 4px solid #b3c6ff;
-  transition: box-shadow 0.2s;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 3px 20px rgba(20,30,60,0.07);
+  padding: 26px 28px 18px 28px;
+  border: 1.5px solid #e8eaef;
+  transition: box-shadow 0.2s, border 0.2s;
+  position: relative;
 }
 .activity-card.leader {
-  border-left: 4px solid #ffd700;
+  border-left: 5px solid #ffd700;
   background: #fffbe6;
 }
 .activity-card-header {
   display: flex;
   align-items: center;
-  gap: 0.0rem;
-  font-size: 1.05rem;
-  font-weight: 500;
-  margin-bottom: 0.1rem;
+  font-size: 1.17em;
+  font-weight: 600;
+  color: #223568;
+  margin-bottom: 3px;
+  gap: 12px;
 }
-.activity-type {
-  font-size: 0.7rem;
+.activity-emoji {
+  font-size: 1.5em;
+  margin-right: 7px;
 }
 
-.activity-date, .activity-location {
-  color: #888;
-  font-size: 0.93rem;
-  margin-left: 0.4rem;
+.activity-title {
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  margin-bottom: 0;
 }
+
 .activity-meta {
-  color: #4d5c7d;
-  font-size: 0.97rem;
-  margin-bottom: 0.0rem;
+  color: #697191;
+  font-size: 1.02em;
+  margin-bottom: 7px;
 }
-.activity-description {
-  font-size: 0.6rem;
-  color: #444;
-  margin-bottom: 0.1rem;
+
+.activity-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
 }
 .activity-links a {
-    font-weight: bold;
+  font-weight: 500;
   margin-right: 0.7rem;
-  font-size: 0.93rem;
-  color: #3562a8;
+  font-size: 0.99rem;
+  color: #2962ad;
   text-decoration: underline;
+  border-radius: 2px;
+  transition: background 0.13s, color 0.13s;
+  padding: 2px 4px;
 }
+.activity-links a:hover {
+  background: #f0f4ff;
+  color: #193972;
+}
+.link-sep {
+  color: #b5b5c3;
+}
+
 .dropdown-btn {
   background: #e6efff;
   border: none;
   color: #355fa8;
-  padding: 3px 10px;
+  padding: 6px 14px;
   cursor: pointer;
   border-radius: 5px;
-  font-size: 0.87em;
-  margin-top: 0px;
+  font-size: 0.97em;
+  margin-top: 8px;
+  margin-bottom: 0;
+  transition: background 0.18s, color 0.18s;
 }
 .dropdown-btn:hover {
   background: #dde8ff;
+  color: #2b455d;
 }
 .activity-description {
   margin: 0 !important;
-  padding: 0 !important;
-  font-size: 0.92em;
-  color: #444;
-  transition: all 0.4s;
-  display: none; /* or block/inline if toggled */
+  padding: 16px 2px 0 2px !important;
+  font-size: 1em;
+  color: #3c4558;
+  background: #fafbfe;
+  border-radius: 0 0 9px 9px;
+  border-top: 1px solid #e8eaef;
+  transition: all 0.35s;
+  display: none;
 }
-.activity-title, .activity-meta, .activity-links {
-  margin-bottom: 0 !important;
-  padding-bottom: 0 !important;
+@media (max-width: 900px) {
+  .activities-list { padding-left: 2vw; padding-right: 2vw;}
+  .activity-card { padding: 15px 7vw; }
+  .section-title { font-size: 1.3rem; }
+}
+.activity-links-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 7px;
 }
 
-
+.activity-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
+}
 </style>
