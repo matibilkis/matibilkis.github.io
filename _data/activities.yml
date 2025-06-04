@@ -22,8 +22,8 @@
   location: "San Fernando, Argentina"
   description: "Talk at an emerging engineering department, a beautiful place by the rio de la Plata!"
   links:
-    - name: Udesa
-      url: "https://udesa.edu.ar/departamento-de-ingenieria"
+    - name: announcement
+      url: "https://eventos.udesa.edu.ar/135801/detail/tres-problemas-cuanticos-qml-cvc-y-muchos-desafios.html"
 
 
 - type: talk
