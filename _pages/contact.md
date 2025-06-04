@@ -7,7 +7,7 @@ permalink: /contact/
 <div class="contact-container">
   <h1 class="contact-title">Reach out to me</h1>
   <div class="contact-card">
-    <form action="<https://formspree.io/f/xovwvwok>" method="POST" class="contact-form">
+    <form action="https://formspree.io/f/xovwvwok" method="POST" class="contact-form">
       <label for="name">Name</label>
       <input type="text" id="name" name="name" required>
 
