@@ -1,0 +1,62 @@
+- type: paper
+  title: "Real-time calibration of coherent-state detectors: learning by trial and error."
+  order: 0
+  url: "https://arxiv.org/pdf/2001.10283"
+  description: "We cast the discrimination of two coherent states of light as a reinforcement learning problem, in which an agent has to choose among a large number of configurations of a receiver composed of simple linear optics elements, on/off photodetectors and feedback, all within reach of current technology. The agent, though completely ignorant about the receiver, is asked to find its optimal configuration by repeating the experiment a finite number of times, based only on the information obtained from the photodetectors and on the correctness of its guess. Despite the fact that the quantum signals are not perfectly distinguishable and therefore an optimal configuration may lead to an incorrect guess (no reward), we construct agents that can both discover near-optimal configurations and achieve high real-time success rate, even in the presence of several noise-sources."
+  description2: "We cast the discrimination of two coherent states of light as a reinforcement learning problem, in which an agent has to choose among a large number of configurations of a receiver composed of simple linear optics elements, on/off photodetectors and feedback, all within reach of current technology. The agent, though completely ignorant about the receiver, is asked to find its optimal configuration by repeating the experiment a finite number of times, based only on the information obtained from the photodetectors and on the correctness of its guess. Despite the fact that the quantum signals are not perfectly distinguishable and therefore an optimal configuration may lead to an incorrect guess (no reward), we construct agents that can both discover near-optimal configurations and achieve high real-time success rate, even in the presence of several noise-sources."
+
+- type: paper
+  title: "A semi-agnostic ansatz with variable structure for quantum machine learning"
+  order: 1
+  url: "https://arxiv.org/pdf/2103.06712"
+  description: "Quantum machine learning -- and specifically Variational Quantum Algorithms (VQAs) -- offers a powerful, flexible paradigm for programming near-term quantum computers, with applications in chemistry, metrology, materials science, data science, and mathematics. Here, one trains an ansatz, in the form of a parameterized quantum circuit, to accomplish a task of interest. However, challenges have recently emerged suggesting that deep ansatzes are difficult to train, due to flat training landscapes caused by randomness or by hardware noise. This motivates our work, where we present a variable structure approach to build ansatzes for VQAs. Our approach, called VAns (Variable Ansatz), applies a set of rules to both grow and (crucially) remove quantum gates in an informed manner during the optimization. Consequently, VAns is ideally suited to mitigate trainability and noise-related issues by keeping the ansatz shallow. We employ VAns in the variational quantum eigensolver for condensed matter and quantum chemistry applications, in the quantum autoencoder for data compression and in unitary compilation problems showing successful results in all cases."
+
+
+- type: paper
+  title: "Sequential hypothesis testing for continuously-monitored quantum systems"
+  order: 2
+  url: "https://quantum-journal.org/papers/q-2024-03-20-1289/pdf/"
+  description: "We consider a quantum system that is being continuously monitored, giving rise to a measurement signal. From such a stream of data, information needs to be inferred about the underlying system's dynamics. Here we focus on hypothesis testing problems and put forward the usage of sequential strategies where the signal is analyzed in real time, allowing the experiment to be concluded as soon as the underlying hypothesis can be identified with a certified prescribed success probability. We analyze the performance of sequential tests by studying the stopping-time behavior, showing a considerable advantage over currently-used strategies based on a fixed predetermined measurement time."
+
+
+- type: paper
+  title: "Hybrid classical-quantum architecture for vectorised image classification of hand-written sketches"
+  order: 3
+  url: "https://arxiv.org/pdf/2407.06416v1"
+  description: "Quantum machine learning (QML) investigates how quantum phenomena can be exploited in order to learn data in an alternative way, e.g. by means of a quantum computer. While recent results evidence that QML models can potentially surpass their classical counterparts’ performance in specific tasks, quantum technology hardware is still unready to reach quantum advantage in tasks of significant relevance to the broad scope of the computer science community. Recent advances indicate that hybrid classical-quantum models can readily attain competitive performances at low architecture complexities. Such investigations are often carried out for image-processing tasks, and are notably constrained to modelling raster images, represented as a grid of two-dimensional pixels. Here, we introduce vector-based representation of sketch drawings as a test-bed for QML models. Such a lower-dimensional data structure results handful to benchmark model’s performance, particularly in current transition times, where classical simulations of quantum circuits are naturally limited in the number of qubits, and quantum hardware is not readily available to perform large-scale experiments. We report some encouraging results for primitive hybrid classical-quantum architectures, in a canonical sketch recognition problem."
+
+
+- type: paper
+  title: "Challenge-Device-Synthesis: A multi-disciplinary approach for the development of social innovation competences for students of Artificial Intelligence"
+  order: 4
+  url: "https://arxiv.org/pdf/2405.19243"
+  description: "The advent of Artificial Intelligence is expected to imply profound changes in the short-term. It is therefore imperative for Academia, and particularly for the Computer Science scope, to develop cross-disciplinary tools that bond AI developments to their social dimension. To this aim, we introduce the Challenge-Device-Synthesis methodology (CDS), in which a specific challenge is presented to the students of AI, who are required to develop a device as a solution for the challenge. The device becomes the object of study for the different dimensions of social transformation, and the conclusions addressed by the students during the discussion around the device are presented in a synthesis piece in the shape of a 10-page scientific paper. The latter is evaluated taking into account both the depth of analysis and the level to which it genuinely reflects the social transformations associated with the proposed AI-based device. We provide data obtained during the pilot for the implementation phase of CDS within the subject of Social Innovation, a 6-ECTS subject from the 6th semester of the Degree of Artificial Intelligence, UAB-Barcelona. We provide details on temporalisation, task distribution, methodological tools used and assessment delivery procedure, as well as qualitative analysis of the results obtained."
+
+
+- type: paper
+  title: "Conditional states and entropy in qudit-qubit systems"
+  order: 5
+  url: "https://arxiv.org/pdf/1812.11251"
+  description: "We examine, in correlated mixed states of qudit-qubit systems, the set of all conditional qubit states that can be reached after local measurements at the qudit based on rank-1 projectors. While for a similar measurement at the qubit, the conditional post-measurement qudit states lie on the surface of an ellipsoid, for a measurement at the qudit we show that the set of post-measurement qubit states can form more complex solid regions. In particular, we show the emergence, for some classes of mixed states, of sets which are the convex hull of solid ellipsoids and which may lead to cone-like and triangle-like shapes in limit cases. We also analyze the associated measurement dependent conditional entropy, providing a full analytic determination of its minimum and of the minimizing local measurement at the qudit for the previous states. Separable rank-2 mixtures are also discussed."
+
+
+- type: paper
+  title: "Automatic re-calibration of quantum devices by reinforcement learning"
+  order: 6
+  url: "https://arxiv.org/pdf/2404.10726"
+  description: "During their operation, due to shifts in environmental conditions, devices undergo various forms of detuning from their optimal settings. Typically, this is addressed through control loops, which monitor variables and the device performance, to maintain settings at their optimal values. Quantum devices are particularly challenging since their functionality relies on precisely tuning their parameters. At the same time, the detailed modeling of the environmental behavior is often computationally unaffordable, while a direct measure of the parameters defining the system state is costly and introduces extra noise in the mechanism. In this study, we investigate the application of reinforcement learning techniques to develop a model-free control loop for continuous recalibration of quantum device parameters. Furthermore, we explore the advantages of incorporating minimal environmental noise models. As an example, the application to numerical simulations of a Kennedy receiver-based long-distance quantum communication protocol is presented."
+
+
+
+- type: paper
+  title: "Music-triggered fashion design: from songs to the metaverse"
+  order: 7
+  url: "https://arxiv.org/pdf/2410.04921"
+  description: "The advent of increasingly-growing virtual realities poses unprecedented opportunities and challenges to different societies. Artistic collectives are not an exception, and we here aim to put special attention into musicians. Compositions, lyrics and even show-advertisements are constituents of a message that artists transmit about their reality. As such, artistic creations are ultimately linked to feelings and emotions, with aesthetics playing a crucial role when it comes to transmit artist's intentions. In this context, we here analyze how virtual realities can help to broaden the opportunities for musicians to bridge with their audiences, by devising a dynamical fashion-design recommendation system inspired by sound stimulus. We present our first steps towards re-defining musical experiences in the metaverse, opening up alternative opportunities for artists to connect both with real and virtual (\textit{e.g.} machine-learning agents operating in the metaverse) in potentially broader ways."
+
+
+- type: paper
+  title: "Reinforcement-learning calibration of coherent-state receivers on variable-loss optical channels"
+  order: 8
+  url: "https://arxiv.org/pdf/2203.09807"
+  description: "We study the problem of calibrating a quantum receiver for optical coherent states when transmitted on a quantum optical channel with variable transmissivity, a common model for long-distance optical-fiber and free/deep-space optical communication. We optimize the error probability of legacy adaptive receivers, such as Kennedy's and Dolinar's, on average with respect to the channel transmissivity distribution. We then compare our results with the ultimate error probability attainable by a general quantum device, computing the Helstrom bound for mixtures of coherent-state hypotheses, for the first time to our knowledge, and with homodyne measurements. With these tools, we first analyze the simplest case of two different transmissivity values; we find that the strategies adopted by adaptive receivers exhibit strikingly new features as the difference between the two transmissivities increases. Finally, we employ a recently introduced library of shallow reinforcement learning methods, demonstrating that an intelligent agent can learn the optimal receiver setup from scratch by training on repeated communication episodes on the channel with variable transmissivity and receiving rewards if the coherent-state message is correctly identified. ."

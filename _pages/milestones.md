@@ -1,5 +1,5 @@
 ---
-layout: projects
+layout: default
 ---
 
 [Licenciate thesis](http://sedici.unlp.edu.ar/handle/10915/67996), <i> Entropía Condicional y correlaciones cuánticas</i> and directed by Raúl Rossigonli & Norma Canosa at UNLP.
