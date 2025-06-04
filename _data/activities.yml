@@ -361,13 +361,13 @@
 # #
 
 - type: poster
-  title: "Quantum machine learning."
+  title: "Quantum machine learning workshop"
   event: "  worshop"
   year: 2019
   month: 10
   day: 20
   location: "ICFO, Castelldefelds, Spain"
-  description: ""
+  description: "Super nice workshop with the presence of Maria Schuld!"
   links:
     - name: "website"
       url: "https://www.icfo.eu/event/7/quantum-machine-learning-workshop-/"

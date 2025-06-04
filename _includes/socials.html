@@ -1,10 +1,6 @@
 {% assign socials = site.jekyllacademic.socials %}
 
-{% if socials.twitter %}
-  <a href="https://twitter.com/{{ socials.twitter | cgi_escape | escape }}" target="_blank" style="color: #1da1f2">
-    <span class="bi bi-twitter"></span>
-  </a>
-{% endif %}
+
 {% if socials.github %}
   <a href="https://github.com/{{ socials.github }}" target="_blank" style="color: #000;">
     <span class="bi bi-github"></span>
@@ -16,12 +12,7 @@
   </a>
 {% endif %}
 {% if site.author.email %}
-  <a href="mailto:{{ site.email }}" target="_blank" style="color: #666">
-    <span class="bi bi-envelope-open-fill">matiasbilkis[]gmail.com</span>
-  </a>
-{% endif %}
-{% if socials.keybase %}
-  <a href="https://keybase.io/{{ socials.keybase | cgi_escape | escape}}" target="_blank" style="color: #FFA500">
-    <span class="fa fa-keybase"></span>
+  <a target="_blank" style="color: #126">
+  matiasbilkis[at]gmail.com || mbilkis[at]cvc.uab.cat
   </a>
 {% endif %}

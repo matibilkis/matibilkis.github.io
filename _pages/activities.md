@@ -9,22 +9,22 @@ permalink: /activities/
 {% for activity in sorted_activities %}
   <div class="activity-item">
     <p class="activity-title {{ activity.type }}">
-      {% case activity.type %}
+      <!-- {% case activity.type %}
         {% when 'talk' %}🎤
         {% when 'panel' %}💬
         {% when 'podcast' %}🎙️
         {% when 'poster' %} 🪧
-      {% endcase %}
+      {% endcase %} -->
       <b>{{ activity.title }}</b> <br>
     {{ activity.day}}/{{ activity.month}}/{{ activity.year}} • {{ activity.location }}
-<br>
+
   <div class="activity-item">
     {% for link in activity.links %}
       <a href="{{ link.url }}" target="_blank">{{ link.name }}</a>
       {% unless forloop.last %} || {% endunless %}
     {% endfor %}
   {% if activity.description %}
-    <button class="dropdown-btn" onclick="toggleDescription(this)">Show Description ▼</button>
+    <button class="dropdown-btn" onclick="toggleDescription(this)">more ▼</button>
     <div class="activity-description" style="display:none;">
       {{ activity.description }}
     </div>
@@ -32,7 +32,6 @@ permalink: /activities/
   </div>
       <hr>
 {% endfor %}
-</div>
 
 <script>
 function toggleDescription(btn) {
@@ -44,10 +43,10 @@ function toggleDescription(btn) {
   }
   if (desc.style.display === "none" || desc.style.display === "") {
     desc.style.display = "block";
-    btn.textContent = "Hide Description ▲";
+    btn.textContent = "less ▲";
   } else {
     desc.style.display = "none";
-    btn.textContent = "Show Description ▼";
+    btn.textContent = "more ▼";
   }
 }
 

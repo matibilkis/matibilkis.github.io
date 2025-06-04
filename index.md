@@ -49,12 +49,12 @@ supported_languages: [en, es]
  <hr>
  <p>
    <span style="font-size: 1.5em; font-weight: bold; margin: 0; color: #1976d2;">Quantum technologist:</span>
-   I am an expert in <b>machine learning</b> and <b>quantum technologies</b>. I have then created the Quantum Machine Learning research group, in the Computer Vision Center. My motivation is <i>discovering concrete applications of quantum machine learning technologies</i>.
+   I am an expert in <b>machine learning</b> and <b>quantum technologies</b>. I have then created the Quantum Machine Learning research group, in the Computer Vision Center of Barcelona. 
  </p>
 
  <p>
    <span style="font-size: 1.5em; font-weight: bold; color: #1976d2;">Researcher:</span>
-   I hold a <b>PhD in physics</b>, and <b>group leader</b> of QML-CVC. My research is inter-disciplinary, and I spend a lot of efforts in ML and physics communities to work on QML.
+   I hold a <a href="https://drive.google.com/file/d/1se8t7J-68Yr_K-4lq_TZO94QsO3_eEjR/view">PhD in physics</a>, and <b>group leader</b> of <a href="https://qml.cvc.uab.es">QML-CVC group</a>. My research is inter-disciplinary, and I spend a lot of efforts in ML and physics communities to work on <b>quantum machine learning</b>.
  </p>
 
  <p>

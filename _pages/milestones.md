@@ -8,4 +8,4 @@ layout: projects
 
 [QML-CVC group](https://qml.cvc.uab.es): it started as a posdoc project, but quickly turn into a whole research group in the Computer Vision Center of Barcelona, a super nice adventure I couldn't have done without Fernando Vilariño.
 
-[Qualia(S) & tech]() Qualia is the set of subjective experiences of our individual experiences, This initiative aims to structure the discussion around <i>what happens to us, both as individuals and in society, when interacting with technology.</i>
+<!-- [Qualia(S) & tech]() Qualia is the set of subjective experiences of our individual experiences, This initiative aims to structure the discussion around <i>what happens to us, both as individuals and in society, when interacting with technology.</i> -->

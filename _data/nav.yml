@@ -1,13 +1,17 @@
 links:
   - title: about
     url: /
+  - title: talks
+    url: /talks
   - title: milestones
     url: /milestones
+  - title: research
+    url: /research
   - title: activities
     url: /activities
   # - title: blog
   #   url: /blog
-  # - title: gallery
-  #   url: /gallery
+
+
   - title: contact
     url: /contact

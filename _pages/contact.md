@@ -2,9 +2,11 @@
 layout: default
 ---
 
-<h1 style="color: #cc0000;">Reach out to me!</h1>
+<h1 style="color: #cc0000;">Reach out to me :)</h1>
 
-Email or pin me in social media
+<br>
+<b>matiasbilkis[at]gmail.com</b>
+<br>
 <lb>
-matiasbilkis[at]gmail.com ||   
-mbilkis[at]cvc.uab.cat
+
+<b>mbilkis[at]cvc.uab.cat </b>
