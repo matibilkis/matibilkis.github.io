@@ -64,3 +64,17 @@
   order: 9
   url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFNEHpvEokos4KPLZGYViLlRzqfqj77b1pgg&s"
   description: "La física cuántica predice fenómenos que a veces suenan un poco... locos ¿Qué podemos aprender de ellos? ¿Y qué pueden ellos aprender de nosotros? ¡Resulta que mucho! <br> En esta charla nos adentraremos en el mundo de las tecnologías cuánticas, y su relación con diferentes tareas de IA, abriendo el debate sobre el impacto y rol de esta nueva clase de dispositivos en nuestra sociedad."
+
+
+
+- type: talk
+  title: "Épica Fura dels Baus || Ciencia y Arte"
+  order: 10
+  url: "https://www.youtubetrimmer.com/view/?v=5RaDlQkD7XE&start=15&end=162&loop=0"
+  description: "Desde haber participado en la residencia artístico-científica, colaboro activamente fundación épica Fura dels Baus en diversas acciones que van desde la física cuántica hasta evaluar y direccionar el impacto social de la inteligencia artificial."
+
+- type: talk
+  title: "Social impact of AI"
+  order: 10
+  url: "https://raw.githubusercontent.com/matibilkis/qml-course/refs/heads/master/Figures/SI.png?token=GHSAT0AAAAAADAEBB4D6OEPNH3L42PMBF4O2CBGMUA"
+  description: "The advent of Artificial Intelligence is expected to imply profound changes in the short-term. It is therefore imperative for Academia, and particularly for the Computer Science scope, to develop cross-disciplinary tools that bond AI developments to their social dimension. In this aspect, I organized a series of seminars touching the social impact of AI, in areas touching (but not limited to) Metaverse cloth design, LLMs & industry, Mathematicas & pedagogics, and quantum energy consumption and potential power savings."

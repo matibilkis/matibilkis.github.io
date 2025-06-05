@@ -11,7 +11,7 @@ supported_languages: [en, es]
   <!-- <img src="assets/images/mati_web.png" alt="Matías Bilkis" class="profile-photo" /> -->
   <div>
     <h1 class="profile-name">Matías Bilkis, PhD</h1>
-    <div class="profile-title">QML  Lead · Researcher · Science Communicator</div>
+    <div class="profile-title">QML  Lead · Researcher · Artivist & Science Communicator</div>
   </div>
 </div>
 
