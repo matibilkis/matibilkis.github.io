@@ -1,5 +1,5 @@
 ---
-title: Talks
+title: talks & more
 layout: default
 permalink: /talks/
 ---

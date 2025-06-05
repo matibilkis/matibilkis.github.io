@@ -1,5 +1,5 @@
 ---
-title: My Activities
+title: activities list
 layout: default
 permalink: /activities/
 ---

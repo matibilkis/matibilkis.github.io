@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Academic Journey
+title: milestones
 ---
 
 <div class="bio-timeline">
