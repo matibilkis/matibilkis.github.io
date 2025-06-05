@@ -1,0 +1,66 @@
+- type: talk
+  title: "Tres problemas cuánticos, QML CVC y muchos desafíos"
+  order: 0
+  url: "https://www.youtube.com/embed/ajyC4ASmHdg"
+  description: "Empezaremos esta charla revisando tres escenarios diferentes en donde el machine learning logra un punto de encuentro con las tecnologías cuánticas. Cada uno de estos «use-cases» nos servirá como excusa para explicar distintas características de los sistemas cuánticos y las dificultades que se aparecen a la hora de intentar manipularlos.<br><br>Continuaremos presentando nuestro grupo emergente (QML-CVC), haciendo un raconto de nuestra experiencia y exponiendo nuestras líneas de investigación. Concluiremos compartiendo una serie de retos y desafíos que nuestro grupo se propone afrontar en la proximidad, y que en el contexto de esta charla han de ser considerados como una invitación a pensar y colaborar en el desarrollo del «aprendizaje automático cuantico»."
+
+
+- type: talk
+  title: "A Quantum machine learning journey"
+  order: 1
+  url: "https://www.youtube.com/embed/87bYG1jj308?start=2180"
+  description: "Our journey begins by model-free learning of long-distance quantum communication protocols, continues towards an intermediate-stage of awareness in which NISQ-computing problems are tackled, and finally lands on the fully-aware terrain, where statistical-inference problems are considered for continuously-monitored systems. Specifically, we depart from a completely agnostic assumption, where a reinforcement learning agent is posed to the task of calibrating a quantum receiver that decodes information out of a continuous-variable system. From here, some light is shed into the learning problem, and in the second framework we consider how to design useful quantum circuits for currently-available quantum computers. To this end, a semi-agnostic algorithm that jointly optimizes both the structure and the parameters of the circuit is introduced. Finally, we consider how open quantum dynamics can be inferred by an agent which is continuously-monitoring a system. Here, the structure of the quantum evolution is assumed to be known, and the agent needs to learn which is the underlying hypothesis that describes systems’ dynamics out of a noisy measurement signal."
+
+- type: talk
+  title: "La belleza del error: la creatividad en la física, en la IA y en la música"
+  order: 2
+  url: "https://www.youtubetrimmer.com/view/?v=IWFlugoLHFU&start=13154&end=15005&loop=0"
+  description: "  <i>How much do we assert by denying? Does beauty emerge from symmetry, or rather from the lack of it? Where is the frontier between casuality and causality? What are the limits of our creation? What are the limits of our creativity?</i><br><br>This talk takes place between these questions and the lack of their answer. With the intention of making room for debate on what it means to do science and/or art, we will perform a little experiment where Artificial Intelligence (AI) agents interact with musicians in real-time. The question on how creation, beauty, mistakes and the lack of answers relate with each other will guide us along this journey."
+
+- type: talk
+  title: "AI & Music S+T+ARTS Festival"
+  order: 3
+  url: "https://www.youtubetrimmer.com/view/?v=Y1urPDJekxY&start=1460&end=2402&loop=0"
+  description: "This talk delves into the intersection of artificial intelligence agents, live coding, and real-time musical performance, highlighting the creative possibilities that emerge when technology and artistry converge. Featuring an Artificial Learning Orchestra, the session showcases how algorithmic music generation—guided by AI systems—can enrich and transform contemporary artistic practice in real-time. By blending technical sophistication with experimental performance, the presentation invites new conversations about the collaborative relationship between artificial intelligence and the creative arts, illuminating fresh pathways for exploration, imagination, and interdisciplinary discovery at the frontier of music and technology."
+
+
+- type: talk
+  title: "Introducción al aprendizaje automático cuántico"
+  order: 5
+  url: "https://static.scientificamerican.com/dam/m/5e59bb0962d033e/original/GettyImages-1465545513c.jpg?m=1713546412.346&w=600"
+  description: "En esta charla introducimos los conceptos básicos del aprendizaje automático cuántico. Hacemos especial hincapié en los circuitos variacionales cuánticos, mejor conocidos como redes neuronales cuánticas. Discutimos similitudes y diferencias con los workflows tradicionales de entrenamiento de redes clásicas, y aprovechamos para contar algunos fenómenos propios de la física cuántica. En el pasar, discutimos potenciales aplicaciones y actuales limitaciones tanto teóricas como experimentales. Cerramos la charla con una perspectiva sobre cómo la computación cuántica puede cambiar radicalmente nuestra sociedad y forma de vincularnos con la tecnología en el mediano plazo."
+
+- type: talk
+  title: "Hands-on on Quantum Machine Learning (QML)! 🚀"
+  order: 6
+  url: "https://raw.githubusercontent.com/matibilkis/castellers/refs/heads/master/figures/qml_tuto.png"
+  description: "In this hands-on tutorial, we will discuss some basics of Quantum Neural Networks (Variational Quantum Algorithms), and our goal is to provide the participant tools and a roadmap to begin the coding journey on QML! with a strong emphasis on what can be done TODAY. Moreover, across the tutorial we will provide some useful resources for the curious ones: feel free to navigate them."
+
+
+- type: talk
+  title: "Tecnologías  Cuánticas: Oportunidades de cooperación entre el sector privado y el sistema público de CyT en Argentina"
+  order: 7
+  url: "https://www.youtubetrimmer.com/view/?v=qciOSnGgIEk&start=6&end=1025&loop=0"
+  description: "En este panel, organizado y coordinado por MB, discutimos las posibilidades y limitaciones de colaboración público-privada para impulsar el desarrollo de la industria tecnológica cuántica en Argentina. Invitamos a referentes de distintos ámbitos, en esta oportunidad Alejandro Fernandez (coordinador LIFIA y RIPAISC), Julio Cella (representante IBM Argentina) y Nicolás Rendtoff (seretario CyT UNLP)."
+
+
+
+- type: talk
+  title: "Podcast interview ||  Quantum Machine Learning, Music, Existence, Meaning of Life, & More 👀"
+  order: 8.5
+  url: "https://www.youtubetrimmer.com/view/?v=Sw5D5f6_ygI&start=11&end=4742&loop=0"
+  description: "The following is a conversation about quantum mechanics, Quantum AI Symbiosis & quantum machine learning, Political Implications, Music, Existence, Meaning of Life and more, with Dr. Matias Bilkis, who has a Phd in theoretical physics & machine learning, is the lead researcher in Quantum Machine Learning, at the Computer Vision center of Barcelona, & external consultant in forecasting disruptive quantum technologies.."
+
+
+- type: talk
+  title: "Inteligencia artificial y computación cuántica: ¿cuál es la promesa cuántica?"
+  order: 8
+  url: "https://www.cvc.uab.es/wp-content/uploads/2023/10/Template-CORTE-FOTO-628x409px-miniatura-NEWS-WEB.png"
+  description: "En esta charla intentaremos contrarrestar la abrumadora y dañina propaganda de la llamada supremacía cuántica. Primeramente haremos una puesta en común sobre lo que intenta describir la física cuántica y ejemplificaremos ciertos fenómenos cuánticos. Después discutiremos sobre una nueva clase de tecnologías que aprovechan estos fenómenos cuánticos y pondremos el acento en cuál es el estado actual. Por último, hablaremos de la inteligencia artificial cuántica, la cual, a pesar de tener un nombre cinematográfico, es un área de investigación muy innovadora que plantea desafíos tanto para los investigadores como para la sociedad. En este contexto, esta charla es una invitación a colaborar junto a la audiencia para pensar en un concepto de inteligencia artificial que no sólo sea cuántica, sino también aceptable."
+
+
+- type: talk
+  title: "Tecnologías cuánticas y aprendizaje automático"
+  order: 9
+  url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFNEHpvEokos4KPLZGYViLlRzqfqj77b1pgg&s"
+  description: "La física cuántica predice fenómenos que a veces suenan un poco... locos ¿Qué podemos aprender de ellos? ¿Y qué pueden ellos aprender de nosotros? ¡Resulta que mucho! <br> En esta charla nos adentraremos en el mundo de las tecnologías cuánticas, y su relación con diferentes tareas de IA, abriendo el debate sobre el impacto y rol de esta nueva clase de dispositivos en nuestra sociedad."

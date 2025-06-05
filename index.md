@@ -4,36 +4,43 @@ usehighlight: true
 usemathjax: true
 supported_languages: [en, es]
 ---
-<head>
-  <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
-</head>
 
- <div style="display: flex;">
-   <!-- <img src="assets/images/mati_web.png" alt="Matías Bilkis" style="width: 100px; height: 100px; object-fit: cover; border-radius: 2%; margin-right: -120px;" /> -->
-   <h1 style="color: #cc0000; font-size: 2.5em; margin: -4;"><b>Matías Bilkis, PhD</b></h1>
+<link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+
+<div class="profile-header">
+  <!-- <img src="assets/images/mati_web.png" alt="Matías Bilkis" class="profile-photo" /> -->
+  <div>
+    <h1 class="profile-name">Matías Bilkis, PhD</h1>
+    <div class="profile-title">QML  Director · Researcher · Science Communicator</div>
+  </div>
 </div>
 
-   <b> Short bio: </b> <i>MB holds a degree in physics (UNLP), a PhD in physics (Grup d'Informació Quàntica - Universitat Autònoma de Barcelona), co-founder and director of the Quantum Machine Learning Group at the Center for Computer Vision (QML-CVC). His research takes place in interdisciplinary fields, in areas such as quantum physics, artificial intelligence, and technology as an element of social innovation.
+<div class="profile-bio">
+  <b>Short bio:</b>
+  <i>MB holds a degree in physics (UNLP), a PhD in physics (Grup d'Informació Quàntica - Universitat Autònoma de Barcelona), co-founder and director of the Quantum Machine Learning Group at the Center for Computer Vision (QML-CVC). His research takes place in interdisciplinary fields, in areas such as quantum physics, artificial intelligence, and technology as an element of social innovation.</i>
+</div>
 
- <hr>
- <p>
-   <span style="font-size: 1.5em; font-weight: bold; margin: 0; color: #1976d2;">Quantum technologist:</span>
-   I am an expert in <b>machine learning</b> and <b>quantum technologies</b>. I have then created the Quantum Machine Learning research group, in the Computer Vision Center of Barcelona.
- </p>
+<hr class="section-divider">
 
- <p>
-   <span style="font-size: 1.5em; font-weight: bold; color: #1976d2;">Researcher:</span>
-   I hold a <a href="https://drive.google.com/file/d/1se8t7J-68Yr_K-4lq_TZO94QsO3_eEjR/view">PhD in physics</a>, and <b>group leader</b> of <a href="https://qml.cvc.uab.es">QML-CVC group</a>. My research is inter-disciplinary, and I spend a lot of efforts in ML and physics communities to work on <b>quantum machine learning</b>.
- </p>
+<section class="profile-section">
+  <h2 class="section-heading">Quantum technologist</h2>
+  <p>
+    I am a lead expert in <b>machine learning</b> and <b>quantum technologies</b>. I founded the Quantum Machine Learning research group at the Computer Vision Center of Barcelona.
+  </p>
+</section>
 
- <p>
-   <span style="font-size: 1.5em; font-weight: bold; color: #1976d2;">Scientific communicator and advisor:</span>
-   Communicating complex things in simple terms & strategic planning for scientific and technology initiatives.
+<section class="profile-section">
+  <h2 class="section-heading">Researcher</h2>
+  <p>
+    I hold a <a href="<https://drive.google.com/file/d/1se8t7J-68Yr_K-4lq_TZO94QsO3_eEjR/view>" target="_blank">PhD in physics</a>, and I'm <b>group leader</b> of the <a href="<https://qml.cvc.uab.es/>" target="_blank">QML-CVC group</a>. My research is interdisciplinary, focused on catalyzing synergies between ML and physics communities to advance <b>quantum machine learning</b>.
+  </p>
+</section>
 
-   I work with both public and private institutions to develop quantum tech agendas adapted to this rapidly-changing times.
- </p>
+<section class="profile-section">
+  <h2 class="section-heading">Scientific communicator &amp; advisor</h2>
+  <p>
+    Passionate about communicating complex ideas simply and creating strategic plans for science and technology initiatives. I collaborate with public and private institutions to develop quantum tech agendas that adapt to rapidly changing times.
+  </p>
+</section>
 
-
-
-
-<hr>
+<hr class="section-divider">

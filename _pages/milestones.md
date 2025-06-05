@@ -4,13 +4,22 @@ title: Academic Journey
 ---
 
 <div class="bio-timeline">
-  <h1 class="bio-title">Academic & Research Milestones</h1>
+  <!-- <h1 class="bio-title">Academic & Research Milestones</h1> -->
 
   <div class="bio-card">
-    <div class="bio-card-title">Licenciate Thesis</div>
+    <div class="bio-card-title">Quantum tech Surveillance consulting group (QutSur)</div>
     <div class="bio-card-desc">
-      <span class="bio-card-subtitle"><i><a href="http://sedici.unlp.edu.ar/handle/10915/67996">Entropía Condicional y correlaciones cuánticas</a></i></span><br>
-      Supervised by <b>Raúl Rossignonli</b> &amp; <b>Norma Canosa</b> at UNLP.
+      QutSur is a forward-thinking initiative designed to bridge the gap between academia and industry. Our mission is to keep stakeholders—researchers, innovators, and decision-makers—continuously informed on the latest breakthroughs and practical applications in quantum technologies
+    </div>
+  </div>
+
+<!-- . With the rapid advancement of artificial intelligence, quantum technology stands out as one of the most dynamic and transformative fields today.  We provide not only up-to-date intelligence and strategic insights, but also hands-on support for real-world implementation, ensuring that our partners remain at the forefront of this evolving landscape. -->
+
+  <div class="bio-card">
+    <div class="bio-card-title">Quantum machine learning Group </div>
+    <div class="bio-card-desc">
+      Originally founded as a postdoc project, <a href="https://qml.cvc.uab.es">QML-CVC</a> swiftly grew into a full research group at the Computer Vision Center, Barcelona.<br>
+      <span style="font-size:0.97em;">This remarkable adventure wouldn't have been possible without <b>Fernando Vilariño</b>.</span>
     </div>
   </div>
 
@@ -23,13 +32,16 @@ title: Academic Journey
     </div>
   </div>
 
+
   <div class="bio-card">
-    <div class="bio-card-title">Quantum machine learning Group </div>
+    <div class="bio-card-title">Licenciate Thesis</div>
     <div class="bio-card-desc">
-      Originally founded as a postdoc project, <a href="https://qml.cvc.uab.es">QML-CVC</a> swiftly grew into a full research group at the Computer Vision Center, Barcelona.<br>
-      <span style="font-size:0.97em;">This remarkable adventure wouldn't have been possible without <b>Fernando Vilariño</b>.</span>
+      <span class="bio-card-subtitle"><i><a href="http://sedici.unlp.edu.ar/handle/10915/67996">Entropía Condicional y correlaciones cuánticas</a></i></span><br>
+      Supervised by <b>Raúl Rossignonli</b> &amp; <b>Norma Canosa</b> at UNLP.
     </div>
   </div>
+
+
 </div>
 
 
