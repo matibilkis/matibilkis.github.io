@@ -7,7 +7,7 @@ title: Academic Journey
   <!-- <h1 class="bio-title">Academic & Research Milestones</h1> -->
 
   <div class="bio-card">
-    <div class="bio-card-title">Quantum tech Surveillance consulting group (QutSur)</div>
+    <div class="bio-card-title">Quantum Tech Surveillance consulting group (QutSur)</div>
     <div class="bio-card-desc">
       QutSur is a forward-thinking initiative designed to bridge the gap between academia and industry. Our mission is to keep stakeholders—researchers, innovators, and decision-makers—continuously informed on the latest breakthroughs and practical applications in quantum technologies
     </div>
