@@ -11,7 +11,7 @@ permalink: /research/
 <div class="research-intro">
   For a full and updated list of publications, check out my
   <a href="https://scholar.google.com/citations?user=bFFWTIEAAAAJ&hl=en">Google Scholar</a>
-  and <a href="https://qml.cvc.uab.es/">my group's website</a>.
+  and <a href="https://qml.cvc.uab.es/">my group's website</a>. Also check out <a href="https://github.com/matibilkis">my GitHub</a>.
   Our weekly QML-CVC seminars are also of particular interest. If you'd like to join, <a href="/contact/">reach out!</a>
 </div>
 
