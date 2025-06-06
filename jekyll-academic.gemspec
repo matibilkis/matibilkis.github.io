@@ -3,12 +3,12 @@
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-academic"
   spec.version       = "1.1.0"
-  spec.authors       = [""]
-  spec.email         = [""]
+  spec.authors       = ["Mike Liang"]
+  spec.email         = ["liang.mike.to@gmail.com"]
 
-  spec.summary       = "Matías Bilkis personal website, built on Jekyll academic."
-  spec.homepage      = ""
-  spec.license       = ""
+  spec.summary       = ""
+  spec.homepage      = "https://github.com/yak-fumblepack/jekyll-academic"
+  spec.license       = "MIT"
   spec.description   = ""
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_layouts|_includes|_sass|LICENSE|README|_config\.yml)!i) }
