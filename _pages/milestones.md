@@ -18,7 +18,7 @@ title: milestones
   <div class="bio-card">
     <div class="bio-card-title">Quantum machine learning Group </div>
     <div class="bio-card-desc">
-      Originally founded as a postdoc project, <a href="https://qml.cvc.uab.es">QML-CVC</a> swiftly grew into a full research group at the Computer Vision Center, Barcelona.<br>, which I co-founded and co-lead with <b>Fernando Vilariño</b>
+      Originally founded as a postdoc project, <a href="https://qml.cvc.uab.es">QML-CVC</a> swiftly grew into a full research group, which I co-founded and co-lead with <b>Fernando Vilariño</b>
     </div>
   </div>
 
