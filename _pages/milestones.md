@@ -25,7 +25,7 @@ title: milestones
   <div class="bio-card">
     <div class="bio-card-title">PhD Thesis</div>
     <div class="bio-card-desc">
-      <span class="bio-card-subtitle"><a href="https://drive.google.com/file/d/1se8t7J-68Yr_K-4lq_TZO94QsO3_eEjR/view">Decision making in quantum environments</a></span><br>
+      <span class="bio-card-subtitle"><a href="https://drive.google.com/file/d/1se8t7J-68Yr_K-4lq_TZO94QsO3_eEjR/view">Decision making in quantum environments</a></span>,
       Directed by <b>John Calsamiglia</b> at <i>Grup d'Informació Quàntica</i>,
       Autonomous University of Barcelona.
     </div>
