@@ -7,9 +7,9 @@ title: milestones
   <!-- <h1 class="bio-title">Academic & Research Milestones</h1> -->
 
   <div class="bio-card">
-    <div class="bio-card-title">Quantum Tech Surveillance consulting group (QutSur)</div>
+    <div class="bio-card-title">the quantum nation</div>
     <div class="bio-card-desc">
-      QutSur designed to keep stakeholders—researchers, innovators, and decision-makers—continuously informed on the latest breakthroughs and practical applications in quantum technologies
+      QN designed to keep stakeholders—researchers, innovators, and decision-makers—continuously informed on the latest breakthroughs and practical applications in quantum technologies, with the goal of building a strong quantum community in Latin America
     </div>
   </div>
 
