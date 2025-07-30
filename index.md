@@ -32,7 +32,7 @@ supported_languages: [en, es]
 <section class="profile-section">
   <h2 class="section-heading">Researcher</h2>
   <p>
-    I hold a <a href="<https://drive.google.com/file/d/1se8t7J-68Yr_K-4lq_TZO94QsO3_eEjR/view>" target="_blank">PhD in physics</a>, and I'm <b>group leader</b> of the <a href="<https://qml.cvc.uab.es/>" target="_blank">QML-CVC group</a>. My research is interdisciplinary, focused on catalyzing synergies between ML and physics communities to advance <b>quantum machine learning</b>.
+    I hold a <a href="https://drive.google.com/file/d/1se8t7J-68Yr_K-4lq_TZO94QsO3_eEjR/view">PhD in physics</a>, and I'm <b>group leader</b> of the <a href="<https://qml.cvc.uab.es/>" target="_blank">QML-CVC group</a>. My research is interdisciplinary, focused on catalyzing synergies between ML and physics communities to advance <b>quantum machine learning</b>.
   </p>
 </section>
 
