@@ -25,7 +25,7 @@ supported_languages: [en, es]
 <section class="profile-section">
   <h2 class="section-heading">Quantum technologist</h2>
   <p>
-    I am a lead expert in <b>machine learning</b> and <b>quantum technologies</b>. I founded the Quantum Machine Learning research group at the Computer Vision Center of Barcelona.
+    I am a lead expert in <b>machine learning</b> and <b>quantum technologies</b>. I founded the Quantum Machine Learning research group at the Computer Vision Center of Barcelona, Spain. I am encouraging the quantum tech ecosystem with <a href="https://www.qutsur.com">QutSur</a>.
   </p>
 </section>
 

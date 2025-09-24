@@ -1,0 +1,75 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Jekyll: Serve",
+      "type": "shell",
+      "command": "bundle exec jekyll serve --drafts --livereload",
+      "group": "build",
+      "presentation": {
+        "reveal": "always",
+        "panel": "new"
+      },
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Jekyll: Build",
+      "type": "shell", 
+      "command": "bundle exec jekyll build",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always"
+      },
+      "options": {
+        "cwd": "${workspaceFolder}"
+      }
+    },
+    {
+      "label": "Jekyll: New Post",
+      "type": "shell",
+      "command": "bundle exec jekyll post '${input:postTitle}'",
+      "group": "build",
+      "presentation": {
+        "reveal": "always"
+      }
+    },
+    {
+      "label": "Optimize Images",
+      "type": "shell",
+      "command": "find assets/images -name '*.jpg' -o -name '*.png' | xargs -I {} sh -c 'echo \"Processing: {}\"; mogrify -resize 1920x1080\\> -quality 85 \"{}\"'",
+      "group": "build",
+      "presentation": {
+        "reveal": "always"
+      }
+    },
+    {
+      "label": "Git: Quick Commit",
+      "type": "shell",
+      "command": "git add . && git commit -m '${input:commitMessage}' && git push",
+      "group": "build",
+      "presentation": {
+        "reveal": "always"
+      }
+    }
+  ],
+  "inputs": [
+    {
+      "id": "postTitle",
+      "description": "Post title",
+      "default": "New Post",
+      "type": "promptString"
+    },
+    {
+      "id": "commitMessage", 
+      "description": "Commit message",
+      "default": "Update content",
+      "type": "promptString"
+    }
+  ]
+}

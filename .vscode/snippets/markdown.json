@@ -1,0 +1,79 @@
+{
+  "Jekyll Post Front Matter": {
+    "prefix": "post",
+    "body": [
+      "---",
+      "layout: post",
+      "title: \"${1:Post Title}\"",
+      "date: ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}",
+      "categories: [${2:quantum, research, communication}]",
+      "tags: [${3:quantum-ml, science-communication}]",
+      "description: \"${4:Brief description for SEO}\"",
+      "image: \"${5:/assets/images/post-image.jpg}\"",
+      "---",
+      "",
+      "${6:Your content here}"
+    ],
+    "description": "Create Jekyll post front matter"
+  },
+  "Research Project Block": {
+    "prefix": "research",
+    "body": [
+      "## ${1:Project Title}",
+      "",
+      "**Status:** ${2:Active/Completed/Planned}  ",
+      "**Collaboration:** ${3:Institution/Group}  ",
+      "**Timeline:** ${4:2024-2025}",
+      "",
+      "### Overview",
+      "${5:Brief project description}",
+      "",
+      "### Key Contributions",
+      "- ${6:Contribution 1}",
+      "- ${7:Contribution 2}",
+      "",
+      "### Resources",
+      "- [Paper](${8:arxiv-link}) ",
+      "- [Code](${9:github-link})",
+      "- [Presentation](${10:presentation-link})",
+      ""
+    ],
+    "description": "Research project template"
+  },
+  "Video Embed": {
+    "prefix": "video",
+    "body": [
+      "<div class=\"video-container\">",
+      "  <iframe src=\"${1:video-url}\" ",
+      "          title=\"${2:Video Title}\"",
+      "          frameborder=\"0\" ",
+      "          allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" ",
+      "          allowfullscreen>",
+      "  </iframe>",
+      "</div>"
+    ],
+    "description": "Responsive video embed"
+  },
+  "Interactive Demo": {
+    "prefix": "demo",
+    "body": [
+      "{% include demo.html ",
+      "   title=\"${1:Demo Title}\"",
+      "   description=\"${2:Demo description}\"",
+      "   link=\"${3:demo-url}\"",
+      "   image=\"${4:/assets/images/demo-preview.jpg}\"",
+      "%}"
+    ],
+    "description": "Interactive demo include"
+  },
+  "Publication Citation": {
+    "prefix": "cite",
+    "body": [
+      "**${1:Title}**  ",
+      "*${2:Authors}*  ",
+      "${3:Journal/Conference}, ${4:Year}  ",
+      "[Paper](${5:paper-url}) | [Code](${6:code-url}) | [Slides](${7:slides-url})"
+    ],
+    "description": "Publication citation format"
+  }
+}

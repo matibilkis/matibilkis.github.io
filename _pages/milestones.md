@@ -9,7 +9,7 @@ title: milestones
   <div class="bio-card">
     <div class="bio-card-title">QutSur</div>
     <div class="bio-card-desc">
-      QutSur designed to keep stakeholders — researchers, innovators, and decision-makers — continuously informed on the latest breakthroughs and practical applications in quantum technologies, with the goal of building a strong quantum community in Latin America
+       <a href="https://www.qutsur.com">QutSur</a> is my company that bridges quantum tech and Latin America.
     </div>
   </div>
 
