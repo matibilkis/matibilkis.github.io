@@ -1,0 +1,47 @@
+# Ecosystem Building Activities
+# Edge City Esmeralda and other ecosystem initiatives
+
+- title: "Edge City Esmeralda - Quantum Residency"
+  role: "Residency Leader"
+  organization: "Edge City Esmeralda (Ethereum Foundation spin-off)"
+  description: "Leading the quantum residency program at Edge City Esmeralda, an incubator in California during June. This program brings together quantum researchers, developers, and entrepreneurs to advance quantum technologies."
+  year: 2026
+  location: "California, USA"
+  links:
+    - name: "Edge City Esmeralda"
+      url: "#"  # Update with actual URL
+  order: 1
+
+- title: "NVIDIA Partnership - Supercomputing Infrastructure"
+  role: "Project Lead"
+  organization: "NVIDIA & Argentine Institutions"
+  description: "Collaborating with NVIDIA and 10+ Argentine institutions and companies to improve supercomputing infrastructure and install a quantum simulation node, potentially at Clementina."
+  year: 2025
+  location: "Argentina"
+  links:
+    - name: "Project Details"
+      url: "#"  # Update with actual URL
+  order: 2
+
+- title: "Quantum Tech Ecosystem in Argentina"
+  role: "Ecosystem Builder"
+  organization: "Multiple Partners"
+  description: "Building connections and partnerships across the quantum technology ecosystem in Argentina, connecting academia, industry, and government."
+  year: 2024
+  location: "Argentina"
+  links: []
+  order: 3
+
+# Add more ecosystem activities as needed
+# Example:
+# - title: "Activity Name"
+#   role: "Your Role"
+#   organization: "Organization Name"
+#   description: "Description"
+#   year: 2025
+#   location: "Location"
+#   links:
+#     - name: "Link Name"
+#       url: "https://..."
+#   order: 4
+

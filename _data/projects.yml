@@ -1,0 +1,34 @@
+# Developer Portfolio Projects
+# Add your GitHub projects here with descriptions and tech stack
+
+- title: "Quantum Machine Learning Projects"
+  description: "Collection of quantum machine learning implementations, including variational quantum algorithms, quantum neural networks, and hybrid classical-quantum models."
+  github: "matibilkis"
+  tech: ["Python", "Qiskit", "PennyLane", "Quantum Computing", "Machine Learning"]
+  order: 1
+  category: "quantum-ml"
+
+- title: "HPC Infrastructure Projects"
+  description: "High-performance computing projects for quantum simulations and classical ML training on supercomputing infrastructure."
+  github: "matibilkis"
+  tech: ["Python", "HPC", "SLURM", "CUDA", "Distributed Computing"]
+  order: 2
+  category: "hpc"
+
+- title: "Classical Machine Learning"
+  description: "Research-focused classical ML projects with deployment-ready implementations."
+  github: "matibilkis"
+  tech: ["Python", "PyTorch", "TensorFlow", "Scikit-learn"]
+  order: 3
+  category: "classical-ml"
+
+# Add more projects as needed
+# Example structure:
+# - title: "Project Name"
+#   description: "Brief description"
+#   github: "username/repo"  # or full URL
+#   url: "https://..."  # Optional: live demo
+#   tech: ["Tech1", "Tech2"]
+#   order: 4
+#   category: "category-name"
+
