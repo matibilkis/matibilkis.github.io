@@ -3,730 +3,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Matías Bilkis - Quantum physicist & AI researcher bridging technology, institutions, and creativity.">
+    <meta name="description" content="Matías Bilkis - Quantum scientist, artivist, entrepreneur. Building quantum tech at the edge of art and science.">
     <meta name="author" content="Matías Bilkis">
     
-    <!-- Open Graph for social sharing -->
+    <!-- Open Graph -->
     <meta property="og:title" content="Matías Bilkis">
-    <meta property="og:description" content="Quantum physicist & AI researcher bridging technology, institutions, and creativity.">
+    <meta property="og:description" content="Quantum scientist, artivist, entrepreneur">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://matibilkis.github.io">
     
-    <title>Matías Bilkis - Quantum Physics & AI</title>
+    <title>Matías Bilkis</title>
     
-    <style>
-        /* Root variables - minimalist palette */
-        :root {
-            --cream-50: #fafaf8;
-            --cream-100: #f5f5f0;
-            --gray-400: #a8a8a0;
-            --gray-600: #666660;
-            --charcoal: #1a1a18;
-            --teal-dark: #1a6f7f;
-            --teal-main: #2080a0;
-            --teal-light: #32b8c6;
-            
-            --spacing-xs: 0.5rem;
-            --spacing-sm: 1rem;
-            --spacing-md: 1.5rem;
-            --spacing-lg: 2rem;
-            --spacing-xl: 3rem;
-            --spacing-2xl: 4rem;
-            
-            --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
-            --font-serif: Georgia, serif;
-            
-            --transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-
-        /* Dark mode */
-        [data-theme="dark"] {
-            --cream-50: #0f0f0d;
-            --cream-100: #1a1a18;
-            --gray-400: #707070;
-            --gray-600: #999999;
-            --charcoal: #f5f5f0;
-            --teal-main: #32b8c6;
-            --teal-light: #4dd9e8;
-        }
-
-        /* Base styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: var(--font-sans);
-            background-color: var(--cream-50);
-            color: var(--charcoal);
-            line-height: 1.6;
-            transition: var(--transition);
-        }
-
-        /* Typography */
-        h1 {
-            font-size: clamp(2rem, 8vw, 3.5rem);
-            font-weight: 700;
-            line-height: 1.1;
-            margin-bottom: var(--spacing-md);
-            letter-spacing: -0.02em;
-        }
-
-        h2 {
-            font-size: clamp(1.5rem, 5vw, 2.5rem);
-            font-weight: 700;
-            margin-bottom: var(--spacing-lg);
-            margin-top: var(--spacing-2xl);
-        }
-
-        h3 {
-            font-size: clamp(1.1rem, 3vw, 1.5rem);
-            font-weight: 600;
-            margin-bottom: var(--spacing-md);
-        }
-
-        p {
-            font-size: 1rem;
-            margin-bottom: var(--spacing-md);
-            color: var(--gray-600);
-            max-width: 65ch;
-        }
-
-        a {
-            color: var(--teal-main);
-            text-decoration: none;
-            border-bottom: 1px solid transparent;
-            transition: var(--transition);
-        }
-
-        a:hover {
-            color: var(--teal-light);
-            border-bottom-color: var(--teal-light);
-        }
-
-        /* Layout */
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: var(--spacing-lg);
-        }
-
-        /* Header / Navigation */
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: var(--spacing-lg) var(--spacing-lg);
-            position: sticky;
-            top: 0;
-            background: rgba(250, 250, 248, 0.95);
-            backdrop-filter: blur(10px);
-            z-index: 100;
-            transition: var(--transition);
-        }
-
-        [data-theme="dark"] header {
-            background: rgba(15, 15, 13, 0.95);
-        }
-
-        .logo {
-            font-size: 1.2rem;
-            font-weight: 700;
-            color: var(--charcoal);
-            text-decoration: none;
-        }
-
-        .theme-toggle {
-            width: 44px;
-            height: 44px;
-            border: none;
-            background: var(--cream-100);
-            border-radius: 50%;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.2rem;
-            transition: var(--transition);
-        }
-
-        .theme-toggle:hover {
-            background: var(--gray-400);
-            transform: rotate(20deg);
-        }
-
-        /* Hero section */
-        .hero {
-            padding: var(--spacing-2xl) var(--spacing-lg);
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            right: 0;
-            width: 500px;
-            height: 500px;
-            background: radial-gradient(circle, rgba(50, 184, 198, 0.08) 0%, transparent 70%);
-            pointer-events: none;
-            z-index: 0;
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 1;
-            max-width: 700px;
-        }
-
-        .hero h1 {
-            color: var(--charcoal);
-            margin-bottom: var(--spacing-sm);
-        }
-
-        .hero .tagline {
-            font-size: 1.3rem;
-            color: var(--teal-main);
-            font-weight: 500;
-            margin-bottom: var(--spacing-lg);
-            line-height: 1.4;
-        }
-
-        .hero p {
-            font-size: 1.1rem;
-            color: var(--gray-600);
-            margin-bottom: var(--spacing-xl);
-            max-width: 60ch;
-        }
-
-        /* CTA Buttons */
-        .cta-group {
-            display: flex;
-            gap: var(--spacing-md);
-            margin-bottom: var(--spacing-xl);
-            flex-wrap: wrap;
-        }
-
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            gap: var(--spacing-sm);
-            padding: var(--spacing-md) var(--spacing-lg);
-            border-radius: 6px;
-            font-weight: 600;
-            font-size: 1rem;
-            text-decoration: none;
-            transition: var(--transition);
-            border: 2px solid transparent;
-            cursor: pointer;
-        }
-
-        .btn-primary {
-            background: var(--teal-main);
-            color: var(--cream-50);
-        }
-
-        .btn-primary:hover {
-            background: var(--teal-light);
-            transform: translateY(-2px);
-            box-shadow: 0 8px 24px rgba(32, 128, 160, 0.2);
-        }
-
-        .btn-secondary {
-            background: transparent;
-            color: var(--teal-main);
-            border: 2px solid var(--teal-main);
-        }
-
-        .btn-secondary:hover {
-            background: var(--teal-main);
-            color: var(--cream-50);
-            transform: translateY(-2px);
-        }
-
-        /* Stats section */
-        .stats {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-            gap: var(--spacing-lg);
-            margin-top: var(--spacing-xl);
-            padding-top: var(--spacing-xl);
-            border-top: 1px solid rgba(32, 128, 160, 0.2);
-        }
-
-        .stat {
-            text-align: left;
-        }
-
-        .stat-number {
-            font-size: 2rem;
-            font-weight: 700;
-            color: var(--teal-main);
-        }
-
-        .stat-label {
-            font-size: 0.9rem;
-            color: var(--gray-600);
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-            margin-top: var(--spacing-xs);
-        }
-
-        /* Sections */
-        section {
-            padding: var(--spacing-2xl) var(--spacing-lg);
-        }
-
-        /* About section */
-        .about {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: var(--spacing-2xl);
-            align-items: start;
-        }
-
-        .about-text h2 {
-            margin-top: 0;
-        }
-
-        .about-text p {
-            color: var(--gray-600);
-            font-size: 1.05rem;
-            line-height: 1.7;
-        }
-
-        .about-visual {
-            height: 100%;
-            min-height: 400px;
-            background: linear-gradient(135deg, rgba(50, 184, 198, 0.1) 0%, rgba(32, 128, 160, 0.05) 100%);
-            border-radius: 12px;
-            border: 1px solid rgba(32, 128, 160, 0.2);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .about-visual::before {
-            content: '';
-            position: absolute;
-            width: 300px;
-            height: 300px;
-            background: radial-gradient(circle, rgba(50, 184, 198, 0.15) 0%, transparent 70%);
-            border-radius: 50%;
-            animation: pulse 4s ease-in-out infinite;
-        }
-
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); opacity: 0.5; }
-            50% { transform: scale(1.1); opacity: 0.3; }
-        }
-
-        .about-visual p {
-            position: relative;
-            z-index: 1;
-            text-align: center;
-            color: var(--teal-main);
-            font-weight: 600;
-            font-size: 1.1rem;
-        }
-
-        /* Pillars section */
-        .pillars {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: var(--spacing-lg);
-            margin-top: var(--spacing-xl);
-        }
-
-        .pillar {
-            padding: var(--spacing-lg);
-            background: var(--cream-100);
-            border-radius: 12px;
-            border: 1px solid rgba(32, 128, 160, 0.15);
-            transition: var(--transition);
-        }
-
-        .pillar:hover {
-            border-color: var(--teal-main);
-            background: rgba(50, 184, 198, 0.05);
-            transform: translateY(-4px);
-        }
-
-        .pillar-icon {
-            font-size: 2.5rem;
-            margin-bottom: var(--spacing-md);
-        }
-
-        .pillar h3 {
-            margin-top: 0;
-            margin-bottom: var(--spacing-sm);
-        }
-
-        .pillar p {
-            font-size: 0.95rem;
-            margin: 0;
-        }
-
-        /* Featured work section */
-        .featured {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: var(--spacing-lg);
-            margin-top: var(--spacing-xl);
-        }
-
-        .featured-card {
-            padding: var(--spacing-lg);
-            background: var(--cream-100);
-            border-radius: 12px;
-            border: 1px solid rgba(32, 128, 160, 0.15);
-            display: flex;
-            flex-direction: column;
-            transition: var(--transition);
-        }
-
-        .featured-card:hover {
-            border-color: var(--teal-main);
-            box-shadow: 0 12px 32px rgba(32, 128, 160, 0.15);
-        }
-
-        .featured-card h3 {
-            margin-top: 0;
-            color: var(--teal-main);
-        }
-
-        .featured-card p {
-            flex: 1;
-            margin-bottom: var(--spacing-md);
-        }
-
-        .featured-card a {
-            align-self: flex-start;
-            font-weight: 600;
-            font-size: 0.95rem;
-        }
-
-        /* What I Do section */
-        .services {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: var(--spacing-lg);
-            margin-top: var(--spacing-xl);
-        }
-
-        .service {
-            padding: var(--spacing-lg);
-            background: var(--cream-100);
-            border-radius: 12px;
-            border-left: 4px solid var(--teal-main);
-            transition: var(--transition);
-        }
-
-        .service:hover {
-            background: rgba(50, 184, 198, 0.08);
-        }
-
-        .service h3 {
-            margin-top: 0;
-            color: var(--teal-main);
-        }
-
-        /* Connect section */
-        .connect {
-            text-align: center;
-            padding: var(--spacing-2xl) var(--spacing-lg);
-        }
-
-        .connect h2 {
-            margin-top: 0;
-        }
-
-        .link-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: var(--spacing-md);
-            margin-top: var(--spacing-xl);
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .link-btn {
-            padding: var(--spacing-md) var(--spacing-lg);
-            background: var(--cream-100);
-            border-radius: 8px;
-            border: 1px solid rgba(32, 128, 160, 0.2);
-            text-decoration: none;
-            color: var(--charcoal);
-            font-weight: 600;
-            transition: var(--transition);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: var(--spacing-sm);
-        }
-
-        .link-btn:hover {
-            background: var(--teal-main);
-            color: var(--cream-50);
-            border-color: var(--teal-main);
-        }
-
-        /* Footer */
-        footer {
-            padding: var(--spacing-xl) var(--spacing-lg);
-            text-align: center;
-            border-top: 1px solid rgba(32, 128, 160, 0.2);
-            color: var(--gray-600);
-            font-size: 0.9rem;
-        }
-
-        footer p {
-            margin: var(--spacing-sm) 0;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .about {
-                grid-template-columns: 1fr;
-            }
-
-            .about-visual {
-                min-height: 250px;
-            }
-
-            .cta-group {
-                flex-direction: column;
-            }
-
-            .btn {
-                width: 100%;
-                justify-content: center;
-            }
-
-            .stats {
-                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            }
-
-            header {
-                padding: var(--spacing-md);
-            }
-
-            section {
-                padding: var(--spacing-xl) var(--spacing-md);
-            }
-        }
-
-        /* Accessibility */
-        .sr-only {
-            position: absolute;
-            width: 1px;
-            height: 1px;
-            padding: 0;
-            margin: -1px;
-            overflow: hidden;
-            clip: rect(0, 0, 0, 0);
-            white-space: nowrap;
-            border-width: 0;
-        }
-
-        a:focus-visible {
-            outline: 2px solid var(--teal-main);
-            outline-offset: 2px;
-        }
-
-        button:focus-visible {
-            outline: 2px solid var(--teal-main);
-            outline-offset: 2px;
-        }
-    </style>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/main.css">
 </head>
 <body>
-    <!-- Header -->
+    <!-- Stars Background -->
+    <div class="stars" id="starsContainer"></div>
+
+    <!-- ==================== HEADER ==================== -->
     <header>
-        <a href="#" class="logo">MB</a>
-        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+        <div class="header-content">
+            <a href="index.html" class="logo">MB</a>
+            <nav>
+                <ul>
+                    <li><a href="talks.html">Talks & Things</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- ==================== HERO SECTION ==================== -->
+    <!-- 
+        EDIT CONTENT BELOW:
+        - Name: Change h1 text
+        - Tagline: Change .tagline paragraph
+    -->
     <section class="hero">
         <div class="hero-content">
             <h1>Matías Bilkis</h1>
-            <p class="tagline">Quantum physics & AI researcher bridging technology, institutions, and creativity across Europe, North and South America.</p>
-            
-            <div class="cta-group">
-                <a href="#work" class="btn btn-primary">See my work</a>
-                <a href="#connect" class="btn btn-secondary">Get in touch</a>
-            </div>
+            <p class="tagline">
+                Building quantum tech at the edge of art and science
+            </p>
 
-            <div class="stats">
-                <div class="stat">
-                    <div class="stat-number">60+</div>
-                    <div class="stat-label">Citations</div>
-                </div>
-                <div class="stat">
-                    <div class="stat-number">11</div>
-                    <div class="stat-label">Papers</div>
-                </div>
-                <div class="stat">
-                    <div class="stat-number">37</div>
-                    <div class="stat-label">Repositories</div>
-                </div>
-                <div class="stat">
-                    <div class="stat-number">10+</div>
-                    <div class="stat-label">Institutions</div>
-                </div>
+            <!-- Constellation Navigation -->
+            <div class="constellation">
+                <a href="talks.html" class="planet planet--talks">
+                    <span class="planet__icon">🎸</span>
+                    <span class="planet__label">Talks & Things</span>
+                </a>
+                
+                <a href="portfolio.html" class="planet planet--portfolio">
+                    <span class="planet__icon">🔬</span>
+                    <span class="planet__label">Portfolio</span>
+                </a>
+                
+                <a href="projects.html" class="planet planet--projects">
+                    <span class="planet__icon">🚀</span>
+                    <span class="planet__label">Projects</span>
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section class="about">
-        <div class="about-text">
-            <h2>About</h2>
-            <p>I bridge technical depth, institutional leadership, and creative exploration. My work spans quantum machine learning, research group coordination, and art-science fusion.</p>
-            <p>Trained in physics with 10+ years of R&D. Co-founder of <a href="#">QML-CVC</a> at the Computer Vision Center. Now leading strategic quantum tech initiatives through <a href="#">QutSur</a>.</p>
-
-            <div class="pillars">
-                <div class="pillar">
-                    <div class="pillar-icon">🔬</div>
-                    <h3>Technical</h3>
-                    <p>Quantum ML, variational algorithms, quantum sensing</p>
-                </div>
-                <div class="pillar">
-                    <div class="pillar-icon">🏢</div>
-                    <h3>Institutional</h3>
-                    <p>10+ institution coordination, international partnerships</p>
-                </div>
-                <div class="pillar">
-                    <div class="pillar-icon">🎨</div>
-                    <h3>Creative</h3>
-                    <p>Outreach, art-science fusion, storytelling</p>
-                </div>
-            </div>
-        </div>
-        <div class="about-visual">
-            <p>🌀</p>
-        </div>
-    </section>
-
-    <!-- Featured Work Section -->
-    <section id="work">
-        <h2>Featured Work</h2>
-        <div class="featured">
-            <div class="featured-card">
-                <h3>Variable Ansatz (VAns)</h3>
-                <p>Semi-agnostic algorithm for quantum machine learning with variable structure. 60+ citations. Pioneering work in trainable quantum circuits.</p>
-                <a href="#">→ Read paper</a>
-            </div>
-            <div class="featured-card">
-                <h3>QML-CVC Group</h3>
-                <p>Co-founded and leading the Quantum Machine Learning research group at Barcelona's Computer Vision Center. Building bridges between ML and physics.</p>
-                <a href="#">→ Visit group</a>
-            </div>
-            <div class="featured-card">
-                <h3>Music × Quantum Art</h3>
-                <p>Exploring art-science fusion through music-triggered design and metaverse applications. Recent paper on emotion-driven quantum aesthetics.</p>
-                <a href="#">→ Explore</a>
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <!-- 
+        EDIT CONTENT BELOW:
+        - Email: Change href="mailto:..."
+        - LinkedIn: Change href="https://..."
+    -->
+    <section class="contact">
+        <div class="container">
+            <h2>Let's build something together</h2>
+            <div class="contact-links">
+                <a href="mailto:matias@qutsur.com" class="btn">
+                    📧 Email
+                </a>
+                <a href="https://www.linkedin.com/in/matias-bilkis-8667501bb/" target="_blank" rel="noopener" class="btn">
+                    🔗 LinkedIn
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- What I Do Section -->
-    <section>
-        <h2>What I Do</h2>
-        <div class="services">
-            <div class="service">
-                <h3>🔬 Research & Development</h3>
-                <p>Quantum machine learning, variational quantum algorithms, quantum sensing, and reinforcement learning. Building tools and methods that scale quantum computing.</p>
-            </div>
-            <div class="service">
-                <h3>💼 Advising & Consulting</h3>
-                <p>Help companies and institutions navigate the quantum landscape. Strategic guidance on technology adoption, team building, and ecosystem development.</p>
-            </div>
-            <div class="service">
-                <h3>📚 Teaching & Outreach</h3>
-                <p>Quantum education, scientific communication, and art-science fusion. Passionate about making complex ideas accessible and creating social innovation.</p>
-            </div>
-            <div class="service">
-                <h3>🌍 Institutional Leadership</h3>
-                <p>Coordinating multi-institutional collaborations and international partnerships. Building quantum tech ecosystems that scale across continents.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Connect Section -->
-    <section class="connect" id="connect">
-        <h2>Let's Connect</h2>
-        <p>Interested in collaboration, speaking, consulting, or just want to chat about quantum tech?</p>
-        
-        <div class="link-grid">
-            <a href="[YOUR_EMAIL]" class="link-btn">📧 Email</a>
-            <a href="[YOUR_LINKEDIN]" class="link-btn">🔗 LinkedIn</a>
-            <a href="[YOUR_GITHUB]" class="link-btn">💻 GitHub</a>
-            <a href="[YOUR_SCHOLAR]" class="link-btn">📚 Scholar</a>
-            <a href="[YOUR_QUTSUR]" class="link-btn">🎯 QutSur</a>
-        </div>
-    </section>
-
-    <!-- Footer -->
+    <!-- ==================== FOOTER ==================== -->
     <footer>
-        <p><strong>Matías Bilkis</strong></p>
-        <p>Quantum ML Researcher • Institutional Leader • Creative Explorer</p>
-        <p>Based in La Plata, Argentina • Open to consulting, advisory, and partnerships</p>
-        <p style="margin-top: var(--spacing-lg); color: var(--gray-400); font-size: 0.85rem;">Built with care using HTML, CSS, and Claude</p>
+        <p>Matías Bilkis &copy; 2026</p>
+        <p style="margin-top: var(--space-sm); font-size: 0.85rem;">
+            Quantum Scientist · Artivist · Entrepreneur
+        </p>
     </footer>
 
-    <!-- Dark mode toggle script -->
-    <script>
-        const themeToggle = document.getElementById('themeToggle');
-        const htmlElement = document.documentElement;
-
-        // Check for saved theme preference or default to light mode
-        const currentTheme = localStorage.getItem('theme') || 'light';
-        htmlElement.setAttribute('data-theme', currentTheme);
-        updateThemeIcon(currentTheme);
-
-        themeToggle.addEventListener('click', () => {
-            const theme = htmlElement.getAttribute('data-theme');
-            const newTheme = theme === 'light' ? 'dark' : 'light';
-            
-            htmlElement.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-            updateThemeIcon(newTheme);
-        });
-
-        function updateThemeIcon(theme) {
-            themeToggle.textContent = theme === 'light' ? '🌙' : '☀️';
-        }
-
-        // Smooth scroll for navigation
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                const href = this.getAttribute('href');
-                if (href !== '#') {
-                    e.preventDefault();
-                    const target = document.querySelector(href);
-                    if (target) {
-                        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    }
-                }
-            });
-        });
-    </script>
+    <!-- ==================== SCRIPTS ==================== -->
+    <script src="assets/js/stars.js"></script>
 </body>
 </html>

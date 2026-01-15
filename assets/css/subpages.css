@@ -1,0 +1,254 @@
+/* ================================
+   Subpages Styles
+   (Talks, Portfolio, Projects)
+   ================================ */
+
+/* ===== Page Layout ===== */
+.subpage {
+    min-height: 100vh;
+    padding-top: 100px;
+    padding-bottom: var(--space-2xl);
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: var(--space-2xl);
+    padding: var(--space-xl) var(--space-lg);
+}
+
+.page-header h1 {
+    margin-bottom: var(--space-sm);
+}
+
+.page-subtitle {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    max-width: none;
+}
+
+/* ===== Content Sections ===== */
+.content-section {
+    margin-bottom: var(--space-2xl);
+}
+
+.content-section h2 {
+    margin-bottom: var(--space-lg);
+    padding-bottom: var(--space-sm);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.05);
+}
+
+/* ===== Cards Grid ===== */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--space-lg);
+    margin-bottom: var(--space-xl);
+}
+
+.card {
+    background: var(--bg-surface);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: var(--space-lg);
+    transition: all var(--transition-smooth);
+    position: relative;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent);
+    box-shadow: 0 8px 24px rgba(10, 132, 255, 0.2);
+}
+
+.card--highlight {
+    border-color: var(--miro-yellow);
+    background: linear-gradient(135deg, var(--bg-surface) 0%, rgba(255, 214, 10, 0.05) 100%);
+}
+
+.card--highlight:hover {
+    border-color: var(--miro-yellow);
+    box-shadow: 0 8px 24px rgba(255, 214, 10, 0.2);
+}
+
+.card h3 {
+    margin-bottom: var(--space-sm);
+    color: var(--text-primary);
+}
+
+.card p {
+    font-size: 0.95rem;
+    margin-bottom: var(--space-sm);
+}
+
+.card-meta {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    font-family: var(--font-mono);
+    margin-bottom: var(--space-md);
+}
+
+.card-tag {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    background: var(--tag-color, var(--accent));
+    color: var(--bg-primary);
+    margin-bottom: var(--space-sm);
+}
+
+.card-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--accent);
+    margin-top: var(--space-sm);
+    border-bottom: 1px solid transparent;
+}
+
+.card-link:hover {
+    border-bottom-color: var(--accent);
+}
+
+/* ===== Tech Stack Pills ===== */
+.tech-stack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-xs);
+    margin-top: var(--space-sm);
+}
+
+.tech-pill {
+    padding: 0.25rem 0.75rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    font-size: 0.75rem;
+    font-family: var(--font-mono);
+    color: var(--text-muted);
+}
+
+/* ===== Project Metrics ===== */
+.project-metrics {
+    display: flex;
+    gap: var(--space-md);
+    margin-top: var(--space-sm);
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.metric {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+}
+
+.metric-value {
+    font-weight: 600;
+    color: var(--accent);
+}
+
+/* ===== Hero Projects Section ===== */
+.hero-projects {
+    margin-bottom: var(--space-2xl);
+}
+
+.hero-projects .cards-grid {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+}
+
+.hero-projects .card {
+    border-width: 2px;
+}
+
+/* ===== Timeline (for Projects page) ===== */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xl);
+}
+
+.timeline-item {
+    background: var(--bg-surface);
+    border-left: 4px solid var(--accent);
+    border-radius: 8px;
+    padding: var(--space-lg);
+    transition: all var(--transition-smooth);
+}
+
+.timeline-item:hover {
+    transform: translateX(8px);
+    border-left-color: var(--miro-blue);
+    box-shadow: 0 4px 16px rgba(10, 132, 255, 0.15);
+}
+
+.timeline-item h3 {
+    margin-bottom: var(--space-xs);
+}
+
+.timeline-tag {
+    display: inline-block;
+    padding: 0.25rem 0.5rem;
+    background: rgba(10, 132, 255, 0.1);
+    color: var(--accent);
+    font-size: 0.75rem;
+    font-weight: 600;
+    border-radius: 4px;
+    margin-bottom: var(--space-sm);
+}
+
+.timeline-description {
+    margin: var(--space-sm) 0;
+}
+
+.timeline-links {
+    display: flex;
+    gap: var(--space-md);
+    margin-top: var(--space-md);
+}
+
+.timeline-links a {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* ===== Active Nav State ===== */
+nav a.active {
+    color: var(--accent);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .cards-grid {
+        grid-template-columns: 1fr;
+        gap: var(--space-md);
+    }
+    
+    .hero-projects .cards-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .page-header {
+        padding: var(--space-lg) var(--space-md);
+    }
+    
+    .project-metrics {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        padding: var(--space-md);
+    }
+    
+    .timeline-item {
+        padding: var(--space-md);
+    }
+}
+
