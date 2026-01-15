@@ -20,12 +20,26 @@
       });
     });
     
-    // Mobile menu toggle (will be added when nav is redesigned)
-    const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
-    const mobileMenu = document.getElementById('mobile-menu');
-    if (mobileMenuToggle && mobileMenu) {
-      mobileMenuToggle.addEventListener('click', () => {
-        mobileMenu.classList.toggle('active');
+    // Scroll reveal animations
+    if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+      };
+      
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('revealed');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+      
+      // Observe all cards and sections
+      document.querySelectorAll('.card, .publication-card, .activity-card, .talk-card, .featured-card, .profile-card').forEach(el => {
+        el.classList.add('scroll-reveal');
+        observer.observe(el);
       });
     }
   </script>

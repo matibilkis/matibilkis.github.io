@@ -1,9 +1,6 @@
 /* Main Stylesheet - Modern CSS with Design System
- * Uses design-system.css variables
+ * Uses design-system.css variables (loaded in head.html)
  */
-
-/* Import design system */
-@import url('design-system.css');
 
 /* Base Layout */
 .main-content {
