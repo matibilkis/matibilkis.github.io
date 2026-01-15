@@ -9,7 +9,10 @@ supported_languages: [en, es]
 
 <div class="homepage-hero">
   <div class="profile-header">
-    <img src="{{ '/assets/images/mati_web.png' | relative_url }}" alt="Matías Bilkis" class="profile-photo" />
+    <div class="profile-photos">
+      <img src="{{ '/assets/images/foto_lead.png' | relative_url }}" alt="Matías Bilkis" class="profile-photo main" />
+      <img src="{{ '/assets/images/foto_engineer.png' | relative_url }}" alt="Matías Bilkis speaking" class="profile-photo secondary" />
+    </div>
     <div class="profile-info">
       <h1 class="profile-name">Matías Bilkis, PhD</h1>
       <div class="profile-title">Quantum Scientist · Entrepreneur · Developer · Ecosystem Builder</div>
@@ -108,6 +111,42 @@ supported_languages: [en, es]
       </ul>
       <p><a href="/activities/">View all activities →</a></p>
     </div>
+  </div>
+</div>
+
+<div class="featured-section">
+  <div class="featured-header">
+    <h2>Featured now</h2>
+    <p>Current initiatives I am leading or building.</p>
+  </div>
+  <div class="featured-grid">
+    {% assign featured = site.data.featured | sort:"order" %}
+    {% for item in featured %}
+    <article class="featured-card">
+      <div class="featured-meta">
+        <span class="featured-status">{{ item.status }}</span>
+      </div>
+      <h3 class="featured-title">{{ item.title }}</h3>
+      <p class="featured-description">{{ item.description }}</p>
+      {% if item.tags %}
+      <div class="featured-tags">
+        {% for tag in item.tags %}
+        <span class="featured-tag">{{ tag }}</span>
+        {% endfor %}
+      </div>
+      {% endif %}
+      <div class="featured-links">
+        {% if item.links %}
+          {% for link in item.links %}
+          <a href="{{ link.url }}" target="_blank">{{ link.name }} →</a>
+          {% endfor %}
+        {% endif %}
+        {% if item.cta_url %}
+          <a href="{{ item.cta_url }}" class="featured-cta" {% if item.cta_url contains 'http' %}target="_blank"{% endif %}>{{ item.cta_text | default: 'Learn more' }} →</a>
+        {% endif %}
+      </div>
+    </article>
+    {% endfor %}
   </div>
 </div>
 
@@ -343,6 +382,135 @@ supported_languages: [en, es]
   }
 
   .quick-links-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Profile photos stacked */
+.profile-photos {
+  position: relative;
+  display: inline-flex;
+}
+.profile-photo.main {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 14px;
+  border: 3px solid #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.profile-photo.secondary {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 12px;
+  border: 2px solid #fff;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.08);
+  position: absolute;
+  bottom: -12px;
+  right: -18px;
+}
+
+/* Featured section */
+.featured-section {
+  max-width: 1200px;
+  margin: 2.5rem auto 1rem auto;
+  padding: 0 1rem;
+}
+.featured-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.featured-header h2 {
+  color: #223568;
+  font-size: 1.9em;
+  margin: 0.2rem 0;
+}
+.featured-header p {
+  color: #4a5568;
+  margin: 0;
+}
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+.featured-card {
+  background: #fff;
+  border: 1.5px solid #e8eaef;
+  border-radius: 12px;
+  padding: 1.25rem 1.4rem;
+  box-shadow: 0 2px 12px rgba(20,30,60,0.08);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.featured-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 22px rgba(20,30,60,0.12);
+}
+.featured-meta {
+  display: flex;
+  justify-content: flex-end;
+}
+.featured-status {
+  background: #e3f2fd;
+  color: #1976d2;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.85em;
+  font-weight: 600;
+}
+.featured-title {
+  margin: 0.6rem 0 0.4rem 0;
+  color: #223568;
+  font-size: 1.25em;
+}
+.featured-description {
+  color: #3d4257;
+  margin: 0 0 0.6rem 0;
+  line-height: 1.6;
+}
+.featured-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.8rem;
+}
+.featured-tag {
+  background: #f0f4ff;
+  color: #2746a6;
+  padding: 0.25rem 0.6rem;
+  border-radius: 8px;
+  font-size: 0.85em;
+  font-weight: 500;
+}
+.featured-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  align-items: center;
+}
+.featured-links a {
+  color: #1976d2;
+  font-weight: 600;
+  text-decoration: none;
+}
+.featured-links a:hover {
+  text-decoration: underline;
+}
+.featured-cta {
+  background: #1976d2;
+  color: #fff !important;
+  padding: 0.45rem 0.85rem;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(25,118,210,0.25);
+}
+
+@media (max-width: 768px) {
+  .profile-photo.secondary {
+    position: static;
+    margin-left: 0.75rem;
+  }
+  .featured-grid {
     grid-template-columns: 1fr;
   }
 }

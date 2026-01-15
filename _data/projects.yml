@@ -1,34 +1,67 @@
 # Developer Portfolio Projects
-# Add your GitHub projects here with descriptions and tech stack
+# Real repositories sourced from resources/database.md and repos.txt
 
-- title: "Quantum Machine Learning Projects"
-  description: "Collection of quantum machine learning implementations, including variational quantum algorithms, quantum neural networks, and hybrid classical-quantum models."
-  github: "matibilkis"
-  tech: ["Python", "Qiskit", "PennyLane", "Quantum Computing", "Machine Learning"]
+- title: "VAns / qvans"
+  description: "Variable-structure ansatz for variational quantum algorithms; grows and prunes gates to stay trainable under noise."
+  github: "matibilkis/qvans"
+  url: "https://github.com/matibilkis/vans"
+  tech: ["Python", "PennyLane", "VQE", "Quantum ML"]
   order: 1
   category: "quantum-ml"
 
-- title: "HPC Infrastructure Projects"
-  description: "High-performance computing projects for quantum simulations and classical ML training on supercomputing infrastructure."
-  github: "matibilkis"
-  tech: ["Python", "HPC", "SLURM", "CUDA", "Distributed Computing"]
+- title: "multivans"
+  description: "PennyLane implementation of VAns with multi-ansatz support for hybrid quantum-classical models."
+  github: "matibilkis/multivans"
+  tech: ["Python", "PennyLane", "Quantum ML"]
   order: 2
-  category: "hpc"
+  category: "quantum-ml"
 
-- title: "Classical Machine Learning"
-  description: "Research-focused classical ML projects with deployment-ready implementations."
-  github: "matibilkis"
-  tech: ["Python", "PyTorch", "TensorFlow", "Scikit-learn"]
+- title: "qmonsprt"
+  description: "Sequential hypothesis testing for continuously monitored quantum systems with stopping-time advantages."
+  github: "matibilkis/qmonsprt"
+  tech: ["Python", "Quantum Sensing", "Sequential Testing"]
   order: 3
-  category: "classical-ml"
+  category: "quantum-sensing"
 
-# Add more projects as needed
-# Example structure:
-# - title: "Project Name"
-#   description: "Brief description"
-#   github: "username/repo"  # or full URL
-#   url: "https://..."  # Optional: live demo
-#   tech: ["Tech1", "Tech2"]
-#   order: 4
-#   category: "category-name"
+- title: "qrec"
+  description: "Reinforcement-learning calibration of coherent-state receivers on variable-loss optical channels."
+  github: "matibilkis/qrec"
+  tech: ["Python", "Reinforcement Learning", "Quantum Comms"]
+  order: 4
+  category: "quantum-rl"
+
+- title: "qml-day"
+  description: "Hands-on Quantum Machine Learning tutorial: circuits, VQAs, and practical exercises for newcomers."
+  github: "matibilkis/qml-day"
+  tech: ["Python", "Qiskit", "Education"]
+  order: 5
+  category: "education"
+
+- title: "hackaton_AI_music"
+  description: "AI + music livecoding project from Sonar hackathon; autonomous improvisation with RL-inspired ideas."
+  github: "matibilkis/hackaton_AI_music"
+  tech: ["Python", "Music AI", "Livecoding"]
+  order: 6
+  category: "creative-ai"
+
+- title: "sandra"
+  description: "AI-driven scientific discovery experiments."
+  github: "matibilkis/sandra"
+  tech: ["Python", "Scientific Discovery"]
+  order: 7
+  category: "ai-research"
+
+- title: "qmon_sindy"
+  description: "Sparse identification of nonlinear dynamics (SINDY) for quantum monitoring tasks."
+  github: "matibilkis/qmon_sindy"
+  tech: ["Python", "SINDY", "Quantum Monitoring"]
+  order: 8
+  category: "quantum-ml"
+
+- title: "continuous"
+  description: "Deep reinforcement learning for continuous control problems (TensorFlow)."
+  github: "matibilkis/continuous"
+  tech: ["Python", "TensorFlow", "RL"]
+  order: 9
+  category: "rl"
 
