@@ -1,0 +1,379 @@
+# Cursor Rules for Matías Bilkis Website
+
+## Project Context
+Personal brand website for Matías Bilkis - quantum scientist, artivist, entrepreneur. Dark minimalist aesthetic with Miró-inspired color palette. Goal: "This guy is cool, I want to email him" (not CV-heavy).
+
+---
+
+## Code Style & Conventions
+
+### General
+- **Language:** HTML5 + vanilla CSS + minimal JavaScript
+- **No frameworks:** Keep it simple, fast, maintainable (no React, Vue, etc.)
+- **File structure:**
+  - `index.html` (homepage)
+  - `talks.html` (Talks & Things subpage)
+  - `portfolio.html` (Portfolio subpage)
+  - `projects.html` (Ongoing Projects subpage)
+  - `assets/` (CSS, JS, images if needed)
+  - `archive/` (old site backup)
+- **Comments:** Use HTML comments for major sections, CSS comments for component groupings
+- **Indentation:** 4 spaces (no tabs)
+
+### CSS
+- **Use CSS variables** for colors, spacing, typography
+- **Mobile-first:** Write base styles for mobile, then `@media` for larger screens
+- **BEM naming** for classes (e.g., `.card__title`, `.btn--primary`)
+- **No inline styles** (except for dynamic JS-generated styles)
+- **Organize CSS by:**
+  1. Variables
+  2. Reset/base styles
+  3. Layout (header, footer, sections)
+  4. Components (buttons, cards, etc.)
+  5. Animations
+  6. Media queries
+
+### JavaScript
+- **Minimal JS:** Only for animations and interactions (no heavy libraries)
+- **Vanilla JS only** (no jQuery)
+- **Use `const` and `let`**, never `var`
+- **Event delegation** where appropriate
+- **Comments for complex logic**
+
+---
+
+## Brand Guidelines
+
+### Color Palette (Miró + Dark)
+```css
+:root {
+  /* Backgrounds */
+  --bg-primary: #0B0F19;      /* Deep charcoal */
+  --bg-surface: #111827;      /* Card/section background */
+  
+  /* Text */
+  --text-primary: #E5E7EB;    /* Main text */
+  --text-muted: #9CA3AF;      /* Secondary text */
+  
+  /* Miró Accents (use sparingly) */
+  --miro-red: #FF3B30;
+  --miro-blue: #0A84FF;
+  --miro-yellow: #FFD60A;
+  --miro-green: #30D158;
+  
+  /* Functional */
+  --accent: #0A84FF;          /* Links, primary CTAs (Miró blue) */
+  --success: #30D158;         /* Positive actions */
+  --warning: #FFD60A;         /* Alerts */
+}
+```
+
+### Typography
+- **Name (hero):** Bold sans-serif, large (clamp 2.5rem to 4rem)
+- **Headings:** Clean sans-serif, medium weight
+- **Body:** Serif or mono, 1rem, line-height 1.6
+- **Spacing:** Generous whitespace (1.5-2rem between sections)
+
+### Visual Rules
+- **No gradients** (flat colors only)
+- **Minimal shadows** (use subtle border/glow instead)
+- **High contrast** (readability > aesthetics)
+- **Animations:** Subtle, purposeful (no bounce/spin)
+- **Icons:** Simple SVG or Unicode emoji
+
+---
+
+## Content Guidelines
+
+### Tone & Voice
+- **Professional but approachable** (not corporate)
+- **Story-driven, not CV-heavy**
+- **Show personality** (artivist, quantum nerd, builder)
+- **Short sentences** (scannable, not academic)
+
+### Writing Style
+- **Headlines:** Short, punchy (5-10 words)
+- **Descriptions:** 1-2 sentences max per item
+- **CTAs:** Action-oriented ("Let's collaborate", "Explore projects")
+- **No jargon** unless necessary (explain quantum concepts simply)
+
+### Do NOT
+- Invent content (use only provided info from GitHub/current site)
+- Add new pages unless asked
+- Create documentation files unprompted
+- Use emojis excessively (1-2 per section max)
+
+---
+
+## Animation Guidelines
+
+### Allowed Animations
+- **Constellation:** Slow rotation/shift (5-10s loop)
+- **Planets:** Pulse/glow on hover (0.3s ease)
+- **Stars:** Subtle twinkle (random delays, 2-4s intervals)
+- **Cards:** Lift on hover (translateY -4px, 0.2s ease)
+- **Links:** Underline slide-in on hover (0.2s ease)
+- **Page transitions:** Fade-in on load (0.5s ease)
+
+### Animation Rules
+- **Duration:** 0.2-0.5s for interactions, 3-10s for ambient
+- **Easing:** `ease` or `cubic-bezier(0.16, 1, 0.3, 1)`
+- **Performance:** Use `transform` and `opacity` (not `top`, `left`, `width`)
+- **Accessibility:** Respect `prefers-reduced-motion`
+
+```css
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+```
+
+---
+
+## Responsiveness
+
+### Breakpoints
+```css
+/* Mobile-first base styles (< 640px) */
+
+@media (min-width: 640px) {
+  /* Tablet */
+}
+
+@media (min-width: 1024px) {
+  /* Desktop */
+}
+
+@media (min-width: 1280px) {
+  /* Large desktop */
+}
+```
+
+### Mobile Priority
+- **Navigation:** Simple top nav (no hamburger unless >5 links)
+- **Hero constellation:** Scales down, planets stack vertically on mobile
+- **Cards:** Single column on mobile, grid on tablet+
+- **Typography:** Use `clamp()` for fluid sizing
+
+---
+
+## Accessibility
+
+### Must-Have
+- **Semantic HTML** (`<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`)
+- **Alt text** for all images/icons
+- **ARIA labels** for interactive elements (buttons, links)
+- **Keyboard navigation** (tab order makes sense)
+- **Focus states** (visible outline on `:focus`)
+- **Contrast ratio** WCAG AA minimum (4.5:1 for text)
+
+### Testing
+- Test with keyboard only (no mouse)
+- Test with screen reader (if possible)
+- Test in high contrast mode
+
+---
+
+## Deployment
+
+### GitHub Pages
+- Site lives at `https://matibilkis.github.io/`
+- Push to `main` branch to deploy
+- No build step (pure HTML/CSS/JS)
+
+### Pre-Deploy Checklist
+- [ ] All links work (internal and external)
+- [ ] Mobile responsive (test in DevTools)
+- [ ] Fast load (<2s on 3G)
+- [ ] No console errors
+- [ ] Contact info correct (matias@qutsur.com)
+
+---
+
+## Development Workflow
+
+### Before Starting Any Task
+1. Read `WORKFLOW.md` to understand current phase
+2. Check existing code for patterns/conventions
+3. Test locally before committing
+
+### Making Changes
+1. **Incremental:** Build one section at a time
+2. **Test often:** Check in browser after each change
+3. **Commit often:** Small, descriptive commits
+4. **Ask before big changes:** Structural changes need approval
+
+### Testing Locally
+```bash
+# Simple Python server
+python3 -m http.server 8000
+
+# Or Python 2
+python -m SimpleHTTPServer 8000
+
+# Then open: http://localhost:8000
+```
+
+---
+
+## Component Patterns
+
+### Button
+```html
+<a href="#" class="btn btn--primary">Get in touch</a>
+```
+
+```css
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.btn--primary {
+  background: var(--accent);
+  color: var(--bg-primary);
+}
+
+.btn--primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(10, 132, 255, 0.3);
+}
+```
+
+### Card
+```html
+<div class="card">
+  <h3 class="card__title">Project Name</h3>
+  <p class="card__description">Short description here.</p>
+  <a href="#" class="card__link">View project →</a>
+</div>
+```
+
+```css
+.card {
+  padding: 1.5rem;
+  background: var(--bg-surface);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.2s ease;
+}
+
+.card:hover {
+  border-color: var(--accent);
+  transform: translateY(-4px);
+}
+```
+
+---
+
+## Common Tasks
+
+### Adding a new section
+1. Add HTML structure with semantic tags
+2. Style with existing CSS variables
+3. Ensure mobile responsiveness
+4. Test accessibility (keyboard, contrast)
+
+### Adding an animation
+1. Use CSS `@keyframes` for loops
+2. Use `transition` for interactions
+3. Add `prefers-reduced-motion` check
+4. Keep duration < 0.5s for interactions
+
+### Adding a new page
+1. Copy structure from existing page
+2. Update `<title>` and meta tags
+3. Link from navigation
+4. Test all links work
+
+---
+
+## Troubleshooting
+
+### Animations not working
+- Check `prefers-reduced-motion` settings
+- Ensure element has `transition` or `animation` property
+- Verify keyframes are defined
+
+### Layout breaking on mobile
+- Check `max-width` on containers
+- Use `clamp()` for fluid typography
+- Test in DevTools responsive mode
+
+### Colors not matching design
+- Verify CSS variables are defined in `:root`
+- Check for inline styles overriding
+- Use DevTools color picker to inspect
+
+---
+
+## DO NOT
+
+- ❌ Add frameworks (React, Vue, jQuery, etc.)
+- ❌ Create new pages without approval
+- ❌ Invent content (use only provided info)
+- ❌ Use heavy JavaScript libraries
+- ❌ Add gradients or heavy shadows
+- ❌ Make text unreadable (low contrast)
+- ❌ Add auto-playing videos/audio
+- ❌ Use animated GIFs (use CSS/SVG instead)
+- ❌ Commit untested code
+- ❌ Delete old site (move to `archive/`)
+
+---
+
+## Questions to Ask Before Proceeding
+
+- Does this align with the "cool guy I want to email" vibe?
+- Is it minimal and fast?
+- Does it work on mobile?
+- Is it accessible?
+- Does it follow the Miró color palette?
+- Is the animation subtle and purposeful?
+
+---
+
+## Contact for Clarifications
+
+If uncertain about:
+- **Content:** Ask user before inventing
+- **Design:** Refer to WORKFLOW.md brand guidelines
+- **Structure:** Ask before major changes
+- **Typography:** Test multiple options, then ask
+
+---
+
+## Success Criteria
+
+**Visual:**
+✅ Dark background with Miró accents
+✅ Constellation navigation unique and clear
+✅ Animations subtle and smooth
+✅ Typography readable and on-brand
+
+**Content:**
+✅ Personality-driven (not CV-heavy)
+✅ Scannable (short sentences, clear hierarchy)
+✅ Honest and authentic
+✅ "Cool guy I want to email" vibe
+
+**Technical:**
+✅ Fast load (<2s)
+✅ Mobile responsive
+✅ Accessible (WCAG AA)
+✅ No broken links
+✅ Deployable on GitHub Pages
+
+---
+
+**Last updated:** 2026-01-15
+**Project phase:** Phase 1 - Setup (see WORKFLOW.md)
+
