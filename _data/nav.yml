@@ -1,17 +1,17 @@
 links:
   - title: about
     url: /
-  - title: talks
-    url: /talks
-  - title: initiatives
-    url: /milestones
   - title: research
     url: /research
+  - title: projects
+    url: /projects
+  - title: qutsur
+    url: /qutsur
+  - title: ecosystem
+    url: /ecosystem
+  - title: talks
+    url: /talks
   - title: activities
     url: /activities
-  # - title: blog
-  #   url: /blog
-
-
   - title: contact
     url: /contact
