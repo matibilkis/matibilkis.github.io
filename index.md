@@ -15,9 +15,9 @@ supported_languages: [en, es]
     </div>
     <div class="profile-info">
       <h1 class="profile-name">Matías Bilkis, PhD</h1>
-      <div class="profile-title">Quantum Scientist · Entrepreneur · Developer · Ecosystem Builder</div>
+      <div class="profile-title">Quantum Scientist · Entrepreneur · Developer</div>
       <div class="profile-bio-short">
-        Professor at UAI, CEO of QutSur, co-founder of QML-CVC. Leading quantum tech innovation through research, business, and ecosystem development.
+        Professor at UAI, CEO of QutSur, co-founder of QML-CVC. Leading quantum tech innovation through research and business.
       </div>
     </div>
   </div>
@@ -53,7 +53,6 @@ supported_languages: [en, es]
       <p>Bridging quantum technology and Latin America through:</p>
       <ul class="profile-highlights">
         <li><strong>Education:</strong> Courses and training programs</li>
-        <li><strong>Ecosystem:</strong> Building partnerships and infrastructure</li>
         <li><strong>Consultancy:</strong> Strategic quantum technology consulting</li>
       </ul>
       <p><a href="https://www.qutsur.com" target="_blank">qutsur.com</a></p>
@@ -75,23 +74,6 @@ supported_languages: [en, es]
         <li>Production-ready implementations</li>
       </ul>
       <p><a href="https://github.com/matibilkis" target="_blank">GitHub →</a></p>
-    </div>
-  </div>
-
-  <!-- Ecosystem Builder -->
-  <div class="profile-card ecosystem">
-    <div class="profile-card-header">
-      <h2 class="profile-card-title">🌐 Ecosystem Builder</h2>
-      <a href="/ecosystem/" class="profile-card-link">View Initiatives →</a>
-    </div>
-    <div class="profile-card-content">
-      <p><strong>Quantum Residency Leader</strong> at Edge City Esmeralda (Ethereum Foundation spin-off)</p>
-      <ul class="profile-highlights">
-        <li>Leading quantum residency program in California</li>
-        <li>NVIDIA partnerships for supercomputing infrastructure</li>
-        <li>Building quantum tech ecosystem in Argentina</li>
-        <li>Connecting academia, industry, and government</li>
-      </ul>
     </div>
   </div>
 
@@ -156,7 +138,6 @@ supported_languages: [en, es]
     <a href="/research/" class="quick-link">Research & Publications</a>
     <a href="/projects/" class="quick-link">Developer Projects</a>
     <a href="/qutsur/" class="quick-link">QutSur Business</a>
-    <a href="/ecosystem/" class="quick-link">Ecosystem Building</a>
     <a href="/talks/" class="quick-link">Talks & Presentations</a>
     <a href="/activities/" class="quick-link">Activities & Events</a>
     <a href="/contact/" class="quick-link">Contact</a>
@@ -311,10 +292,6 @@ supported_languages: [en, es]
 
 .profile-card.developer {
   border-left: 4px solid #ff9800;
-}
-
-.profile-card.ecosystem {
-  border-left: 4px solid #9c27b0;
 }
 
 .profile-card.speaker {

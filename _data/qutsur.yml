@@ -13,9 +13,6 @@ services:
   - name: "Education & Training"
     description: "Courses and programs for companies and institutions"
   
-  - name: "Ecosystem Development"
-    description: "Building connections and infrastructure for quantum tech in Latin America"
-  
   - name: "Research & Development"
     description: "Cutting-edge R&D in quantum machine learning and quantum technologies"
 

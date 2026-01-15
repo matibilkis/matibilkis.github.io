@@ -73,21 +73,6 @@ permalink: /es/
     </div>
   </div>
 
-  <div class="profile-card ecosystem">
-    <div class="profile-card-header">
-      <h2 class="profile-card-title">🌐 Ecosistema</h2>
-      <a href="/ecosystem/" class="profile-card-link">Ver iniciativas →</a>
-    </div>
-    <div class="profile-card-content">
-      <p><strong>Líder de la residencia cuántica</strong> en Edge City Esmeralda</p>
-      <ul class="profile-highlights">
-        <li>Residencia en California</li>
-        <li>Alianzas NVIDIA para supercómputo</li>
-        <li>Construcción del ecosistema cuántico en Argentina</li>
-      </ul>
-    </div>
-  </div>
-
   <div class="profile-card speaker">
     <div class="profile-card-header">
       <h2 class="profile-card-title">🎤 Speaker & Outreach</h2>
@@ -147,7 +132,6 @@ permalink: /es/
     <a href="/research/" class="quick-link">Investigación</a>
     <a href="/projects/" class="quick-link">Proyectos</a>
     <a href="/qutsur/" class="quick-link">QutSur</a>
-    <a href="/ecosystem/" class="quick-link">Ecosistema</a>
     <a href="/talks/" class="quick-link">Charlas</a>
     <a href="/activities/" class="quick-link">Actividades</a>
     <a href="/contact/" class="quick-link">Contacto</a>

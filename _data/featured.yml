@@ -22,7 +22,7 @@
   description: "Leading a quantum residency (Ethereum Foundation spin-off) in California. Building a landing page and program roadmap for June 2026."
   cta_text: "Residency overview"
   cta_url: "https://example.com/edge-city-quantum"  # replace with final landing page
-  tags: ["ecosystem", "residency", "web3"]
+  tags: ["residency", "web3"]
 
 - title: "QutSur Quantum Tech Surveillance"
   order: 3

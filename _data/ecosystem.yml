@@ -12,25 +12,6 @@
       url: "#"  # Update with actual URL
   order: 1
 
-- title: "NVIDIA Partnership - Supercomputing Infrastructure"
-  role: "Project Lead"
-  organization: "NVIDIA & Argentine Institutions"
-  description: "Collaborating with NVIDIA and 10+ Argentine institutions and companies to improve supercomputing infrastructure and install a quantum simulation node, potentially at Clementina."
-  year: 2025
-  location: "Argentina"
-  links:
-    - name: "Project Details"
-      url: "#"  # Update with actual URL
-  order: 2
-
-- title: "Quantum Tech Ecosystem in Argentina"
-  role: "Ecosystem Builder"
-  organization: "Multiple Partners"
-  description: "Building connections and partnerships across the quantum technology ecosystem in Argentina, connecting academia, industry, and government."
-  year: 2024
-  location: "Argentina"
-  links: []
-  order: 3
 
 # Add more ecosystem activities as needed
 # Example:
