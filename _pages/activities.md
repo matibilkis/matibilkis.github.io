@@ -3,10 +3,24 @@ title: activities list
 layout: default
 permalink: /activities/
 ---
-<div class="activities-list">
+
+<link rel="stylesheet" href="{{ '/assets/css/design-system.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+
+<h1 class="section-title">Activities & Events</h1>
+
+<div class="activities-filters">
+  <button class="filter-btn active" data-filter="all">All</button>
+  <button class="filter-btn" data-filter="talk">Talks</button>
+  <button class="filter-btn" data-filter="panel">Panels</button>
+  <button class="filter-btn" data-filter="poster">Posters</button>
+  <button class="filter-btn" data-filter="leader">Leadership</button>
+</div>
+
+<div class="activities-list" id="activities-list">
 {% assign sorted_activities = site.data.activities | sort:"year" | reverse %}
 {% for activity in sorted_activities %}
-  <div class="activity-card{% if activity.type == 'leader' %} leader{% endif %}">
+  <div class="activity-card{% if activity.type == 'leader' %} leader{% endif %}" data-type="{{ activity.type | default: 'other' }}">
     <div class="activity-card-header">
       <span class="activity-title"><b>{{ activity.title }}</b></span>
     </div>
@@ -22,8 +36,8 @@ permalink: /activities/
       </div>
     {% endif %}
     {% if activity.description %}
-      <button class="dropdown-btn" onclick="toggleDescription(this)">more ▼</button>
-      <div class="activity-description" style="display:none;">
+      <button class="dropdown-btn" onclick="toggleDescription(this)" aria-expanded="false" aria-controls="desc-{{ forloop.index }}">more ▼</button>
+      <div class="activity-description" id="desc-{{ forloop.index }}" style="display:none;">
         {{ activity.description }}
       </div>
     {% endif %}
@@ -40,46 +54,109 @@ function toggleDescription(btn) {
   if (desc.style.display === "none" || desc.style.display === "") {
     desc.style.display = "block";
     btn.textContent = "less ▲";
+    btn.setAttribute('aria-expanded', 'true');
   } else {
     desc.style.display = "none";
     btn.textContent = "more ▼";
+    btn.setAttribute('aria-expanded', 'false');
   }
 }
+
+// Filter functionality
+document.addEventListener('DOMContentLoaded', function() {
+  const filterButtons = document.querySelectorAll('.filter-btn');
+  const activityCards = document.querySelectorAll('.activity-card');
+  
+  filterButtons.forEach(btn => {
+    btn.addEventListener('click', function() {
+      const filter = this.getAttribute('data-filter');
+      
+      // Update active button
+      filterButtons.forEach(b => b.classList.remove('active'));
+      this.classList.add('active');
+      
+      // Filter cards
+      activityCards.forEach(card => {
+        if (filter === 'all' || card.getAttribute('data-type') === filter) {
+          card.style.display = 'block';
+          setTimeout(() => {
+            card.style.opacity = '1';
+            card.style.transform = 'translateY(0)';
+          }, 10);
+        } else {
+          card.style.opacity = '0';
+          card.style.transform = 'translateY(-20px)';
+          setTimeout(() => {
+            card.style.display = 'none';
+          }, 300);
+        }
+      });
+    });
+  });
+});
 </script>
 
 <style>
-body { background: #f6f7fa; }
+.activities-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  margin: var(--spacing-xl) auto var(--spacing-lg);
+  max-width: 900px;
+  padding: 0 var(--spacing-lg);
+}
 
-.section-title {
-  font-size: 2rem;
-  color: #223568;
-  margin-top: 24px;
-  margin-bottom: 36px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-align: center;
+.filter-btn {
+  padding: var(--spacing-sm) var(--spacing-lg);
+  background: var(--color-bg-primary);
+  border: 2px solid var(--color-neutral-200);
+  border-radius: var(--radius-full);
+  color: var(--color-text-primary);
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-sm);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  text-transform: capitalize;
+}
+
+.filter-btn:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+  transform: translateY(-2px);
+}
+
+.filter-btn.active {
+  background: var(--gradient-primary);
+  color: white;
+  border-color: transparent;
+  box-shadow: var(--shadow-md);
 }
 
 .activities-list {
   display: flex;
   flex-direction: column;
-  gap: 32px;
-  max-width: 780px;
-  margin: 0 auto 40px auto;
+  gap: var(--spacing-xl);
+  max-width: 900px;
+  margin: 0 auto var(--spacing-3xl);
+  padding: 0 var(--spacing-lg);
 }
 
 .activity-card {
-  background: #fff;
-  border-radius: 14px;
-  box-shadow: 0 3px 20px rgba(20,30,60,0.07);
-  padding: 26px 28px 18px 28px;
-  border: 1.5px solid #e8eaef;
-  transition: box-shadow 0.2s, border 0.2s;
+  background: var(--color-bg-primary);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+  padding: var(--spacing-xl);
+  border: 2px solid var(--color-neutral-100);
+  transition: all var(--transition-base);
   position: relative;
+  opacity: 1;
+  transform: translateY(0);
 }
+
 .activity-card.leader {
-  border-left: 5px solid #ffd700;
-  background: #fffbe6;
+  border-left: 5px solid var(--color-highlight);
+  background: linear-gradient(135deg, #fffbe5 0%, #fff8dc 100%);
 }
 .activity-card-header {
   display: flex;
