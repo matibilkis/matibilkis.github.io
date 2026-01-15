@@ -47,10 +47,11 @@ permalink: /es/
     </div>
     <div class="profile-card-content">
       <p><strong>CEO de QutSur</strong> - consultora de tecnología cuántica (LLC)</p>
+      <p>Conectando tecnología cuántica y Latinoamérica a través de:</p>
       <ul class="profile-highlights">
-        <li><strong>Educación:</strong> cursos, diplomatura, programa de radio</li>
-        <li><strong>Ecosistema:</strong> alianzas con NVIDIA, infraestructura</li>
-        <li><strong>Consultoría:</strong> vigilancia tecnológica y estrategia</li>
+        <li><strong>Educación:</strong> cursos y programas de formación</li>
+        <li><strong>Ecosistema:</strong> construcción de alianzas e infraestructura</li>
+        <li><strong>Consultoría:</strong> consultoría estratégica en tecnología cuántica</li>
       </ul>
       <p><a href="https://www.qutsur.com" target="_blank">qutsur.com</a></p>
     </div>

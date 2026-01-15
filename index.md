@@ -50,11 +50,11 @@ supported_languages: [en, es]
     </div>
     <div class="profile-card-content">
       <p><strong>CEO of QutSur</strong> - Quantum Technology Consultancy (LLC)</p>
-      <p>Three interconnected pillars:</p>
+      <p>Bridging quantum technology and Latin America through:</p>
       <ul class="profile-highlights">
-        <li><strong>Education:</strong> Courses, diploma program, radio show</li>
-        <li><strong>Ecosystem:</strong> Partnerships with NVIDIA, infrastructure development</li>
-        <li><strong>Consultancy:</strong> Quantum tech surveillance, strategic consulting</li>
+        <li><strong>Education:</strong> Courses and training programs</li>
+        <li><strong>Ecosystem:</strong> Building partnerships and infrastructure</li>
+        <li><strong>Consultancy:</strong> Strategic quantum technology consulting</li>
       </ul>
       <p><a href="https://www.qutsur.com" target="_blank">qutsur.com</a></p>
     </div>

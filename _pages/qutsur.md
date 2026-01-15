@@ -11,8 +11,7 @@ permalink: /qutsur/
 {% assign qutsur = site.data.qutsur %}
 
 <div class="qutsur-intro">
-  <p><strong>QutSur</strong> is a quantum technology consultancy group, an LLC focused on bridging quantum tech and Latin America. 
-  We operate through three interconnected pillars that support and reinforce each other: <strong>Education</strong>, <strong>Ecosystem</strong>, and <strong>Consultancy</strong>.</p>
+  <p><strong>QutSur</strong> is a quantum technology consultancy group, an LLC focused on bridging quantum tech and Latin America.</p>
   
   <p><a href="{{ qutsur.company.url }}" target="_blank">Visit QutSur.com →</a></p>
 </div>
@@ -20,24 +19,6 @@ permalink: /qutsur/
 <div class="qutsur-mission">
   <h2>Mission</h2>
   <p>{{ qutsur.mission }}</p>
-</div>
-
-<div class="pillars-section">
-  <h2 class="pillars-title">Our Three Pillars</h2>
-  
-  {% for pillar in qutsur.pillars %}
-  <div class="pillar-card">
-    <h3 class="pillar-name">{{ pillar.name }}</h3>
-    <p class="pillar-description">{{ pillar.description }}</p>
-    {% if pillar.details %}
-    <ul class="pillar-details">
-      {% for detail in pillar.details %}
-      <li>{{ detail }}</li>
-      {% endfor %}
-    </ul>
-    {% endif %}
-  </div>
-  {% endfor %}
 </div>
 
 <div class="services-section">

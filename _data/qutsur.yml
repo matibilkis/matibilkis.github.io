@@ -1,35 +1,10 @@
 # QutSur Business Information
-# Based on the company structure described in conf/qutsur/
+# Only public information from qutsur.com
 
 company:
   name: "QutSur"
   url: "https://www.qutsur.com"
-  description: "QutSur is a quantum technology consultancy group, an LLC focused on bridging quantum tech and Latin America. We operate through three interconnected pillars: Education, Ecosystem, and Consultancy."
-
-pillars:
-  - name: "Education"
-    description: "Professor at UAI, driving quantum computing diploma program. QutSur offers informative and formative courses to companies and civil society. Radio program on TXS Plus."
-    details:
-      - "Titular professor at Universidad Abierta Interamericana"
-      - "Quantum computing diploma program"
-      - "Corporate and public education courses"
-      - "Radio program on TXS Plus"
-
-  - name: "Ecosystem"
-    description: "Building connections with leading tech companies. Working with NVIDIA and 10+ Argentine institutions/companies to improve supercomputing infrastructure and install a quantum simulation node (potentially at Clementina). Leading the quantum residency at Edge City Esmeralda (Ethereum Foundation spin-off), an incubator in California during June."
-    details:
-      - "Partnerships with NVIDIA and Argentine tech companies"
-      - "Supercomputing infrastructure development"
-      - "Quantum simulation node installation"
-      - "Edge City Esmeralda quantum residency leadership"
-
-  - name: "Consultancy"
-    description: "TRL4 prototype of LLM and automated scientific report creator and internet search tool, focused on automated quantum tech surveillance. Respected by top researchers and entrepreneurs in Argentina. Organized cycles at Practia Global - an elite monitoring team on quantum technology advances."
-    details:
-      - "LLM prototype for scientific reports"
-      - "Automated quantum tech surveillance"
-      - "Strategic consulting for quantum technologies"
-      - "Elite monitoring team on quantum advances"
+  description: "QutSur is a quantum technology consultancy group, an LLC focused on bridging quantum tech and Latin America."
 
 services:
   - name: "Quantum Technology Consulting"
@@ -44,5 +19,5 @@ services:
   - name: "Research & Development"
     description: "Cutting-edge R&D in quantum machine learning and quantum technologies"
 
-mission: "To bridge quantum technology and Latin America, maintaining three interconnected pillars that support each other: Education, Ecosystem, and Consultancy."
+mission: "To bridge quantum technology and Latin America."
 
