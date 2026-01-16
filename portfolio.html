@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Matías Bilkis - Portfolio of quantum ML research and production tools">
+    <title>Portfolio - Matías Bilkis</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/subpages.css">
+</head>
+<body>
+    <!-- Stars Background -->
+    <div class="stars" id="starsContainer"></div>
+
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <a href="index.html" class="logo">MB</a>
+            <nav>
+                <ul>
+                    <li><a href="talks.html">Talks & Things</a></li>
+                    <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="subpage">
+        <div class="container">
+            <div class="page-header">
+                <h1>🔬 Portfolio</h1>
+                <p class="page-subtitle">Research-focused, deployment-ready projects</p>
+            </div>
+
+            <!-- 
+                EDIT CONTENT BELOW:
+                Hero projects are featured at the top
+                Each project has: title, description, tech stack, metrics, GitHub link
+            -->
+
+            <!-- Hero Projects -->
+            <section class="hero-projects">
+                <h2>⭐ Featured Work</h2>
+                <div class="cards-grid">
+                    
+                    <div class="card card--highlight">
+                        <span class="card-tag" style="--tag-color: var(--miro-blue);">Quantum ML</span>
+                        <h3>qvans - Variable-Structure Ansatz</h3>
+                        <p>Neural architecture search for quantum circuits. Collaboration with Los Alamos National Lab and Google's Alphabet X.</p>
+                        <div class="project-metrics">
+                            <span class="metric">📊 <span class="metric-value">60+ citations</span></span>
+                            <span class="metric">📄 <span class="metric-value">Published QMI 2023</span></span>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-pill">Python</span>
+                            <span class="tech-pill">PennyLane</span>
+                            <span class="tech-pill">VQE</span>
+                        </div>
+                        <a href="https://github.com/matibilkis/qvans" target="_blank" rel="noopener" class="card-link">View on GitHub →</a>
+                    </div>
+
+                    <div class="card card--highlight">
+                        <span class="card-tag" style="--tag-color: var(--miro-green);">Reinforcement Learning</span>
+                        <h3>quantum-self-tuning</h3>
+                        <p>Production-ready RL library for quantum sensor calibration. Model-free agents for experimental self-tuning.</p>
+                        <div class="project-metrics">
+                            <span class="metric">📊 <span class="metric-value">30+ citations</span></span>
+                            <span class="metric">🎤 <span class="metric-value">6+ talks</span></span>
+                            <span class="metric">📚 <span class="metric-value">4 papers</span></span>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-pill">Python</span>
+                            <span class="tech-pill">TensorFlow</span>
+                            <span class="tech-pill">RL</span>
+                        </div>
+                        <a href="https://github.com/matibilkis/quantum-self-tuning" target="_blank" rel="noopener" class="card-link">View on GitHub →</a>
+                    </div>
+
+                    <div class="card card--highlight">
+                        <span class="card-tag" style="--tag-color: var(--miro-yellow);">Production Tool</span>
+                        <h3>board-tex</h3>
+                        <p>Full-stack web app for real-time LaTeX equation rendering. Built with agentic AI collaboration.</p>
+                        <div class="tech-stack">
+                            <span class="tech-pill">JavaScript</span>
+                            <span class="tech-pill">HTML/CSS</span>
+                            <span class="tech-pill">LaTeX</span>
+                        </div>
+                        <a href="https://github.com/matibilkis/board-tex" target="_blank" rel="noopener" class="card-link">View on GitHub →</a>
+                    </div>
+
+                    <div class="card card--highlight">
+                        <span class="card-tag" style="--tag-color: var(--miro-red);">Creative</span>
+                        <h3>🏆 hackaton_AI_music</h3>
+                        <p>Winner of Sónar Festival Hackathon 2021. Real-time RL for live music generation with Q-learning and SuperCollider.</p>
+                        <div class="project-metrics">
+                            <span class="metric">🏆 <span class="metric-value">1st Place</span></span>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-pill">Python</span>
+                            <span class="tech-pill">RL</span>
+                            <span class="tech-pill">SuperCollider</span>
+                            <span class="tech-pill">OSC</span>
+                        </div>
+                        <a href="https://github.com/matibilkis/hackaton_AI_music" target="_blank" rel="noopener" class="card-link">View on GitHub →</a>
+                    </div>
+
+                    <div class="card card--highlight">
+                        <span class="card-tag" style="--tag-color: var(--miro-blue);">Quantum</span>
+                        <h3>qmonsprt</h3>
+                        <p>Sequential hypothesis testing for continuously-monitored quantum systems. Published in Quantum 2024.</p>
+                        <div class="project-metrics">
+                            <span class="metric">📄 <span class="metric-value">Quantum 8, 1289</span></span>
+                        </div>
+                        <div class="tech-stack">
+                            <span class="tech-pill">Python</span>
+                            <span class="tech-pill">Quantum</span>
+                        </div>
+                        <a href="https://github.com/matibilkis/qmonsprt" target="_blank" rel="noopener" class="card-link">View on GitHub →</a>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Quantum ML Projects -->
+            <section class="content-section">
+                <h2>🔮 Quantum Machine Learning</h2>
+                <div class="cards-grid">
+                    
+                    <div class="card">
+                        <span class="card-tag" style="--tag-color: var(--miro-blue);">QML</span>
+                        <h3>qsense-continuos</h3>
+                        <p>Deep RL for continuous-time quantum control. Large-scale TensorFlow implementation with automatic AI agent control.</p>
+                        <div class="tech-stack">
+                            <span class="tech-pill">Python</span>
+                            <span class="tech-pill">TensorFlow</span>
+                            <span class="tech-pill">Deep RL</span>
+                        </div>
+                        <a href="https://github.com/matibilkis/qsense-continuos" target="_blank" rel="noopener" class="card-link">View on GitHub →</a>
+                    </div>
+
+                    <div class="card">
+                        <span class="card-tag" style="--tag-color: var(--miro-blue);">QML</span>
+                        <h3>quantum-generative-AI</h3>
+                        <p>Generative AI with quantum computers. Quantum GANs and diffusion models for image processing.</p>
+                        <div class="tech-stack">
+                            <span class="tech-pill">Python</span>
+                            <span class="tech-pill">Quantum</span>
+                            <span class="tech-pill">GANs</span>
+                        </div>
+                        <a href="https://github.com/matibilkis/quantum-generative-AI" target="_blank" rel="noopener" class="card-link">View on GitHub →</a>
+                    </div>
+
+                    <div class="card">
+                        <span class="card-tag" style="--tag-color: var(--miro-blue);">QML</span>
+                        <h3>multivans</h3>
+                        <p>VAns implementation in PennyLane. Variable-structure ansatz in modern quantum framework.</p>
+                        <div class="tech-stack">
+                            <span class="tech-pill">Python</span>
+                            <span class="tech-pill">PennyLane</span>
+                        </div>
+                        <a href="https://github.com/matibilkis/multivans" target="_blank" rel="noopener" class="card-link">View on GitHub →</a>
+                    </div>
+
+                    <div class="card">
+                        <span class="card-tag" style="--tag-color: var(--miro-blue);">QML</span>
+                        <h3>vans</h3>
+                        <p>Original VAns implementation. Variable-structure ansatz for variational quantum algorithms.</p>
+                        <div class="tech-stack">
+                            <span class="tech-pill">Python</span>
+                            <span class="tech-pill">Quantum</span>
+                        </div>
+                        <a href="https://github.com/matibilkis/vans" target="_blank" rel="noopener" class="card-link">View on GitHub →</a>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- RL & Control Projects -->
+            <section class="content-section">
+                <h2>🤖 Reinforcement Learning</h2>
+                <div class="cards-grid">
+                    
+                    <div class="card">
+                        <span class="card-tag" style="--tag-color: var(--miro-green);">RL</span>
+                        <h3>deep-quantum-discrimination</h3>
+                        <p>Deep RL experiments for quantum communications. Large-scale deep RL with continuous-time automatic control.</p>
+                        <div class="tech-stack">
+                            <span class="tech-pill">Python</span>
+                            <span class="tech-pill">TensorFlow</span>
+                            <span class="tech-pill">Deep RL</span>
+                        </div>
+                        <a href="https://github.com/matibilkis/deep-quantum-discrimination" target="_blank" rel="noopener" class="card-link">View on GitHub →</a>
+                    </div>
+
+                    <div class="card">
+                        <span class="card-tag" style="--tag-color: var(--miro-green);">RL</span>
+                        <h3>qrec</h3>
+                        <p>Reinforcement learning recalibration library. Model-free calibration for quantum devices.</p>
+                        <div class="tech-stack">
+                            <span class="tech-pill">Python</span>
+                            <span class="tech-pill">RL</span>
+                        </div>
+                        <a href="https://github.com/matibilkis/qrec" target="_blank" rel="noopener" class="card-link">View on GitHub →</a>
+                    </div>
+
+                    <div class="card">
+                        <span class="card-tag" style="--tag-color: var(--miro-green);">RL</span>
+                        <h3>continuous</h3>
+                        <p>Deep reinforcement learning with TensorFlow. Continuous control problems and large-scale RL experiments.</p>
+                        <div class="tech-stack">
+                            <span class="tech-pill">Python</span>
+                            <span class="tech-pill">TensorFlow</span>
+                        </div>
+                        <a href="https://github.com/matibilkis/continuous" target="_blank" rel="noopener" class="card-link">View on GitHub →</a>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Educational & Tools -->
+            <section class="content-section">
+                <h2>📚 Educational & Tools</h2>
+                <div class="cards-grid">
+                    
+                    <div class="card">
+                        <span class="card-tag" style="--tag-color: var(--miro-yellow);">Education</span>
+                        <h3>intro-2-QML</h3>
+                        <p>Hands-on introduction to Quantum Machine Learning. Code from scratch → PennyLane → CUDA-Q with Jupyter notebooks.</p>
+                        <div class="tech-stack">
+                            <span class="tech-pill">Python</span>
+                            <span class="tech-pill">Jupyter</span>
+                            <span class="tech-pill">PennyLane</span>
+                        </div>
+                        <a href="https://github.com/matibilkis/intro-2-QML" target="_blank" rel="noopener" class="card-link">View on GitHub →</a>
+                    </div>
+
+                    <div class="card">
+                        <span class="card-tag" style="--tag-color: var(--miro-yellow);">Education</span>
+                        <h3>castellers</h3>
+                        <p>QML course materials and tutorials. Educational content with hands-on exercises.</p>
+                        <div class="tech-stack">
+                            <span class="tech-pill">Python</span>
+                            <span class="tech-pill">QML</span>
+                        </div>
+                        <a href="https://github.com/matibilkis/castellers" target="_blank" rel="noopener" class="card-link">View on GitHub →</a>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Research & Discovery -->
+            <section class="content-section">
+                <h2>🔍 Scientific Discovery</h2>
+                <div class="cards-grid">
+                    
+                    <div class="card">
+                        <span class="card-tag" style="--tag-color: var(--accent);">Research</span>
+                        <h3>sandra</h3>
+                        <p>AI-driven scientific discovery. Dynamical law extraction using SINDY and RNN.</p>
+                        <div class="tech-stack">
+                            <span class="tech-pill">Python</span>
+                            <span class="tech-pill">ML</span>
+                            <span class="tech-pill">SINDY</span>
+                        </div>
+                        <a href="https://github.com/matibilkis/sandra" target="_blank" rel="noopener" class="card-link">View on GitHub →</a>
+                    </div>
+
+                    <div class="card">
+                        <span class="card-tag" style="--tag-color: var(--accent);">Research</span>
+                        <h3>qmon_sindy</h3>
+                        <p>Quantum monitoring with SINDY. Real-time quantum system analysis and nonlinear dynamics identification.</p>
+                        <div class="tech-stack">
+                            <span class="tech-pill">Python</span>
+                            <span class="tech-pill">Quantum</span>
+                            <span class="tech-pill">SINDY</span>
+                        </div>
+                        <a href="https://github.com/matibilkis/qmon_sindy" target="_blank" rel="noopener" class="card-link">View on GitHub →</a>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- Stats -->
+            <section class="content-section">
+                <div style="text-align: center; padding: var(--space-2xl) 0;">
+                    <p style="font-size: 1.1rem; max-width: none;">
+                        <strong>48+ repositories</strong> · <strong>115+ citations</strong> · <strong>9 papers</strong> · <strong>H-index: 4</strong>
+                    </p>
+                    <div style="margin-top: var(--space-lg);">
+                        <a href="https://github.com/matibilkis" target="_blank" rel="noopener" class="btn">
+                            💻 View all on GitHub
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p><a href="index.html">← Back to home</a></p>
+        <p style="margin-top: var(--space-sm);">Matías Bilkis &copy; 2026</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/stars.js"></script>
+</body>
+</html>
+
