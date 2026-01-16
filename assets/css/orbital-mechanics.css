@@ -1,0 +1,483 @@
+/* ================================
+   Three-Body Orbital Mechanics
+   Enhanced constellation with physics-inspired motion
+   ================================ */
+
+/* ===== Constellation Container ===== */
+.constellation {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    height: 500px;
+    margin: var(--space-xl) auto var(--space-lg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Center point (barycenter) */
+.constellation::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    background: var(--accent);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 20px var(--accent);
+    animation: pulse-center 3s ease-in-out infinite;
+    z-index: 0;
+}
+
+@keyframes pulse-center {
+    0%, 100% { opacity: 0.3; transform: translate(-50%, -50%) scale(1); }
+    50% { opacity: 0.8; transform: translate(-50%, -50%) scale(1.5); }
+}
+
+/* ===== Orbital Paths (Visual Guide) ===== */
+.orbital-path {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 1px dashed rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.orbital-path--1 {
+    width: 300px;
+    height: 300px;
+    margin: -150px 0 0 -150px;
+    animation: rotate-orbit-1 20s linear infinite;
+}
+
+.orbital-path--2 {
+    width: 350px;
+    height: 280px;
+    margin: -140px 0 0 -175px;
+    animation: rotate-orbit-2 25s linear infinite reverse;
+}
+
+.orbital-path--3 {
+    width: 320px;
+    height: 320px;
+    margin: -160px 0 0 -160px;
+    animation: rotate-orbit-3 30s linear infinite;
+}
+
+/* ===== Planet Container (Orbital Motion) ===== */
+.planet-orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: center;
+    z-index: 10;
+}
+
+/* Planet 1: Talks & Things (Yellow) */
+.planet-orbit--1 {
+    width: 300px;
+    height: 300px;
+    margin: -150px 0 0 -150px;
+    animation: orbit-1 20s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite;
+}
+
+/* Planet 2: Portfolio (Blue) */
+.planet-orbit--2 {
+    width: 350px;
+    height: 280px;
+    margin: -140px 0 0 -175px;
+    animation: orbit-2 25s cubic-bezier(0.4, 0.1, 0.6, 0.9) infinite;
+    animation-delay: -8s;
+}
+
+/* Planet 3: Projects (Green) */
+.planet-orbit--3 {
+    width: 320px;
+    height: 320px;
+    margin: -160px 0 0 -160px;
+    animation: orbit-3 30s cubic-bezier(0.35, 0.15, 0.65, 0.85) infinite;
+    animation-delay: -15s;
+}
+
+/* Orbital animations (elliptical paths) */
+@keyframes orbit-1 {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes orbit-2 {
+    0% { transform: rotate(0deg) scaleX(1.1); }
+    100% { transform: rotate(360deg) scaleX(1.1); }
+}
+
+@keyframes orbit-3 {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* ===== Planet Sphere ===== */
+.planet {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 160px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: var(--bg-surface);
+    border: 3px solid rgba(255, 255, 255, 0.15);
+    cursor: pointer;
+    transition: all var(--transition-smooth);
+    text-decoration: none;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    overflow: visible;
+    z-index: 10;
+    
+    /* Counter-rotate to keep planet upright */
+    animation: counter-spin 20s linear infinite reverse;
+}
+
+/* Counter-rotation for each planet */
+.planet-orbit--1 .planet {
+    animation: counter-spin-1 20s linear infinite reverse;
+}
+
+.planet-orbit--2 .planet {
+    animation: counter-spin-2 25s linear infinite;
+}
+
+.planet-orbit--3 .planet {
+    animation: counter-spin-3 30s linear infinite reverse;
+}
+
+@keyframes counter-spin-1 {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(-360deg); }
+}
+
+@keyframes counter-spin-2 {
+    0% { transform: rotate(0deg) scaleX(0.91); }
+    100% { transform: rotate(-360deg) scaleX(0.91); }
+}
+
+@keyframes counter-spin-3 {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(-360deg); }
+}
+
+/* Planet-specific styles */
+.planet--talks {
+    border-color: var(--miro-yellow);
+    background: linear-gradient(135deg, var(--bg-surface) 0%, rgba(255, 214, 10, 0.1) 100%);
+}
+
+.planet--portfolio {
+    border-color: var(--miro-blue);
+    background: linear-gradient(135deg, var(--bg-surface) 0%, rgba(10, 132, 255, 0.1) 100%);
+}
+
+.planet--projects {
+    border-color: var(--miro-green);
+    background: linear-gradient(135deg, var(--bg-surface) 0%, rgba(48, 209, 88, 0.1) 100%);
+}
+
+/* ===== Planet Hover Effects ===== */
+.planet:hover {
+    transform: scale(1.15);
+    border-width: 4px;
+    z-index: 100;
+}
+
+.planet--talks:hover {
+    border-color: var(--miro-yellow);
+    box-shadow: 
+        0 8px 40px rgba(255, 214, 10, 0.4),
+        0 0 60px rgba(255, 214, 10, 0.2);
+}
+
+.planet--portfolio:hover {
+    border-color: var(--miro-blue);
+    box-shadow: 
+        0 8px 40px rgba(10, 132, 255, 0.4),
+        0 0 60px rgba(10, 132, 255, 0.2);
+}
+
+.planet--projects:hover {
+    border-color: var(--miro-green);
+    box-shadow: 
+        0 8px 40px rgba(48, 209, 88, 0.4),
+        0 0 60px rgba(48, 209, 88, 0.2);
+}
+
+/* Pause orbit on hover */
+.planet-orbit:hover {
+    animation-play-state: paused;
+}
+
+.planet:hover {
+    animation-play-state: paused;
+}
+
+/* ===== Planet Icon ===== */
+.planet__icon {
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+    animation: icon-float 3s ease-in-out infinite;
+}
+
+@keyframes icon-float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+}
+
+.planet:hover .planet__icon {
+    animation-play-state: paused;
+    transform: scale(1.1);
+}
+
+/* ===== Planet Label ===== */
+.planet__label {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    text-align: center;
+    line-height: 1.2;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    letter-spacing: 0.02em;
+}
+
+/* ===== Planet Atmosphere (Glow) ===== */
+.planet::after {
+    content: '';
+    position: absolute;
+    inset: -15px;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.planet--talks::after {
+    background: radial-gradient(circle, rgba(255, 214, 10, 0.4) 0%, transparent 70%);
+}
+
+.planet--portfolio::after {
+    background: radial-gradient(circle, rgba(10, 132, 255, 0.4) 0%, transparent 70%);
+}
+
+.planet--projects::after {
+    background: radial-gradient(circle, rgba(48, 209, 88, 0.4) 0%, transparent 70%);
+}
+
+.planet:hover::after {
+    opacity: 1;
+    animation: pulse-glow 2s ease-in-out infinite;
+}
+
+@keyframes pulse-glow {
+    0%, 100% { transform: scale(1); opacity: 0.6; }
+    50% { transform: scale(1.1); opacity: 1; }
+}
+
+/* ===== Orbital Trails ===== */
+.planet::before {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: currentColor;
+    border-radius: 50%;
+    opacity: 0.3;
+    top: 50%;
+    left: -20px;
+    box-shadow: 
+        -15px 0 0 -1px currentColor,
+        -30px 0 0 -2px currentColor,
+        -45px 0 0 -3px currentColor;
+    pointer-events: none;
+}
+
+/* ===== Connecting Lines (Gravitational Bonds) ===== */
+.constellation-lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+}
+
+/* ===== Mobile Optimization ===== */
+@media (max-width: 768px) {
+    .constellation {
+        height: 450px;
+        max-width: 100%;
+    }
+    
+    .planet {
+        width: 130px;
+        height: 130px;
+    }
+    
+    .planet__icon {
+        font-size: 2.8rem;
+    }
+    
+    .planet__label {
+        font-size: 0.85rem;
+    }
+    
+    .orbital-path--1 {
+        width: 250px;
+        height: 250px;
+        margin: -125px 0 0 -125px;
+    }
+    
+    .orbital-path--2 {
+        width: 290px;
+        height: 230px;
+        margin: -115px 0 0 -145px;
+    }
+    
+    .orbital-path--3 {
+        width: 270px;
+        height: 270px;
+        margin: -135px 0 0 -135px;
+    }
+    
+    .planet-orbit--1 {
+        width: 250px;
+        height: 250px;
+        margin: -125px 0 0 -125px;
+    }
+    
+    .planet-orbit--2 {
+        width: 290px;
+        height: 230px;
+        margin: -115px 0 0 -145px;
+    }
+    
+    .planet-orbit--3 {
+        width: 270px;
+        height: 270px;
+        margin: -135px 0 0 -135px;
+    }
+}
+
+@media (max-width: 480px) {
+    .constellation {
+        height: 400px;
+    }
+    
+    .planet {
+        width: 110px;
+        height: 110px;
+    }
+    
+    .planet__icon {
+        font-size: 2.4rem;
+        margin-bottom: 0.3rem;
+    }
+    
+    .planet__label {
+        font-size: 0.75rem;
+    }
+    
+    /* Smaller orbits for mobile */
+    .orbital-path--1,
+    .planet-orbit--1 {
+        width: 200px;
+        height: 200px;
+        margin: -100px 0 0 -100px;
+    }
+    
+    .orbital-path--2,
+    .planet-orbit--2 {
+        width: 240px;
+        height: 190px;
+        margin: -95px 0 0 -120px;
+    }
+    
+    .orbital-path--3,
+    .planet-orbit--3 {
+        width: 220px;
+        height: 220px;
+        margin: -110px 0 0 -110px;
+    }
+}
+
+/* ===== Reduced Motion ===== */
+@media (prefers-reduced-motion: reduce) {
+    .planet-orbit,
+    .planet,
+    .orbital-path,
+    .planet__icon,
+    .planet::after {
+        animation: none !important;
+    }
+    
+    /* Static positions for reduced motion */
+    .planet-orbit--1 {
+        transform: rotate(30deg);
+    }
+    
+    .planet-orbit--2 {
+        transform: rotate(150deg) scaleX(1.1);
+    }
+    
+    .planet-orbit--3 {
+        transform: rotate(270deg);
+    }
+    
+    .planet {
+        transform: rotate(-30deg);
+    }
+    
+    .planet-orbit--2 .planet {
+        transform: rotate(-150deg) scaleX(0.91);
+    }
+    
+    .planet-orbit--3 .planet {
+        transform: rotate(-270deg);
+    }
+}
+
+/* ===== High Performance Mode ===== */
+.constellation.performance-mode .orbital-path {
+    display: none;
+}
+
+.constellation.performance-mode .planet::before {
+    display: none;
+}
+
+/* ===== Accessibility ===== */
+.planet:focus-visible {
+    outline: 3px solid var(--accent);
+    outline-offset: 8px;
+    z-index: 100;
+}
+
+/* ===== Print Styles ===== */
+@media print {
+    .planet-orbit,
+    .planet,
+    .orbital-path {
+        animation: none !important;
+    }
+    
+    .constellation::before {
+        display: none;
+    }
+}
+

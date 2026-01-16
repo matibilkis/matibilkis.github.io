@@ -22,6 +22,7 @@
     <!-- Styles -->
     <link rel="stylesheet" href="assets/css/main.css">
     <link rel="stylesheet" href="assets/css/ux-enhancements.css">
+    <link rel="stylesheet" href="assets/css/orbital-mechanics.css">
 </head>
 <body>
     <!-- Stars Background -->
@@ -54,22 +55,50 @@
                 Building quantum tech at the edge of art and science
             </p>
 
-            <!-- Constellation Navigation -->
-            <div class="constellation">
-                <a href="talks.html" class="planet planet--talks">
-                    <span class="planet__icon">🎸</span>
-                    <span class="planet__label">Talks & Things</span>
-                </a>
+            <!-- Constellation Navigation - Three-Body Orbital System -->
+            <div class="constellation" id="constellation">
+                <!-- Orbital paths (visual guides) -->
+                <div class="orbital-path orbital-path--1"></div>
+                <div class="orbital-path orbital-path--2"></div>
+                <div class="orbital-path orbital-path--3"></div>
                 
-                <a href="portfolio.html" class="planet planet--portfolio">
-                    <span class="planet__icon">🔬</span>
-                    <span class="planet__label">Portfolio</span>
-                </a>
+                <!-- Planet 1: Talks & Things -->
+                <div class="planet-orbit planet-orbit--1">
+                    <a href="talks.html" class="planet planet--talks" 
+                       role="button" 
+                       aria-label="Navigate to Talks & Things"
+                       tabindex="0">
+                        <span class="planet__icon" aria-hidden="true">🎸</span>
+                        <span class="planet__label">Talks & Things</span>
+                    </a>
+                </div>
                 
-                <a href="projects.html" class="planet planet--projects">
-                    <span class="planet__icon">🚀</span>
-                    <span class="planet__label">Projects</span>
-                </a>
+                <!-- Planet 2: Portfolio -->
+                <div class="planet-orbit planet-orbit--2">
+                    <a href="portfolio.html" class="planet planet--portfolio"
+                       role="button"
+                       aria-label="Navigate to Portfolio"
+                       tabindex="0">
+                        <span class="planet__icon" aria-hidden="true">🔬</span>
+                        <span class="planet__label">Portfolio</span>
+                    </a>
+                </div>
+                
+                <!-- Planet 3: Projects -->
+                <div class="planet-orbit planet-orbit--3">
+                    <a href="projects.html" class="planet planet--projects"
+                       role="button"
+                       aria-label="Navigate to Ongoing Projects"
+                       tabindex="0">
+                        <span class="planet__icon" aria-hidden="true">🚀</span>
+                        <span class="planet__label">Projects</span>
+                    </a>
+                </div>
+                
+                <!-- SVG for connecting lines (optional) -->
+                <svg class="constellation-lines" width="100%" height="100%">
+                    <!-- Lines will be drawn dynamically if needed -->
+                </svg>
             </div>
         </div>
     </section>
