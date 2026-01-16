@@ -132,38 +132,7 @@ body.loaded {
 }
 
 /* ===== Planet Glow Effect ===== */
-.planet {
-    position: relative;
-}
-
-.planet::after {
-    content: '';
-    position: absolute;
-    inset: -10px;
-    border-radius: 50%;
-    background: radial-gradient(circle, currentColor 0%, transparent 70%);
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    pointer-events: none;
-    z-index: -1;
-}
-
-.planet--talks::after {
-    color: var(--miro-yellow);
-}
-
-.planet--portfolio::after {
-    color: var(--miro-blue);
-}
-
-.planet--projects::after {
-    color: var(--miro-green);
-}
-
-.planet:hover::after,
-.planet:focus::after {
-    opacity: 0.3;
-}
+/* Moved to orbital-mechanics.css for three-body system */
 
 /* ===== Quantum Pulse Animation ===== */
 @keyframes quantum-pulse {
