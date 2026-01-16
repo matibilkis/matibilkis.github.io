@@ -1,5 +1,44 @@
 # Changelog
 
+## 2026-01-15 - Three-Body Orbital System 🌌
+
+### ✨ Major Feature: Physics-Inspired Planet Navigation
+
+**Enhanced Constellation System:**
+- Replaced static planets with dynamic three-body orbital system
+- Each planet now orbits around common barycenter
+- Physics-inspired motion (20s, 25s, 30s periods)
+- Elliptical and circular orbits for variety
+- Counter-rotation keeps planets upright
+
+**Visual Enhancements:**
+- 🪐 Planets 45% larger (110px → 160px)
+- 🌟 Pulsing barycenter at center
+- ✨ Gravitational bonds (dynamic SVG lines)
+- 🎨 Enhanced glow effects on hover
+- 🌊 Ripple effect on click
+- 👁️ Orbital path guides
+
+**Animations:**
+- Planet rotation (orbit)
+- Planet spin (counter-rotation)
+- Icon floating
+- Atmospheric glow
+- Quantum entanglement (planets react to each other)
+
+**Performance:**
+- Automatic performance mode (FPS monitoring)
+- Mobile optimization
+- GPU-accelerated animations
+- Reduced motion support
+
+**Added Files:**
+- `assets/css/orbital-mechanics.css` (600+ lines)
+- `assets/js/orbital-system.js` (300+ lines)
+- `ORBITAL_SYSTEM.md` (comprehensive docs)
+
+---
+
 ## 2026-01-15 - UX Optimization & YouTube Integration
 
 ### ✨ New Features

@@ -161,12 +161,19 @@ Your site will be live at **https://matibilkis.github.io/** in a few minutes.
 ## ✨ Features
 
 - **Dark minimalist design** with Miró-inspired colors
-- **Constellation navigation** with 3 interactive planets
+- **Three-body orbital system** - Physics-inspired planet navigation 🌌
+  - Planets orbit around common barycenter
+  - Different speeds (20s, 25s, 30s periods)
+  - Gravitational bonds (dynamic SVG lines)
+  - Quantum entanglement effects
 - **Blinking stars animation** (80 randomly positioned stars)
+- **15+ micro-interactions** (hover, click, scroll animations)
 - **Fully responsive** (mobile, tablet, desktop)
 - **Fast loading** (no frameworks, pure HTML/CSS/JS)
 - **Easy to edit** (all content marked with comments)
-- **Accessible** (keyboard navigation, WCAG AA contrast)
+- **Accessible** (keyboard navigation, WCAG AA compliant)
+- **Automated testing** (HTML, links, accessibility, performance)
+- **CI/CD pipeline** (GitHub Actions)
 
 ---
 
@@ -191,7 +198,13 @@ Your site will be live at **https://matibilkis.github.io/** in a few minutes.
 
 ## 📚 Documentation
 
+- `QUICK_START.md` - 5-minute quick start guide
 - `WORKFLOW.md` - Complete build workflow and brand guidelines
+- `ORBITAL_SYSTEM.md` - Three-body orbital mechanics explained
+- `UX_ANALYSIS.md` - UX improvements and strategy
+- `TESTING.md` - Testing guide and automation
+- `ANALYTICS_SETUP.md` - Analytics and monitoring options
+- `HOW_TO_ADD_VIDEOS.md` - YouTube video management
 - `.cursorrules` - Cursor AI code conventions and patterns
 
 ---
