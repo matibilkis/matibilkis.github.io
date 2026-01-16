@@ -6,50 +6,51 @@
 /* ===== Page Layout ===== */
 .subpage {
     min-height: 100vh;
-    padding-top: 100px;
-    padding-bottom: var(--space-2xl);
+    padding-top: 90px;
+    padding-bottom: var(--space-xl);
 }
 
 .page-header {
     text-align: center;
-    margin-bottom: var(--space-2xl);
-    padding: var(--space-xl) var(--space-lg);
+    margin-bottom: var(--space-xl);
+    padding: var(--space-lg);
 }
 
 .page-header h1 {
-    margin-bottom: var(--space-sm);
+    margin-bottom: var(--space-xs);
 }
 
 .page-subtitle {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: var(--text-muted);
     max-width: none;
+    line-height: 1.5;
 }
 
 /* ===== Content Sections ===== */
 .content-section {
-    margin-bottom: var(--space-2xl);
+    margin-bottom: var(--space-xl);
 }
 
 .content-section h2 {
-    margin-bottom: var(--space-lg);
-    padding-bottom: var(--space-sm);
+    margin-bottom: var(--space-md);
+    padding-bottom: var(--space-xs);
     border-bottom: 2px solid rgba(255, 255, 255, 0.05);
 }
 
 /* ===== Cards Grid ===== */
 .cards-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: var(--space-lg);
-    margin-bottom: var(--space-xl);
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: var(--space-md);
+    margin-bottom: var(--space-lg);
 }
 
 .card {
     background: var(--bg-surface);
     border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 12px;
-    padding: var(--space-lg);
+    border-radius: 10px;
+    padding: var(--space-md) var(--space-lg);
     transition: all var(--transition-smooth);
     position: relative;
 }
@@ -215,6 +216,77 @@
 .timeline-links a {
     font-size: 0.9rem;
     font-weight: 600;
+}
+
+/* ===== YouTube Video Grid ===== */
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: var(--space-lg);
+    margin-bottom: var(--space-lg);
+}
+
+.video-card {
+    background: var(--bg-surface);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all var(--transition-smooth);
+}
+
+.video-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--miro-red);
+    box-shadow: 0 8px 24px rgba(255, 59, 48, 0.2);
+}
+
+.video-embed {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    background: #000;
+}
+
+.video-embed iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.video-info {
+    padding: var(--space-md);
+}
+
+.video-info h3 {
+    margin-top: 0;
+    margin-bottom: var(--space-xs);
+    color: var(--text-primary);
+}
+
+.video-info p {
+    font-size: 0.9rem;
+    margin-bottom: var(--space-xs);
+}
+
+.video-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-xs);
+    margin-top: var(--space-sm);
+}
+
+.video-tag {
+    padding: 0.25rem 0.5rem;
+    background: rgba(255, 59, 48, 0.1);
+    color: var(--miro-red);
+    font-size: 0.7rem;
+    font-weight: 600;
+    border-radius: 4px;
+    text-transform: lowercase;
 }
 
 /* ===== Active Nav State ===== */

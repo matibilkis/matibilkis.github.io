@@ -19,8 +19,10 @@ website/
 │   ├── css/
 │   │   ├── main.css        # Main styles (colors, typography, layout)
 │   │   └── subpages.css    # Subpage styles (cards, timeline)
-│   └── js/
-│       └── stars.js        # Blinking stars animation
+│   ├── js/
+│   │   ├── stars.js        # Blinking stars animation
+│   │   └── videos.js       # YouTube video loader
+│   └── videos.json         # YouTube video data
 ├── archive/                # Old site backups
 ├── WORKFLOW.md             # Full project workflow and guidelines
 └── .cursorrules            # Cursor AI guidelines
@@ -76,6 +78,31 @@ All content is marked with HTML comments for easy editing:
     </div>
 </div>
 ```
+
+### Adding YouTube Videos (`assets/videos.json`)
+```json
+{
+  "videos": [
+    {
+      "id": "VIDEO_ID_HERE",
+      "title": "Video Title",
+      "description": "Short description",
+      "category": "art",
+      "tags": ["tag1", "tag2"]
+    }
+  ]
+}
+```
+
+**Categories:**
+- `"art"` - Shows in "Artistic & Creative Work" section
+- `"talk"` - Shows in "Talks" section (if you add this section)
+- Leave blank or use other value for general videos
+
+**To add a new video:**
+1. Get YouTube video ID from URL (e.g., `y_aVeya0k5U` from `https://www.youtube.com/watch?v=y_aVeya0k5U`)
+2. Add entry to `assets/videos.json`
+3. Videos load automatically on page refresh!
 
 ---
 
@@ -146,10 +173,11 @@ Your site will be live at **https://matibilkis.github.io/** in a few minutes.
 ## 📝 Quick Tips
 
 1. **Add a new talk/project:** Copy an existing `.card` or `.timeline-item` block and edit
-2. **Change colors:** Edit CSS variables in `assets/css/main.css`
-3. **Adjust stars:** Change `numberOfStars` in `assets/js/stars.js`
-4. **Add images:** Place in `assets/` and reference with relative paths
-5. **Test locally first:** Always run local server before pushing to GitHub
+2. **Add YouTube videos:** Edit `assets/videos.json` with video ID, title, description
+3. **Change colors:** Edit CSS variables in `assets/css/main.css`
+4. **Adjust stars:** Change `numberOfStars` in `assets/js/stars.js` (currently 80)
+5. **Add images:** Place in `assets/` and reference with relative paths
+6. **Test locally first:** Always run local server before pushing to GitHub
 
 ---
 
