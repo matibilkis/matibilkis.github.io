@@ -1,0 +1,32 @@
+{
+  "name": "matias-bilkis-website",
+  "version": "2.0.0",
+  "description": "Personal website for Matías Bilkis - Quantum scientist, artivist, entrepreneur",
+  "scripts": {
+    "test": "bash tests/run-all-tests.sh",
+    "test:html": "node tests/test-html.js",
+    "test:links": "node tests/test-links.js",
+    "test:a11y": "bash tests/test-accessibility.sh",
+    "test:perf": "bash tests/test-performance.sh",
+    "dev": "python3 -m http.server 8000",
+    "serve": "python3 -m http.server 8000",
+    "lint": "echo 'No linting configured - using browser console'"
+  },
+  "keywords": [
+    "quantum",
+    "machine-learning",
+    "portfolio",
+    "personal-website"
+  ],
+  "author": "Matías Bilkis <matias@qutsur.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/matibilkis/matibilkis.github.io.git"
+  },
+  "devDependencies": {
+    "pa11y": "^7.0.0",
+    "lighthouse": "^11.0.0"
+  }
+}
+
