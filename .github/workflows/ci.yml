@@ -1,0 +1,89 @@
+name: CI - Test & Deploy
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  test:
+    name: Run Tests
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: 📥 Checkout code
+        uses: actions/checkout@v4
+      
+      - name: 🔧 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+      
+      - name: 🔧 Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      
+      - name: 📦 Install test dependencies
+        run: |
+          npm install -g pa11y lighthouse
+          pip install html5validator
+      
+      - name: 🧪 Run HTML validation
+        run: node tests/test-html.js
+        continue-on-error: false
+      
+      - name: 🧪 Run link checking
+        run: node tests/test-links.js
+        continue-on-error: false
+      
+      - name: 🧪 Run accessibility tests
+        run: bash tests/test-accessibility.sh
+        continue-on-error: true # Don't fail on accessibility for now
+      
+      - name: 🧪 Run performance tests
+        run: bash tests/test-performance.sh
+        continue-on-error: true # Don't fail on performance for now
+      
+      - name: 📊 Upload test results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-results
+          path: tests/lighthouse-*.json
+          retention-days: 30
+  
+  deploy:
+    name: Deploy to GitHub Pages
+    needs: test
+    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
+    runs-on: ubuntu-latest
+    
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    
+    steps:
+      - name: 📥 Checkout code
+        uses: actions/checkout@v4
+      
+      - name: 🔧 Setup Pages
+        uses: actions/configure-pages@v4
+      
+      - name: 📤 Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+      
+      - name: 🚀 Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
+      
+      - name: ✅ Deployment successful
+        run: |
+          echo "🎉 Website deployed successfully!"
+          echo "🌐 Visit: ${{ steps.deployment.outputs.page_url }}"
+

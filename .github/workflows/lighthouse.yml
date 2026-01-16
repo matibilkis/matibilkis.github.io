@@ -1,0 +1,78 @@
+name: Lighthouse CI
+
+on:
+  schedule:
+    # Run daily at 00:00 UTC
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  lighthouse:
+    name: Lighthouse Performance Audit
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: 📥 Checkout code
+        uses: actions/checkout@v4
+      
+      - name: 🔧 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+      
+      - name: 📦 Install Lighthouse
+        run: npm install -g @lhci/cli lighthouse
+      
+      - name: 🔧 Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      
+      - name: 🚀 Start local server
+        run: |
+          python3 -m http.server 8080 &
+          sleep 3
+      
+      - name: 🏃 Run Lighthouse CI
+        run: |
+          lhci autorun --config=.lighthouserc.json || lighthouse http://localhost:8080/index.html --output=json --output-path=lighthouse-report.json --chrome-flags="--headless"
+      
+      - name: 📊 Upload Lighthouse report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lighthouse-report
+          path: |
+            lighthouse-report.json
+            .lighthouseci/
+          retention-days: 30
+      
+      - name: 📈 Comment PR with results
+        if: github.event_name == 'pull_request'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const report = JSON.parse(fs.readFileSync('lighthouse-report.json', 'utf8'));
+            const scores = report.categories;
+            
+            const comment = `
+            ## 🏆 Lighthouse Performance Report
+            
+            | Category | Score |
+            |----------|-------|
+            | 🚀 Performance | ${Math.round(scores.performance.score * 100)}% |
+            | ♿ Accessibility | ${Math.round(scores.accessibility.score * 100)}% |
+            | 🔍 SEO | ${Math.round(scores.seo.score * 100)}% |
+            | ✨ Best Practices | ${Math.round(scores['best-practices'].score * 100)}% |
+            
+            [View full report](https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }})
+            `;
+            
+            github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: comment
+            });
+
