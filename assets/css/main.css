@@ -318,3 +318,357 @@ footer p {
     border-width: 0;
 }
 
+/* ===== CONVERSION OPTIMIZATIONS ===== */
+
+/* Hero CTAs */
+.hero-ctas {
+    display: flex;
+    gap: var(--space-md);
+    justify-content: center;
+    margin-top: var(--space-xl);
+    flex-wrap: wrap;
+}
+
+.btn--primary {
+    background: var(--miro-blue);
+    border-color: var(--miro-blue);
+    color: white;
+}
+
+.btn--primary:hover {
+    background: #0070D9;
+    border-color: #0070D9;
+    color: white;
+}
+
+.btn--secondary {
+    background: var(--miro-green);
+    border-color: var(--miro-green);
+    color: white;
+}
+
+.btn--secondary:hover {
+    background: #28B24A;
+    border-color: #28B24A;
+    color: white;
+}
+
+/* Proof Badges */
+.proof-badges {
+    display: flex;
+    gap: var(--space-md);
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: var(--space-xl);
+    margin-bottom: var(--space-xl);
+}
+
+.proof-badge {
+    padding: var(--space-xs) var(--space-md);
+    background: rgba(10, 132, 255, 0.1);
+    border: 1px solid rgba(10, 132, 255, 0.3);
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: var(--text-primary);
+    white-space: nowrap;
+}
+
+/* Proof Section */
+.proof-section {
+    padding: var(--space-2xl) 0;
+    background: var(--bg-surface);
+}
+
+.proof-section h2 {
+    text-align: center;
+    margin-bottom: var(--space-xl);
+}
+
+.proof-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--space-lg);
+    margin-top: var(--space-xl);
+}
+
+.proof-card {
+    padding: var(--space-lg);
+    background: var(--bg-primary);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all var(--transition-smooth);
+}
+
+.proof-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(10, 132, 255, 0.15);
+}
+
+.proof-icon {
+    font-size: 2.5rem;
+    margin-bottom: var(--space-sm);
+}
+
+.proof-card h3 {
+    color: var(--text-primary);
+    margin-bottom: var(--space-xs);
+}
+
+.proof-metric {
+    color: var(--accent);
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-bottom: var(--space-sm);
+}
+
+.proof-card p:last-child {
+    margin-bottom: 0;
+}
+
+/* Offerings Section */
+.offerings-section {
+    padding: var(--space-2xl) 0;
+}
+
+.offerings-section h2 {
+    text-align: center;
+    margin-bottom: var(--space-xl);
+}
+
+.offerings-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-lg);
+    margin-top: var(--space-xl);
+}
+
+.offering-card {
+    padding: var(--space-xl);
+    background: var(--bg-surface);
+    border-radius: 12px;
+    border: 2px solid rgba(255, 255, 255, 0.05);
+    transition: all var(--transition-smooth);
+}
+
+.offering-card:hover {
+    border-color: rgba(10, 132, 255, 0.3);
+    transform: translateY(-4px);
+}
+
+.offering-card h3 {
+    color: var(--text-primary);
+    margin-bottom: var(--space-md);
+    font-size: 1.5rem;
+}
+
+.offering-card > p {
+    color: var(--text-muted);
+    margin-bottom: var(--space-lg);
+    max-width: none;
+}
+
+.offering-list {
+    list-style: none;
+    margin-bottom: var(--space-lg);
+    padding-left: 0;
+}
+
+.offering-list li {
+    padding: var(--space-xs) 0;
+    color: var(--text-muted);
+    position: relative;
+    padding-left: var(--space-md);
+}
+
+.offering-list li:before {
+    content: "→";
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+}
+
+.offering-card .btn {
+    width: 100%;
+    justify-content: center;
+    margin-top: var(--space-md);
+}
+
+/* CV Section */
+.cv-section {
+    padding: var(--space-2xl) 0;
+    background: var(--bg-surface);
+}
+
+.cv-section h2 {
+    text-align: center;
+    margin-bottom: var(--space-md);
+}
+
+.cv-intro {
+    text-align: center;
+    margin: 0 auto var(--space-xl);
+    max-width: none;
+}
+
+.cv-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--space-xl);
+    margin-top: var(--space-xl);
+}
+
+.cv-card {
+    padding: var(--space-xl);
+    background: var(--bg-primary);
+    border-radius: 12px;
+    border: 2px solid rgba(10, 132, 255, 0.2);
+    text-align: center;
+}
+
+.cv-card h3 {
+    color: var(--text-primary);
+    margin-bottom: var(--space-md);
+    font-size: 1.3rem;
+}
+
+.cv-description {
+    color: var(--text-muted);
+    margin-bottom: var(--space-lg);
+    text-align: left;
+    max-width: none;
+}
+
+.cv-description strong {
+    color: var(--text-primary);
+    display: block;
+    margin-bottom: var(--space-xs);
+}
+
+.cv-card .btn {
+    width: 100%;
+    justify-content: center;
+}
+
+.cv-footer {
+    text-align: center;
+    margin-top: var(--space-xl);
+    color: var(--text-muted);
+    max-width: none;
+}
+
+.cv-footer a {
+    color: var(--accent);
+    font-weight: 600;
+}
+
+/* Sticky CTA Bar (Desktop) */
+.sticky-cta {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(11, 15, 25, 0.95);
+    backdrop-filter: blur(12px);
+    border-top: 1px solid rgba(10, 132, 255, 0.2);
+    padding: var(--space-md) 0;
+    z-index: 100;
+    display: none;
+    animation: slideUp 0.3s ease;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.sticky-cta.visible {
+    display: block;
+}
+
+.sticky-cta-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--space-lg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--space-lg);
+}
+
+.sticky-cta-text {
+    flex: 1;
+}
+
+.sticky-cta-text h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: var(--text-primary);
+}
+
+.sticky-cta-text p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.sticky-cta-buttons {
+    display: flex;
+    gap: var(--space-md);
+    flex-shrink: 0;
+}
+
+.sticky-cta .btn {
+    padding: var(--space-sm) var(--space-lg);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .hero-ctas {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .hero-ctas .btn {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .proof-badges {
+        font-size: 0.8rem;
+    }
+    
+    .proof-badge {
+        padding: 0.4rem 0.8rem;
+    }
+    
+    .offerings-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .cv-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .sticky-cta-content {
+        flex-direction: column;
+        text-align: center;
+        gap: var(--space-md);
+    }
+    
+    .sticky-cta-buttons {
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .sticky-cta .btn {
+        width: 100%;
+    }
+}
+
