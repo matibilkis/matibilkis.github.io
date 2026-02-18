@@ -154,7 +154,7 @@ supported_languages: [en, es]
   <h2 class="quick-links-title">Quick Links</h2>
   <div class="quick-links-grid">
     <a href="/research/" class="quick-link">Research & Publications</a>
-    <a href="/projects/" class="quick-link">Developer Projects</a>
+    <a href="/projects/" class="quick-link">Code Development</a>
     <a href="/qutsur/" class="quick-link">QutSur Business</a>
     <a href="/talks/" class="quick-link">Talks & Presentations</a>
     <a href="/activities/" class="quick-link">Activities & Events</a>
@@ -171,7 +171,7 @@ supported_languages: [en, es]
   align-items: center;
   justify-content: center;
   padding: var(--spacing-4xl) var(--spacing-lg) var(--spacing-3xl);
-  margin: calc(-2rem - var(--spacing-lg)) calc(-1 * var(--spacing-lg)) var(--spacing-3xl);
+  margin: 0 calc(-1 * var(--spacing-lg)) var(--spacing-3xl);
   overflow: hidden;
   background: var(--gradient-hero);
 }
@@ -211,7 +211,7 @@ supported_languages: [en, es]
 .hero-content {
   display: grid;
   grid-template-columns: auto 1fr;
-  gap: var(--spacing-3xl);
+  gap: var(--spacing-2xl);
   align-items: center;
   animation: fadeIn 0.8s ease-out;
 }
@@ -219,8 +219,9 @@ supported_languages: [en, es]
 .hero-photos {
   position: relative;
   display: flex;
-  align-items: center;
-  gap: var(--spacing-md);
+  align-items: flex-start;
+  gap: 0;
+  flex-shrink: 0;
 }
 
 .photo-wrapper {
@@ -245,8 +246,10 @@ supported_languages: [en, es]
   width: 140px;
   height: 140px;
   border: 3px solid var(--color-bg-primary);
-  margin-left: calc(-1 * var(--spacing-xl));
+  margin-left: calc(-1 * var(--spacing-lg));
   margin-top: var(--spacing-xl);
+  position: relative;
+  z-index: 1;
 }
 
 .hero-photo {
@@ -270,6 +273,7 @@ supported_languages: [en, es]
 
 .hero-text {
   max-width: 600px;
+  padding-left: var(--spacing-md);
 }
 
 .hero-name {
@@ -326,6 +330,11 @@ supported_languages: [en, es]
   
   .hero-photos {
     justify-content: center;
+    align-items: center;
+  }
+  
+  .hero-text {
+    padding-left: 0;
   }
   
   .photo-wrapper.secondary-photo {

@@ -1,12 +1,12 @@
----
-title: Developer Portfolio
+   ---
+title: Code Development
 layout: default
 permalink: /projects/
 ---
 
 <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
 
-<h1 class="section-title">Developer Portfolio</h1>
+<h1 class="section-title">Code Development</h1>
 
 <div class="research-intro">
   Research-focused, deployment-ready projects in quantum and classical machine learning. 
