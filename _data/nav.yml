@@ -1,17 +1,9 @@
 links:
-  - title: about
+  - title: About
     url: /
-  - title: research
-    url: /research
-  - title: Code Development
-    url: /projects
-  - title: qutsur
-    url: /qutsur
-  - title: talks
+  - title: Papers
+    url: /papers
+  - title: Coding
+    url: /coding
+  - title: Talks
     url: /talks
-  - title: activities
-    url: /activities
-  - title: contact
-    url: /contact
-  - title: es
-    url: /es/
