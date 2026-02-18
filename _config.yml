@@ -1,41 +1,17 @@
-title: Matias Bikis
-navbar_title:
+title: Matias Bilkis
 author:
-  name: Matias Bilkis # Your name
-  email: matiasbilkis[]@gmail.com
+  name: Matias Bilkis
 url: ""
-baseurl: "" # The subpath of your site, e.g. /blog
+baseurl: ""
 
-
-jekyllacademic:
-  homepage_title: "Matias Bilkis " # Your homepage title
-  disqusname: # Your disqus sitename
-  footer: 2025 # Your name, Year
-  contentlicense:
-  socials:
-    twitter: matibilkis # Your twitter username
-    github: matibilkis # Your github username
-    linkedin: matias-bilkis-8667501bb # Your linkedin
-
-# No need to edit this part, however if you want to, that's fine as well
-permalink: pretty
 markdown: kramdown
 kramdown:
   input: GFM
-  syntax_highlighter_opts:
-    disable: true
 
 collections:
   pages:
     output: true
     permalink: /:name
-  # posts:
-  #   output: true
-  #   permalink: /:year/:month/:day/:slug
-  projects:
-    output: true
-    permalink: /:collection/:title
 
 plugins:
-  - jekyll-sitemap
   - jekyll-seo-tag
