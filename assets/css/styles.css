@@ -211,6 +211,75 @@
   border-bottom: 1px solid var(--color-border);
 }
 
+/* Coding Page */
+
+.coding-page {
+  max-width: 720px;
+}
+
+.coding-page .page-title {
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.main-content:has(.coding-page) {
+  align-items: flex-start;
+  padding-top: 2.5rem;
+  padding-bottom: 2rem;
+}
+
+.coding-section-title {
+  font-size: var(--font-size-sm);
+  font-weight: 300;
+  color: var(--color-text-dim);
+  margin-top: 1.2rem;
+  margin-bottom: 0.6rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.coding-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.coding-item {
+  padding: 0.4rem 0;
+}
+
+.coding-item-title {
+  font-size: var(--font-size-sm);
+  font-weight: 400;
+}
+
+.coding-item-title a {
+  color: var(--color-text);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.coding-item-title a:hover {
+  color: var(--color-accent);
+  border-bottom-color: var(--color-accent);
+}
+
+.coding-item-meta {
+  font-size: 0.65rem;
+  color: var(--color-text-dim);
+  margin-top: 0.1rem;
+}
+
+.coding-cites {
+  color: var(--color-text-muted);
+}
+
+.coding-item-desc {
+  font-size: 0.65rem;
+  color: var(--color-text-muted);
+  line-height: 1.4;
+  margin-top: 0.15rem;
+}
+
 /* Talks Page */
 
 .talks-page {
