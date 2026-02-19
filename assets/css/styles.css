@@ -212,6 +212,126 @@
   border-bottom: 1px solid var(--color-border);
 }
 
+/* Talks Page */
+
+.talks-page {
+  max-width: 720px;
+}
+
+.talks-page .page-title {
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.main-content:has(.talks-page) {
+  align-items: flex-start;
+  padding-top: 2.5rem;
+  padding-bottom: 2rem;
+}
+
+.talks-section-title {
+  font-size: var(--font-size-sm);
+  font-weight: 300;
+  color: var(--color-text-dim);
+  margin-top: 1.2rem;
+  margin-bottom: 0.6rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.talks-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.2rem;
+}
+
+.talk-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.talk-title {
+  font-size: var(--font-size-sm);
+  font-weight: 400;
+}
+
+.talk-video {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  background: var(--color-bg);
+}
+
+.talk-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--color-border);
+  border-radius: 2px;
+}
+
+.talk-video-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-border);
+  border-radius: 2px;
+}
+
+.talk-video-link a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: var(--color-text-dim);
+  transition: color var(--transition);
+}
+
+.talk-video-link a:hover {
+  color: var(--color-accent);
+}
+
+.talk-video-link .play-icon {
+  font-size: 1.5rem;
+}
+
+.talk-video-link .play-label {
+  font-size: 0.65rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.talks-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.talk-item {
+  padding: 0.3rem 0;
+}
+
+.talk-item-title {
+  font-size: var(--font-size-sm);
+  font-weight: 400;
+}
+
+.talk-item-desc {
+  font-size: 0.65rem;
+  color: var(--color-text-muted);
+  line-height: 1.4;
+  margin-top: 0.1rem;
+}
+
 /* PDF viewer overlay */
 
 .pdf-overlay {
@@ -295,5 +415,9 @@
     flex-direction: column;
     gap: 2rem;
     text-align: center;
+  }
+
+  .talks-grid {
+    grid-template-columns: 1fr;
   }
 }
