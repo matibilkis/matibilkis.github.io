@@ -12,28 +12,28 @@ permalink: /talks
   <div class="talks-grid">
 
     <div class="talk-card">
-      <div class="talk-title">Quantum Computing Seminar I</div>
+      <div class="talk-title">Quantum & Finance</div>
       <div class="talk-video">
         <iframe src="https://www.youtube.com/embed/OkHlyQxSkaU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
 
     <div class="talk-card">
-      <div class="talk-title">Quantum Computing Seminar II</div>
+      <div class="talk-title">Quantum & industrial processes</div>
       <div class="talk-video">
         <iframe src="https://www.youtube.com/embed/ELZt_7dH7Xw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
 
     <div class="talk-card">
-      <div class="talk-title">Quantum Computing Seminar III</div>
+      <div class="talk-title">Quantum, ML, security & internet Seminar III</div>
       <div class="talk-video">
         <iframe src="https://www.youtube.com/embed/VFB0sy-IHjw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
 
     <div class="talk-card">
-      <div class="talk-title">Quantum &amp; Blockchain Live</div>
+      <div class="talk-title">Quantum Tech beyond the hype</div>
       <div class="talk-video talk-video-link">
         <a href="https://x.com/i/broadcasts/1OyKAjAlrryGb" target="_blank" rel="noopener">
           <span class="play-icon">&#9654;</span>
