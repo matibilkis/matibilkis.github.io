@@ -17,7 +17,4 @@ layout: default
       </p>
     </div>
   </div>
-  <div class="landing-photo">
-    <img src="{{ '/assets/images/foto_lead.png' | relative_url }}" alt="Matias Bilkis" />
-  </div>
 </div>
