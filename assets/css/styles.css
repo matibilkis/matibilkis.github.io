@@ -109,6 +109,112 @@
   border-bottom: 1px solid var(--color-border);
 }
 
+/* Papers Page */
+
+.papers-page .page-title {
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+}
+
+.papers-page {
+  max-width: 720px;
+}
+
+.papers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.paper {
+  padding: 0.4rem 0;
+}
+
+.paper-title {
+  font-size: var(--font-size-sm);
+  font-weight: 400;
+}
+
+.paper-title a {
+  color: var(--color-text);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.paper-title a:hover {
+  color: var(--color-accent);
+  border-bottom-color: var(--color-accent);
+}
+
+.paper-meta {
+  font-size: 0.65rem;
+  color: var(--color-text-dim);
+  margin-top: 0.1rem;
+}
+
+.paper-cites {
+  color: var(--color-text-muted);
+}
+
+.paper-desc {
+  font-size: 0.65rem;
+  color: var(--color-text-muted);
+  line-height: 1.4;
+  margin-top: 0.15rem;
+}
+
+.papers-section-title {
+  font-size: var(--font-size-sm);
+  font-weight: 300;
+  color: var(--color-text-dim);
+  margin-top: 1.2rem;
+  margin-bottom: 0.6rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+/* PDF viewer overlay */
+
+.pdf-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.85);
+  z-index: 200;
+  align-items: center;
+  justify-content: center;
+}
+
+.pdf-overlay.active {
+  display: flex;
+}
+
+.pdf-overlay iframe {
+  width: 70%;
+  height: 85%;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+}
+
+.pdf-close {
+  position: fixed;
+  top: 1rem;
+  right: 1.5rem;
+  font-size: 1.5rem;
+  color: var(--color-text-muted);
+  cursor: pointer;
+  z-index: 201;
+  background: none;
+  border: none;
+  font-family: var(--font-sans);
+}
+
+.pdf-close:hover {
+  color: var(--color-accent);
+}
+
 /* Responsive */
 
 @media (max-width: 768px) {
