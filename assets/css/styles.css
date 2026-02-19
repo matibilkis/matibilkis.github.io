@@ -120,6 +120,12 @@
   max-width: 720px;
 }
 
+.main-content:has(.papers-page) {
+  align-items: flex-start;
+  padding-top: 2.5rem;
+  padding-bottom: 2rem;
+}
+
 .papers-list {
   display: flex;
   flex-direction: column;
@@ -153,6 +159,18 @@
 
 .paper-cites {
   color: var(--color-text-muted);
+}
+
+.pdf-link {
+  font-size: 0.6rem;
+  color: var(--color-text-dim);
+  border-bottom: none !important;
+  text-transform: lowercase;
+  letter-spacing: 0.05em;
+}
+
+.pdf-link:hover {
+  color: var(--color-accent);
 }
 
 .paper-desc {
