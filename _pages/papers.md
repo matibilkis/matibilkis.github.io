@@ -91,6 +91,28 @@ permalink: /papers
 
 <script>
 function openPdf(url) {
+  var active = document.activeElement;
+  var paperTitle = '';
+  var paperUrl = '';
+
+  if (active && active.classList && active.classList.contains('pdf-link')) {
+    var paperTitleContainer = active.parentElement;
+    var primaryLink = paperTitleContainer ? paperTitleContainer.querySelector('a:not(.pdf-link)') : null;
+    if (primaryLink) {
+      paperTitle = (primaryLink.textContent || '').trim();
+      paperUrl = primaryLink.href || '';
+    }
+  }
+
+  if (typeof window.gtag === 'function') {
+    window.gtag('event', 'paper_pdf_open', {
+      pdf_url: url,
+      paper_title: paperTitle,
+      paper_url: paperUrl,
+      page_path: window.location.pathname
+    });
+  }
+
   document.getElementById('pdfFrame').src = url;
   document.getElementById('pdfOverlay').classList.add('active');
 }

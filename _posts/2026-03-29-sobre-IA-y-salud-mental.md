@@ -1,0 +1,25 @@
+---
+layout: post
+title: Sobre IA y salud mental
+summary: algunos comentarios e ideas que se me ocurrieron 
+---
+
+Hace apenas unos días que salió al aire el episodio número 4 de Mundo Cuántico (este programa de radio en TXSPlus que decidí empezar). Si bien en el programa de radio discutimos - primariamente - sobre tecnologías cuánticas, decidí que el cuarto episodio funcione como pulmón, para intentar plasmar (al menos en el schedule) la importancia sobre el uso, consumo y algunos abusos de la tecnología en el plano social/comunitario. Si te interesa escuchar el programa, lo podés hacer desde <a href="https://www.youtube.com/watch?v=yDQa2okM2XA&t=36s">este link en YouTube</a>.
+
+A lo largo del último año (desde que me radiqué nuevamnete en mi querida ciudad natal, La Plata), me la pasé dando charlas en distintos ambientes. En parte, para descrubrir nuevas plataformas profesionales y colaborativas (quién pudiera esconder <i>tan</i> bien la urgencia laboral de tamaño desarraigo), y en parte para poder - genuinamente - contrastar ciertos interrogantes propios, que cada tanto eligen bailar en el pantanoso terreno de lo interdisciplinar. Ejemplos más concretos de estas charlas: "el impacto de la IA en la industria musical" (charla que dí en la UADE hacia ¿Noviembre? del año 2025), y "Inteligencia artificial y salud mental", otra charla que di, en un terreno totalmente nuevo para mí, que fue la residencia de psiquiatría inantil del Hospital de Niños de La Plata. El formato charla, como podrá intuir el lector, me sienta bastante bien, aunque intento ser cuidadoso, y sobretodo en sitios como el Hospi.
+
+Preparar la charla del Hospital de Niños me gustó mucho. Es algo que hicimos con Stella, referente de toda la vida, y quien me animó a dar esta charla en primer lugar. ¿De qué puede hablar un físico en el hospital de niños, residencia de psiquiatria infantil, after all? 
+
+En la charla, intenté ser lo más sincero, honesto que puede [ser un físico], y con mis (a veces extraordinarias) cualidades de mover mucho las manos, conté cómo funcionaban las redes neuronales, algunos modelos de inteligencia artificial, qué era un Transformer y hasta incluso comparé cuántos CDs se necesitaban para almacenar la información que había en Netflix (creo que era algo así como una torre de 1.2kms de alto). Seguido de estas introducciones con imágenes, enumeré diez ejemplos donde (yo Matías, que se sentó un ratito a pensar y leer sobre...) la inteligencia artificial / los algoritmos / la virtualidad tiene un punto de encuentro con bastante fricción sobre la salud mental. Intenté poner cierto foco en las infancias.
+
+Por supuesto, hay una baraja bastante típica, supongo que un repertorio algo estándar para esta altura de la década, cuando tocamos este tema. A ver si me acuerdo de memoria.
+
+- Lo imaginario, la realidad virtual, los límites (físicos, virtuales, y paternos); la importancia que tiene el  juego para un niño, y dentro de ello cómo los límites físicos funcionan de pared sobre la cual la mente de un infante se apoya para salta e imaginar más alto. Cómo la realidad virtual puede atentar un poco sobre esta idea, y esta idea de la tecnología sin límites (que puede ser re copada porque abre las puertas a un niño experimentar cómo volar, pero también puede cerrarle las puertas de la imaginación). Aclaración: esto se me ocurrió pensando un poquito, y cada una de las cosas que estoy enumerando es **muy probable** que se le haya ocurrido a algún pensador/trabajador anteriormente, y este pecando aquí de copión, bajo el paraguas de la ignorancia.
+
+-Las adicciones, la nueva pandemia juvenil. Este es un tema que se discute muchísimo en los medios en estos tiempos. Las estadísticas dan miedo, y el hecho de que las casas de apuestas online estén entre los principales patrocinadores de los torneos de fútbol lo convierte en un túnel oscuro donde la luz todavía no se adivina.
+
+- Las legislaciones por supuesto no acompañan. Ni hablar en tiempos donde la comisión de Ciencias del Congreso de la Nación está presidida por una terraplanista cuya sanidad mental es, cuanto menos, discutible.
+
+- El uso indiscriminado de los chatbots, algunos ejemplos que tuvieron amplia repercusión mundial, sobre suicidios <i>no prevenidos</i> bajo estos chats y jóvenes de alguna u otra maner <i>vulnerables</i>. Como dice Drexler en alguna canción, la maquina la hace el hombre y es lo que el hombre haga con ella; en este sentido, yo no creo que <i>la culpa</i> de estos suicidos sea la de ChatGPT o el LLM de turno, sino del poco cuidado que tenemos como sociedad para el control y consumo de estas tecnologías (cosa que, casi por definición propia de los tiempos vertiginosos que corren).
+  
+-  [...] algunos más... si te interesa,  <a href="https://docs.google.com/presentation/d/1Edag5HBPDH2JznFGMNI7YlbpvXkWoOZsSW3kHTYyCHk/edit?slide=id.p1#slide=id.p1">este es el link de las slides</a>

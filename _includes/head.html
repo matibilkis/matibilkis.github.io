@@ -7,6 +7,62 @@
   <link rel="stylesheet" href="{{ '/assets/css/design-system.css' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
 
+  {% if site.google_analytics %}
+  <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', '{{ site.google_analytics }}');
+  </script>
+  <script>
+    (function() {
+      function trackEvent(eventName, params) {
+        if (typeof window.gtag === 'function') {
+          window.gtag('event', eventName, params || {});
+        }
+      }
+
+      document.addEventListener('click', function(event) {
+        var link = event.target.closest('a[href]');
+        if (!link) return;
+
+        var href = link.getAttribute('href');
+        if (!href || href.charAt(0) === '#') return;
+
+        if (link.classList.contains('sidebar-link')) {
+          trackEvent('navigation_click', {
+            nav_item: (link.textContent || '').trim(),
+            nav_target: href,
+            page_path: window.location.pathname
+          });
+        }
+
+        if (href.indexOf('mailto:') === 0 || href.indexOf('tel:') === 0) return;
+
+        var isAbsoluteHttp = href.indexOf('http://') === 0 || href.indexOf('https://') === 0;
+        if (!isAbsoluteHttp) return;
+
+        var targetUrl;
+        try {
+          targetUrl = new URL(href);
+        } catch (e) {
+          return;
+        }
+
+        if (targetUrl.hostname === window.location.hostname) return;
+
+        trackEvent('outbound_click', {
+          destination_url: targetUrl.href,
+          destination_domain: targetUrl.hostname,
+          link_text: (link.textContent || '').trim().slice(0, 120),
+          page_path: window.location.pathname
+        });
+      });
+    })();
+  </script>
+  {% endif %}
+
   <link rel="sitemap" type="application/xml" title="sitemap" href="{{ site.baseurl }}/sitemap.xml" />
   {% seo title=false %}
 </head>

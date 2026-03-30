@@ -34,6 +34,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center 22%;
 }
 
 .sidebar-nav {
@@ -47,7 +48,7 @@
   font-size: var(--font-size-xs);
   text-transform: uppercase;
   letter-spacing: 0.15em;
-  color: var(--color-text-dim);
+  color: var(--color-text-muted);
   transition: color var(--transition);
 }
 
@@ -507,6 +508,217 @@
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: var(--color-text-dim);
+}
+
+/* Blog Page */
+
+.blog-page {
+  max-width: 720px;
+}
+
+.blog-page .page-title {
+  margin-bottom: 0.7rem;
+  padding-bottom: 0.5rem;
+}
+
+.main-content:has(.blog-page),
+.main-content:has(.post-page) {
+  align-items: flex-start;
+  padding-top: 2.5rem;
+  padding-bottom: 2rem;
+}
+
+.blog-intro {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.blog-write-box {
+  margin-bottom: 1.2rem;
+  padding: 0.8rem;
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-secondary);
+}
+
+.blog-write-title {
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-dim);
+  margin-bottom: 0.5rem;
+}
+
+.blog-write-steps {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-size: 0.7rem;
+  color: var(--color-text-muted);
+  line-height: 1.4;
+}
+
+.blog-write-steps code {
+  color: var(--color-text);
+  font-family: var(--font-mono);
+  background: var(--color-surface);
+  padding: 0.05rem 0.25rem;
+}
+
+.blog-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.blog-item {
+  padding: 0.7rem 0;
+  border-bottom: 1px dashed var(--color-border);
+}
+
+.blog-item:last-child {
+  border-bottom: none;
+}
+
+.blog-item-meta {
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--color-text-dim);
+  margin-bottom: 0.35rem;
+}
+
+.blog-item-title {
+  font-size: var(--font-size-base);
+  font-weight: 400;
+  margin-bottom: 0.25rem;
+}
+
+.blog-item-title a {
+  color: var(--color-text);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.blog-item-title a:hover {
+  color: var(--color-accent);
+  border-bottom-color: var(--color-accent);
+}
+
+.blog-item-summary {
+  font-size: 0.7rem;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+}
+
+.blog-read-more {
+  display: inline-block;
+  margin-top: 0.35rem;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--color-text-dim);
+}
+
+.blog-read-more:hover {
+  color: var(--color-accent);
+}
+
+/* Blog Post */
+
+.post-page {
+  max-width: 720px;
+}
+
+.post-header {
+  margin-bottom: 1rem;
+}
+
+.post-back-link {
+  display: inline-block;
+  margin-bottom: 0.8rem;
+  font-size: 0.6rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--color-text-dim);
+}
+
+.post-back-link:hover {
+  color: var(--color-accent);
+}
+
+.post-page .post-title {
+  margin-bottom: 0.35rem;
+}
+
+.post-meta {
+  font-size: 0.65rem;
+  color: var(--color-text-dim);
+  letter-spacing: 0.03em;
+}
+
+.post-content {
+  font-size: var(--font-size-base);
+  color: var(--color-text);
+  line-height: 1.85;
+}
+
+.post-content p {
+  margin-bottom: 1rem;
+}
+
+.post-content h2,
+.post-content h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.6rem;
+  font-weight: 400;
+}
+
+.post-content ul,
+.post-content ol {
+  margin-left: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.post-content li {
+  margin-bottom: 0.35rem;
+}
+
+.post-content a {
+  color: var(--color-text);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.post-content a:hover {
+  color: var(--color-accent);
+  border-bottom-color: var(--color-accent);
+}
+
+.post-content blockquote {
+  margin: 1.2rem 0;
+  padding: 0.6rem 0.9rem;
+  border-left: 2px solid var(--color-accent);
+  background: var(--color-bg-secondary);
+  color: var(--color-text-muted);
+}
+
+.post-content code {
+  font-size: 0.9em;
+  background: var(--color-surface);
+  padding: 0.05rem 0.3rem;
+}
+
+.post-content pre {
+  overflow-x: auto;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid var(--color-border);
+  background: var(--color-bg-secondary);
+}
+
+.post-content pre code {
+  background: transparent;
+  padding: 0;
 }
 
 /* Responsive */

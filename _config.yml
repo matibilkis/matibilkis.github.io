@@ -3,6 +3,7 @@ author:
   name: Matias Bilkis
 url: "https://matiasbilkis.com"
 baseurl: ""
+google_analytics: "G-J5XJ3N46W1"
 
 markdown: kramdown
 kramdown:
@@ -15,3 +16,11 @@ collections:
 
 plugins:
   - jekyll-seo-tag
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+      permalink: /blog/:title/
