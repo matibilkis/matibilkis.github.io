@@ -1,6 +1,8 @@
 title: Matias Bilkis
+description: "Personal website of Matias Bilkis: quantum technology, machine learning, research papers, talks, coding projects, and blog."
 author:
   name: Matias Bilkis
+lang: en
 url: "https://matiasbilkis.com"
 baseurl: ""
 google_analytics: "G-J5XJ3N46W1"
@@ -16,6 +18,7 @@ collections:
 
 plugins:
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 defaults:
   - scope:
@@ -24,3 +27,8 @@ defaults:
     values:
       layout: post
       permalink: /blog/:title/
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: default

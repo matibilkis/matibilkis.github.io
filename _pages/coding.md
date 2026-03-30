@@ -2,6 +2,7 @@
 layout: default
 title: Coding
 permalink: /coding
+description: "Selected coding projects by Matias Bilkis, including open-source research tools and educational repositories."
 ---
 
 <div class="page-content coding-page">

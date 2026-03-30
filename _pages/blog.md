@@ -2,6 +2,7 @@
 layout: default
 title: Blog
 permalink: /blog
+description: "Notes and essays by Matias Bilkis on quantum technologies, AI, and social impact."
 ---
 
 <div class="page-content blog-page">

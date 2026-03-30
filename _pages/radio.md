@@ -2,6 +2,7 @@
 layout: default
 title: Radio
 permalink: /radio
+description: "Mundo Cuantico podcast episodes by Matias Bilkis, connecting quantum science, technology, and society."
 ---
 
 <div class="page-content radio-page">

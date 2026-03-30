@@ -2,6 +2,7 @@
 layout: default
 title: Talks
 permalink: /talks
+description: "Recorded talks and public speaking sessions by Matias Bilkis on quantum tech, AI, and interdisciplinary topics."
 ---
 
 <div class="page-content talks-page">

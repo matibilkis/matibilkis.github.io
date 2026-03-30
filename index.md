@@ -1,5 +1,7 @@
 ---
 layout: default
+title: Matias Bilkis
+description: "Physicist focused on quantum technology and machine learning, with research, industry, and interdisciplinary projects."
 ---
 
 <div class="landing">

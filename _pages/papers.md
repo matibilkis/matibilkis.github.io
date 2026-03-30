@@ -2,6 +2,7 @@
 layout: default
 title: Papers
 permalink: /papers
+description: "Research papers and theses by Matias Bilkis in quantum machine learning, quantum control, and related fields."
 ---
 
 <div class="page-content papers-page">
