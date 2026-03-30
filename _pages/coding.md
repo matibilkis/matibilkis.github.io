@@ -7,6 +7,9 @@ description: "Selected coding projects by Matias Bilkis, including open-source r
 
 <div class="page-content coding-page">
   <h1 class="page-title">Coding</h1>
+  <p>
+    You can find my work on <a href="https://github.com/matibilkis">GitHub</a>, including this website's <a href="https://github.com/matibilkis/portfolio">portfolio repository</a>.
+  </p>
 
   <h2 class="coding-section-title">Research Highlights</h2>
 

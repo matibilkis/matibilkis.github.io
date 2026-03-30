@@ -6,6 +6,9 @@ lang: en
 url: "https://matiasbilkis.com"
 baseurl: ""
 google_analytics: "G-J5XJ3N46W1"
+image: "/assets/images/foto_lead.png"
+twitter:
+  card: summary_large_image
 
 markdown: kramdown
 kramdown:
@@ -27,8 +30,10 @@ defaults:
     values:
       layout: post
       permalink: /blog/:title/
+      image: "/assets/images/foto_lead.png"
   - scope:
       path: ""
       type: "pages"
     values:
       layout: default
+      image: "/assets/images/foto_lead.png"
