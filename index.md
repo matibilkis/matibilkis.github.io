@@ -1,7 +1,8 @@
 ---
 layout: default
 title: Matias Bilkis
-description: "Physicist focused on quantum technology and machine learning, with research, industry, and interdisciplinary projects."
+lang: es
+description: "Fisico enfocado en tecnologias cuanticas y aprendizaje automatico, con experiencia en investigacion, industria y proyectos interdisciplinarios."
 ---
 
 <div class="landing">
@@ -9,13 +10,13 @@ description: "Physicist focused on quantum technology and machine learning, with
     <h1 class="landing-name">Matias Bilkis</h1>
     <div class="landing-tagline">
       <p>
-        Hola, I am Matias Bilkis, a <strong>physicist specialized in quantum technologies and machine learning</strong>. My work combines research depth with practical execution, spanning both academic and industry environments.
+        Hola, soy Matias Bilkis, <strong>fisico especializado en tecnologias cuanticas y aprendizaje automatico</strong>. Mi trabajo combina profundidad de investigacion con ejecucion practica, en entornos academicos e industriales.
       </p>
       <p>
-        I hold a <strong>PhD in Quantum Machine Learning</strong> from the Autonomous University of Barcelona, where I was supervised by Prof. John Calsamiglia and worked with the <a href="https://giq.uab.cat">@giq-uab</a> team. I also co-founded the <a href="https://qml.cvc.uab.es"><strong>QML-CVC research group</strong></a> at the <a href="https://www.cvc.uab.es">Computer Vision Center of Barcelona</a> (2023-2025).
+        Tengo un <strong>doctorado en Quantum Machine Learning</strong> por la Universidad Autonoma de Barcelona, donde trabaje con el equipo <a href="https://giq.uab.cat">@giq-uab</a> bajo la supervision del Prof. John Calsamiglia. Tambien cofunde el <a href="https://qml.cvc.uab.es"><strong>QML-CVC research group</strong></a> en el <a href="https://www.cvc.uab.es">Computer Vision Center de Barcelona</a> (2023-2025).
       </p>
       <p>
-        Beyond research, I enjoy translating complex technical ideas into clear strategy, products, and talks for broader audiences. If you are new to the field, you can start with <a href="https://www.youtube.com/watch?v=OkHlyQxSkaU">this introductory talk</a>, or explore <a href="https://www.youtube.com/watch?v=ELZt_7dH7Xw">this seminar series</a> on industrial applications. I am currently based in La Plata, Argentina.
+        Mas alla de la investigacion, me interesa traducir ideas tecnicas complejas en estrategia, productos y charlas claras para audiencias amplias. Si recien te estas acercando al tema, podes empezar con <a href="https://www.youtube.com/watch?v=OkHlyQxSkaU">esta charla introductoria</a>, o explorar <a href="https://www.youtube.com/watch?v=ELZt_7dH7Xw">esta serie de seminarios</a> sobre aplicaciones industriales. Actualmente vivo en La Plata, Argentina.
       </p>
     </div>
   </div>

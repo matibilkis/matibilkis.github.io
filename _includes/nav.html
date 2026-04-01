@@ -1,9 +1,33 @@
 <nav class="sidebar">
+  {% assign current_lang = page.lang | default: site.default_lang | default: 'es' %}
+  {% if current_lang == 'en' %}
+    {% assign nav_links = site.data.nav_en.links %}
+  {% else %}
+    {% assign nav_links = site.data.nav.links %}
+  {% endif %}
+
+  {% if current_lang == 'en' %}
+    {% assign es_url = page.url | replace_first: '/en', '' %}
+    {% if es_url == '' %}
+      {% assign es_url = '/' %}
+    {% endif %}
+    {% assign en_url = page.url %}
+  {% else %}
+    {% assign es_url = page.url %}
+    {% if page.layout == 'post' %}
+      {% assign en_url = '/en/blog' %}
+    {% elsif page.url == '/' %}
+      {% assign en_url = '/en/' %}
+    {% else %}
+      {% assign en_url = '/en' | append: page.url %}
+    {% endif %}
+  {% endif %}
+
   <div class="sidebar-photo">
     <img src="{{ '/assets/images/foto_lead.png' | relative_url }}" alt="Matias Bilkis" />
   </div>
   <ul class="sidebar-nav">
-    {% for item in site.data.nav.links %}
+    {% for item in nav_links %}
     <li>
       <a href="{{ item.url }}" class="sidebar-link {% if item.url == page.url %}active{% endif %}">
         {{ item.title }}
@@ -11,4 +35,9 @@
     </li>
     {% endfor %}
   </ul>
+  <div class="lang-switcher">
+    <a href="{{ es_url | relative_url }}" class="lang-link {% unless current_lang == 'en' %}active{% endunless %}">ES</a>
+    <span class="lang-separator">|</span>
+    <a href="{{ en_url | relative_url }}" class="lang-link {% if current_lang == 'en' %}active{% endif %}">EN</a>
+  </div>
 </nav>

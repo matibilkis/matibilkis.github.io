@@ -65,4 +65,26 @@
 
   <link rel="sitemap" type="application/xml" title="sitemap" href="{{ site.baseurl }}/sitemap.xml" />
   {% seo title=false %}
+  {% assign current_lang = page.lang | default: site.default_lang | default: 'es' %}
+  {% if current_lang == 'en' %}
+    {% assign es_alt_path = page.url | replace_first: '/en', '' %}
+    {% if es_alt_path == '' %}
+      {% assign es_alt_path = '/' %}
+    {% endif %}
+    {% assign en_alt_path = page.url %}
+  {% else %}
+    {% assign es_alt_path = page.url %}
+    {% if page.layout == 'post' %}
+      {% assign en_alt_path = nil %}
+    {% elsif page.url == '/' %}
+      {% assign en_alt_path = '/en/' %}
+    {% else %}
+      {% assign en_alt_path = '/en' | append: page.url %}
+    {% endif %}
+  {% endif %}
+  <link rel="alternate" hreflang="es" href="{{ site.url }}{{ es_alt_path }}" />
+  {% if en_alt_path %}
+  <link rel="alternate" hreflang="en" href="{{ site.url }}{{ en_alt_path }}" />
+  {% endif %}
+  <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ es_alt_path }}" />
 </head>

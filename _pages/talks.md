@@ -1,118 +1,119 @@
 ---
 layout: default
-title: Talks
+title: Charlas
 permalink: /talks
-description: "Recorded talks and public speaking sessions by Matias Bilkis on quantum tech, AI, and interdisciplinary topics."
+lang: es
+description: "Charlas grabadas y presentaciones publicas de Matias Bilkis sobre tecnologias cuanticas, IA y temas interdisciplinarios."
 ---
 
 <div class="page-content talks-page">
-  <h1 class="page-title">Talks</h1>
+  <h1 class="page-title">Charlas</h1>
 
-  <h2 class="talks-section-title">Recorded talks</h2>
+  <h2 class="talks-section-title">Charlas grabadas</h2>
 
   <div class="talks-grid">
 
     <div class="talk-card">
-      <div class="talk-title">Quantum & Finance</div>
+      <div class="talk-title">Quantum y Finanzas</div>
       <div class="talk-video">
         <iframe src="https://www.youtube.com/embed/OkHlyQxSkaU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
 
     <div class="talk-card">
-      <div class="talk-title">Quantum & industrial processes</div>
+      <div class="talk-title">Quantum y procesos industriales</div>
       <div class="talk-video">
         <iframe src="https://www.youtube.com/embed/ELZt_7dH7Xw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
 
     <div class="talk-card">
-      <div class="talk-title">Quantum, ML, security & internet Seminar III</div>
+      <div class="talk-title">Quantum, ML, seguridad e internet - Seminario III</div>
       <div class="talk-video">
         <iframe src="https://www.youtube.com/embed/VFB0sy-IHjw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
 
     <div class="talk-card">
-      <div class="talk-title">Quantum Tech beyond the hype</div>
+      <div class="talk-title">Quantum Tech mas alla del hype</div>
       <div class="talk-video talk-video-link">
         <a href="https://x.com/i/broadcasts/1OyKAjAlrryGb" target="_blank" rel="noopener">
           <span class="play-icon">&#9654;</span>
-          <span class="play-label">Watch on X</span>
+          <span class="play-label">Ver en X</span>
         </a>
       </div>
     </div>
 
   </div>
 
-  <h2 class="talks-section-title">Other talks</h2>
+  <h2 class="talks-section-title">Otras charlas</h2>
 
   <div class="talks-list">
 
     <div class="talk-item">
-      <div class="talk-item-title">Quantum Tech Explained</div>
-      <div class="talk-item-desc">AI meets quantum computing: geopolitics, business models, and an accessible intro to quantum machine learning.</div>
+      <div class="talk-item-title">Quantum Tech explicado</div>
+      <div class="talk-item-desc">IA y computacion cuantica: geopolítica, modelos de negocio e introduccion accesible al quantum machine learning.</div>
     </div>
 
     <div class="talk-item">
-      <div class="talk-item-title">Quantum Finance &amp; Logistics</div>
-      <div class="talk-item-desc">Impact of quantum computing on portfolio optimization, process acceleration and modeling in finance and logistics.</div>
+      <div class="talk-item-title">Quantum en finanzas y logistica</div>
+      <div class="talk-item-desc">Impacto de la computacion cuantica en optimizacion de carteras, aceleracion de procesos y modelado en finanzas y logistica.</div>
     </div>
 
     <div class="talk-item">
-      <div class="talk-item-title">Internet &amp; Quantum ML</div>
-      <div class="talk-item-desc">Quantum machine learning, quantum-safe communications, cybersecurity implications and the future of connectivity.</div>
+      <div class="talk-item-title">Internet y Quantum ML</div>
+      <div class="talk-item-desc">Quantum machine learning, comunicaciones seguras ante quantum, ciberseguridad y futuro de la conectividad.</div>
     </div>
 
     <div class="talk-item">
-      <div class="talk-item-title">Virtual Quantum Labs</div>
-      <div class="talk-item-desc">Quantum computers as controllable laboratories for drug design, catalysis, natural resource exploration and medical imaging.</div>
+      <div class="talk-item-title">Laboratorios cuanticos virtuales</div>
+      <div class="talk-item-desc">Computadoras cuanticas como laboratorios controlables para diseno de farmacos, catálisis, exploracion de recursos e imagen medica.</div>
     </div>
 
     <div class="talk-item">
-      <div class="talk-item-title">AI &amp; Music Industry</div>
-      <div class="talk-item-desc">AI adoption in entertainment: content generation, distribution, festival logistics and ethical considerations.</div>
+      <div class="talk-item-title">IA e industria musical</div>
+      <div class="talk-item-desc">Adopcion de IA en entretenimiento: generacion de contenido, distribucion, logistica de festivales y consideraciones eticas.</div>
     </div>
 
     <div class="talk-item">
-      <div class="talk-item-title">AI &amp; Child Mental Health</div>
-      <div class="talk-item-desc">How technology affects children's mental health. Given at psychiatric hospitals and schools with mental health professionals.</div>
+      <div class="talk-item-title">IA y salud mental infantil</div>
+      <div class="talk-item-desc">Como la tecnologia impacta la salud mental de ninos y adolescentes. Charla dada en hospitales y escuelas con profesionales de salud mental.</div>
     </div>
 
     <div class="talk-item">
-      <div class="talk-item-title">Blockchain &amp; Quantum Threat</div>
-      <div class="talk-item-desc">Shor's algorithm, post-quantum cryptography, and the transition timeline for quantum-resistant blockchain systems.</div>
+      <div class="talk-item-title">Blockchain y amenaza cuantica</div>
+      <div class="talk-item-desc">Algoritmo de Shor, criptografia post-cuantica y tiempos de transicion hacia sistemas blockchain resistentes a quantum.</div>
     </div>
 
   </div>
 
-  <h2 class="talks-section-title">Events organized</h2>
+  <h2 class="talks-section-title">Eventos organizados</h2>
 
   <div class="talks-list">
 
     <div class="talk-item">
       <div class="talk-item-title">Quantum Ecosystem Argentina</div>
-      <div class="talk-item-desc">Roundtable with UNLP Science Secretary, IBM quantum ambassador and LIFIA director. CUANTOS event.</div>
+      <div class="talk-item-desc">Mesa redonda con la Secretaria de Ciencia de la UNLP, embajador quantum de IBM y direccion de LIFIA. Evento CUANTOS.</div>
     </div>
 
     <div class="talk-item">
       <div class="talk-item-title">Quantum Tech &mdash; RAFA 2025</div>
-      <div class="talk-item-desc">Satellite event at the Annual Meeting of the Argentine Physics Association on public-private quantum roadmaps.</div>
+      <div class="talk-item-desc">Evento satelite de la Reunion Anual de la Asociacion Fisica Argentina sobre hojas de ruta publico-privadas en quantum.</div>
     </div>
 
     <div class="talk-item">
       <div class="talk-item-title">Decentralized Science &mdash; devConnect</div>
-      <div class="talk-item-desc">Full-day event at La Rural on alternative science funding, part of the annual Ethereum devConnect conference.</div>
+      <div class="talk-item-desc">Evento de jornada completa en La Rural sobre financiamiento alternativo de la ciencia, dentro de la conferencia anual Ethereum devConnect.</div>
     </div>
 
     <div class="talk-item">
       <div class="talk-item-title">Amor Desclasificado</div>
-      <div class="talk-item-desc">Tech and society cycle at Max Nordau La Plata: digital archives, human rights, and the impact of virtuality.</div>
+      <div class="talk-item-desc">Ciclo de tecnologia y sociedad en Max Nordau La Plata: archivos digitales, derechos humanos e impacto de la virtualidad.</div>
     </div>
 
     <div class="talk-item">
       <div class="talk-item-title">Creativity &amp; Quantum &mdash; IEEE QCE25</div>
-      <div class="talk-item-desc">Panel at IEEE Quantum Week, Albuquerque. Panelists from Oakland University, ICFO, Fura dels Baus, QML-CVC and Munster University.</div>
+      <div class="talk-item-desc">Panel en IEEE Quantum Week, Albuquerque, con participantes de Oakland University, ICFO, Fura dels Baus, QML-CVC y Munster University.</div>
     </div>
 
   </div>

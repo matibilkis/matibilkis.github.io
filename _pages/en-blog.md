@@ -1,9 +1,9 @@
 ---
 layout: default
 title: Blog
-permalink: /blog
-lang: es
-description: "Notas y ensayos de Matias Bilkis sobre tecnologias cuanticas, IA e impacto social."
+lang: en
+permalink: /en/blog
+description: "Notes and essays by Matias Bilkis on quantum technologies, AI, and social impact."
 ---
 
 <div class="page-content blog-page">
@@ -20,11 +20,11 @@ description: "Notas y ensayos de Matias Bilkis sobre tecnologias cuanticas, IA e
       {% elsif post.excerpt %}
       <p class="blog-item-summary">{{ post.excerpt | strip_html | truncate: 180 }}</p>
       {% endif %}
-      <a class="blog-read-more" href="{{ post.url | relative_url }}">leer</a>
+      <a class="blog-read-more" href="{{ post.url | relative_url }}">read</a>
     </article>
     {% endfor %}
   </div>
   {% else %}
-  <p class="blog-intro">Todavia no hay posts. Agrega el primero en <code>_posts</code>.</p>
+  <p class="blog-intro">No posts yet. Add your first one in <code>_posts</code>.</p>
   {% endif %}
 </div>

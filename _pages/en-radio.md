@@ -1,14 +1,14 @@
 ---
 layout: default
 title: Radio
-permalink: /radio
-lang: es
-description: "Episodios de Mundo Cuantico por Matias Bilkis, conectando ciencia cuantica, tecnologia y sociedad."
+lang: en
+permalink: /en/radio
+description: "Mundo Cuantico podcast episodes by Matias Bilkis, connecting quantum science, technology, and society."
 ---
 
 <div class="page-content radio-page">
-  <h1 class="page-title">Mundo Cuántico</h1>
-  <p class="radio-intro">Un podcast que explora el mundo cuantico &mdash; tecnologia, ciencia y todo lo que hay en el medio.</p>
+  <h1 class="page-title">Mundo Cuantico</h1>
+  <p class="radio-intro">A podcast exploring the quantum world &mdash; technology, science, and everything in between.</p>
 
   <div class="radio-gallery">
 
@@ -17,7 +17,7 @@ description: "Episodios de Mundo Cuantico por Matias Bilkis, conectando ciencia 
         <iframe src="https://www.youtube.com/embed/3VlcmEXG-s8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
       <div class="radio-info">
-        <span class="radio-episode">Episodio 1</span>
+        <span class="radio-episode">Episode 1</span>
       </div>
     </div>
 
@@ -26,7 +26,7 @@ description: "Episodios de Mundo Cuantico por Matias Bilkis, conectando ciencia 
         <iframe src="https://www.youtube.com/embed/A5azR4JowZg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
       <div class="radio-info">
-        <span class="radio-episode">Episodio 2</span>
+        <span class="radio-episode">Episode 2</span>
       </div>
     </div>
 
@@ -35,7 +35,7 @@ description: "Episodios de Mundo Cuantico por Matias Bilkis, conectando ciencia 
         <iframe src="https://www.youtube.com/embed/tAttbkbFJfc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
       <div class="radio-info">
-        <span class="radio-episode">Episodio 3 — IA y Quantum Tech</span>
+        <span class="radio-episode">Episode 3 - AI and Quantum Tech</span>
       </div>
     </div>
 
@@ -44,7 +44,7 @@ description: "Episodios de Mundo Cuantico por Matias Bilkis, conectando ciencia 
         <iframe src="https://www.youtube.com/embed/yDQa2okM2XA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
       <div class="radio-info">
-        <span class="radio-episode">Episodio 4 — IA y salud mental</span>
+        <span class="radio-episode">Episode 4 - AI &amp; Mental Health</span>
       </div>
     </div>
 

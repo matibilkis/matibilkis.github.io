@@ -2,14 +2,144 @@
 layout: default
 ---
 
+<div class="accessibility-bar" role="region" aria-label="Accessibility controls">
+  <div class="accessibility-bar__group">
+    <span class="accessibility-bar__section-label">Text size</span>
+    <div class="accessibility-bar__buttons" aria-label="Adjust text size">
+      <button type="button" class="accessibility-bar__button" data-font-scale="small">A-</button>
+      <button type="button" class="accessibility-bar__button" data-font-scale="base">A</button>
+      <button type="button" class="accessibility-bar__button" data-font-scale="large">A+</button>
+    </div>
+  </div>
+  <div class="accessibility-bar__group">
+    <span class="accessibility-bar__section-label">Theme</span>
+    <select class="accessibility-bar__select" aria-label="Color theme">
+      <option value="default">Default</option>
+      <option value="light">Light</option>
+      <option value="sepia">Sepia</option>
+      <option value="high-contrast">High contrast</option>
+    </select>
+  </div>
+</div>
+<div class="accessibility-bar-spacer" aria-hidden="true"></div>
+
 <article class="page-content post-page">
   <header class="post-header">
-    <a class="post-back-link" href="{{ '/blog' | relative_url }}">&#8592; back to blog</a>
+    {% assign post_lang = page.lang | default: site.default_lang | default: 'es' %}
+    {%- comment -%}
+      Estimated reading time:
+      - word count is based on the rendered post content (HTML-stripped)
+      - assumes ~200 WPM for Spanish/English text
+    {%- endcomment -%}
+    {% assign post_text = content | strip_html | strip_newlines %}
+    {% assign post_words = post_text | number_of_words %}
+    {% assign wpm = 200 %}
+    {% assign minutes = post_words | divided_by: wpm %}
+    {% assign remainder = post_words | modulo: wpm %}
+    {% if remainder > 0 %}
+      {% assign minutes = minutes | plus: 1 %}
+    {% endif %}
+    {% if minutes < 1 %}
+      {% assign minutes = 1 %}
+    {% endif %}
+    {% if post_lang == 'en' %}
+      <a class="post-back-link" href="{{ '/en/blog' | relative_url }}">&#8592; back to blog</a>
+      <div class="post-meta">{{ page.date | date: "%B %-d, %Y" }} &middot; ~{{ minutes }} min read</div>
+    {% else %}
+      <a class="post-back-link" href="{{ '/blog' | relative_url }}">&#8592; volver al blog</a>
+      <div class="post-meta">{{ page.date | date: "%-d/%m/%Y" }} &middot; ~{{ minutes }} min de lectura</div>
+    {% endif %}
     <h1 class="page-title post-title">{{ page.title }}</h1>
-    <div class="post-meta">{{ page.date | date: "%B %-d, %Y" }}</div>
   </header>
 
   <div class="post-content">
     {{ content }}
   </div>
 </article>
+
+<script>
+  (function() {
+    var STORAGE_KEYS = {
+      theme: 'accessibilityTheme',
+      font: 'accessibilityFontScale'
+    };
+
+    function applyTheme(theme) {
+      var body = document.body;
+      if (!body) return;
+      body.classList.remove('theme-default', 'theme-light', 'theme-sepia', 'theme-high-contrast');
+      var className = 'theme-' + (theme || 'default');
+      body.classList.add(className);
+    }
+
+    function applyFontScale(scale) {
+      var body = document.body;
+      if (!body) return;
+      body.classList.remove('font-scale-small', 'font-scale-base', 'font-scale-large');
+      var className = 'font-scale-' + (scale || 'base');
+      body.classList.add(className);
+    }
+
+    function initAccessibilityBar() {
+      var bar = document.querySelector('.accessibility-bar');
+      if (!bar) return;
+
+      var themeSelect = bar.querySelector('.accessibility-bar__select');
+      var fontButtons = bar.querySelectorAll('.accessibility-bar__button[data-font-scale]');
+
+      var savedTheme = 'default';
+      var savedFont = 'base';
+
+      try {
+        savedTheme = localStorage.getItem(STORAGE_KEYS.theme) || savedTheme;
+        savedFont = localStorage.getItem(STORAGE_KEYS.font) || savedFont;
+      } catch (e) {}
+
+      applyTheme(savedTheme);
+      applyFontScale(savedFont);
+
+      if (themeSelect) {
+        themeSelect.value = savedTheme;
+        themeSelect.addEventListener('change', function(event) {
+          var value = event.target.value || 'default';
+          applyTheme(value);
+          try {
+            localStorage.setItem(STORAGE_KEYS.theme, value);
+          } catch (e) {}
+        });
+      }
+
+      if (fontButtons && fontButtons.length) {
+        function updateActiveButton(scale) {
+          fontButtons.forEach(function(btn) {
+            var isActive = btn.getAttribute('data-font-scale') === scale;
+            if (isActive) {
+              btn.classList.add('is-active');
+            } else {
+              btn.classList.remove('is-active');
+            }
+          });
+        }
+
+        updateActiveButton(savedFont);
+
+        fontButtons.forEach(function(btn) {
+          btn.addEventListener('click', function() {
+            var scale = btn.getAttribute('data-font-scale') || 'base';
+            applyFontScale(scale);
+            updateActiveButton(scale);
+            try {
+              localStorage.setItem(STORAGE_KEYS.font, scale);
+            } catch (e) {}
+          });
+        });
+      }
+    }
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initAccessibilityBar);
+    } else {
+      initAccessibilityBar();
+    }
+  })();
+</script>
