@@ -57,5 +57,14 @@ description: "Episodios de Mundo Cuantico por Matias Bilkis, conectando ciencia 
       </div>
     </div>
 
+    <div class="radio-card">
+      <div class="radio-video">
+        <iframe src="https://www.youtube.com/embed/8J-aknbfJ8U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="radio-info">
+        <span class="radio-episode">Episodios 6 y 7 — Quantum bits and where to find them</span>
+      </div>
+    </div>
+
   </div>
 </div>
