@@ -66,5 +66,50 @@ description: "Episodios de Mundo Cuantico por Matias Bilkis, conectando ciencia 
       </div>
     </div>
 
+    <div class="radio-card">
+      <div class="radio-video">
+        <iframe src="https://www.youtube.com/embed/VdcBTydgy_0?start=35" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="radio-info">
+        <span class="radio-episode">Episodio 8 — Contextualidad y territorio</span>
+      </div>
+    </div>
+
+    <div class="radio-card">
+      <div class="radio-video">
+        <iframe src="https://www.youtube.com/embed/_77fgaMSyv4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="radio-info">
+        <span class="radio-episode">Episodio 9 — Una visión del mundo startup argentino</span>
+      </div>
+    </div>
+
+    <div class="radio-card">
+      <div class="radio-video">
+        <iframe src="https://www.youtube.com/embed/_HJvc3c726U" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="radio-info">
+        <span class="radio-episode">Episodio 10 — Hablemos de IA y Educación, con Fernando Schapachnik</span>
+      </div>
+    </div>
+
+    <div class="radio-card">
+      <div class="radio-video">
+        <iframe src="https://www.youtube.com/embed/d-ZskzlmIQ0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="radio-info">
+        <span class="radio-episode">Episodio 11 — Física cuántica para todos</span>
+      </div>
+    </div>
+
+    <div class="radio-card">
+      <div class="radio-video">
+        <iframe src="https://www.youtube.com/embed/lY4_KOIIo5g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="radio-info">
+        <span class="radio-episode">Episodio 12 — Simulación cuántica para la vida cotidiana</span>
+      </div>
+    </div>
+
   </div>
 </div>

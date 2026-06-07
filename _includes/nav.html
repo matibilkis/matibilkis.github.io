@@ -1,4 +1,4 @@
-<nav class="sidebar">
+<nav class="sidebar" aria-label="Main navigation">
   {% assign current_lang = page.lang | default: site.default_lang | default: 'es' %}
   {% if current_lang == 'en' %}
     {% assign nav_links = site.data.nav_en.links %}
@@ -40,4 +40,39 @@
     <span class="lang-separator">|</span>
     <a href="{{ en_url | relative_url }}" class="lang-link {% if current_lang == 'en' %}active{% endif %}">EN</a>
   </div>
+
+  <button
+    type="button"
+    class="mobile-menu-btn"
+    aria-expanded="false"
+    aria-controls="mobile-nav"
+    aria-label="{% if current_lang == 'en' %}Open menu{% else %}Abrir menu{% endif %}"
+  >
+    <span class="mobile-menu-btn__icon" aria-hidden="true"></span>
+    <span class="mobile-menu-btn__label">{% if current_lang == 'en' %}Menu{% else %}Menú{% endif %}</span>
+  </button>
 </nav>
+
+<div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+  <div class="mobile-nav__backdrop"></div>
+  <div class="mobile-nav__panel" role="dialog" aria-modal="true" aria-label="{% if current_lang == 'en' %}Site navigation{% else %}Navegacion del sitio{% endif %}">
+    <div class="mobile-nav__header">
+      <span class="mobile-nav__title">{% if current_lang == 'en' %}Navigate{% else %}Navegar{% endif %}</span>
+      <button type="button" class="mobile-nav__close" aria-label="{% if current_lang == 'en' %}Close menu{% else %}Cerrar menu{% endif %}">&times;</button>
+    </div>
+    <ul class="mobile-nav__list">
+      {% for item in nav_links %}
+      <li>
+        <a href="{{ item.url }}" class="mobile-nav__link {% if item.url == page.url %}active{% endif %}">
+          {{ item.title }}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+    <div class="mobile-nav__lang">
+      <a href="{{ es_url | relative_url }}" class="lang-link {% unless current_lang == 'en' %}active{% endunless %}">ES</a>
+      <span class="lang-separator">|</span>
+      <a href="{{ en_url | relative_url }}" class="lang-link {% if current_lang == 'en' %}active{% endif %}">EN</a>
+    </div>
+  </div>
+</div>
