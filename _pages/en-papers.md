@@ -8,6 +8,7 @@ description: "Research papers and theses by Matias Bilkis in quantum machine lea
 
 <div class="page-content papers-page">
   <h1 class="page-title">Papers</h1>
+  <p class="papers-scholar"><a href="https://scholar.google.com/citations?user=bFFWTIEAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar &rarr;</a></p>
 
   <div class="papers-list">
 

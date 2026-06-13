@@ -19,7 +19,7 @@ description: "Físico enfocado en tecnologías cuánticas y aprendizaje automát
         Más allá de la investigación, me interesa traducir ideas técnicas complejas en estrategia, productos y charlas claras para audiencias amplias. Si recién te estás acercando al tema, podés empezar con <a href="https://www.youtube.com/watch?v=OkHlyQxSkaU">esta charla introductoria</a>, o explorar <a href="https://www.youtube.com/watch?v=ELZt_7dH7Xw">esta serie de seminarios</a> sobre aplicaciones industriales. Actualmente vivo en La Plata, Argentina.
       </p>
       <p>
-        Hoy dirijo <a href="https://qutsur.com"><strong>QutSur</strong></a>, donde construimos el ecosistema de tecnologías cuánticas en Sudamérica &mdash; de la prueba de concepto a la estrategia. ¿Tenés un proyecto o una idea para explorar? Escribime a <a href="mailto:matias@qutsur.com">matias@qutsur.com</a>.
+        Hoy dirijo <a href="https://qutsur.com"><strong>QutSur</strong></a>, donde damos apoyo al ecosistema de tecnologías cuánticas desde el Sur.
       </p>
     </div>
   </div>

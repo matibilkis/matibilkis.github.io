@@ -176,8 +176,22 @@
 /* Papers Page */
 
 .papers-page .page-title {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+.papers-scholar {
+  margin: 0 0 1.5rem;
+  font-size: var(--font-size-xs);
+}
+
+.papers-scholar a {
+  color: var(--color-text-muted);
+  letter-spacing: 0.04em;
+}
+
+.papers-scholar a:hover {
+  color: var(--color-accent);
 }
 
 .papers-page {
