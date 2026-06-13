@@ -46,6 +46,12 @@ description: "Selected coding projects by Matias Bilkis, including open-source r
       <div class="coding-item-desc">Full-stack web app for real-time LaTeX equation rendering.</div>
     </div>
 
+    <div class="coding-item">
+      <div class="coding-item-title"><a href="https://md2pdf-ashen.vercel.app">md2pdf</a></div>
+      <div class="coding-item-meta">Python &middot; Typst &middot; FastAPI &middot; <span class="coding-cites">live app</span></div>
+      <div class="coding-item-desc">Markdown and plain notes to print-ready PDFs &mdash; wide annotation margins, LaTeX math, typeset for reading away from the screen.</div>
+    </div>
+
   </div>
 
   <h2 class="coding-section-title">Educational</h2>
