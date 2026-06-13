@@ -16,21 +16,21 @@ description: "Recorded talks and public speaking sessions by Matias Bilkis on qu
     <div class="talk-card">
       <div class="talk-title">Quantum & Finance</div>
       <div class="talk-video">
-        <iframe src="https://www.youtube.com/embed/OkHlyQxSkaU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe loading="lazy" src="https://www.youtube.com/embed/OkHlyQxSkaU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
 
     <div class="talk-card">
       <div class="talk-title">Quantum & industrial processes</div>
       <div class="talk-video">
-        <iframe src="https://www.youtube.com/embed/ELZt_7dH7Xw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe loading="lazy" src="https://www.youtube.com/embed/ELZt_7dH7Xw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
 
     <div class="talk-card">
       <div class="talk-title">Quantum, ML, security & internet Seminar III</div>
       <div class="talk-video">
-        <iframe src="https://www.youtube.com/embed/VFB0sy-IHjw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe loading="lazy" src="https://www.youtube.com/embed/VFB0sy-IHjw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
 

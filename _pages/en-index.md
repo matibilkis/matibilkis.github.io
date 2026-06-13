@@ -19,6 +19,9 @@ description: "Physicist focused on quantum technology and machine learning, with
       <p>
         Beyond research, I enjoy translating complex technical ideas into clear strategy, products, and talks for broader audiences. If you are new to the field, you can start with <a href="https://www.youtube.com/watch?v=OkHlyQxSkaU">this introductory talk</a>, or explore <a href="https://www.youtube.com/watch?v=ELZt_7dH7Xw">this seminar series</a> on industrial applications. I am currently based in La Plata, Argentina.
       </p>
+      <p>
+        Today I lead <a href="https://qutsur.com"><strong>QutSur</strong></a>, where we are building the quantum technology ecosystem in South America &mdash; from proof of concept to strategy. Have a project or an idea to explore? Reach me at <a href="mailto:matias@qutsur.com">matias@qutsur.com</a>.
+      </p>
     </div>
   </div>
 </div>

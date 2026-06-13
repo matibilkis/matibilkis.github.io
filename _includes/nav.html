@@ -35,6 +35,10 @@
     </li>
     {% endfor %}
   </ul>
+  <div class="sidebar-contact">
+    <a href="mailto:matias@qutsur.com" class="sidebar-contact-link">Email</a>
+    <a href="https://github.com/matibilkis" class="sidebar-contact-link" target="_blank" rel="noopener">GitHub</a>
+  </div>
   <div class="lang-switcher">
     <a href="{{ es_url | relative_url }}" class="lang-link {% unless current_lang == 'en' %}active{% endunless %}">ES</a>
     <span class="lang-separator">|</span>
@@ -69,6 +73,10 @@
       </li>
       {% endfor %}
     </ul>
+    <div class="mobile-nav__contact">
+      <a href="mailto:matias@qutsur.com" class="mobile-nav__link">Email</a>
+      <a href="https://github.com/matibilkis" class="mobile-nav__link" target="_blank" rel="noopener">GitHub</a>
+    </div>
     <div class="mobile-nav__lang">
       <a href="{{ es_url | relative_url }}" class="lang-link {% unless current_lang == 'en' %}active{% endunless %}">ES</a>
       <span class="lang-separator">|</span>

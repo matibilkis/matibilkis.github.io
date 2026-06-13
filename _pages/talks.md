@@ -3,7 +3,7 @@ layout: default
 title: Charlas
 permalink: /talks
 lang: es
-description: "Charlas grabadas y presentaciones publicas de Matias Bilkis sobre tecnologias cuanticas, IA y temas interdisciplinarios."
+description: "Charlas grabadas y presentaciones públicas de Matias Bilkis sobre tecnologías cuánticas, IA y temas interdisciplinarios."
 ---
 
 <div class="page-content talks-page">
@@ -16,26 +16,26 @@ description: "Charlas grabadas y presentaciones publicas de Matias Bilkis sobre 
     <div class="talk-card">
       <div class="talk-title">Quantum y Finanzas</div>
       <div class="talk-video">
-        <iframe src="https://www.youtube.com/embed/OkHlyQxSkaU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe loading="lazy" src="https://www.youtube.com/embed/OkHlyQxSkaU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
 
     <div class="talk-card">
       <div class="talk-title">Quantum y procesos industriales</div>
       <div class="talk-video">
-        <iframe src="https://www.youtube.com/embed/ELZt_7dH7Xw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe loading="lazy" src="https://www.youtube.com/embed/ELZt_7dH7Xw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
 
     <div class="talk-card">
       <div class="talk-title">Quantum, ML, seguridad e internet - Seminario III</div>
       <div class="talk-video">
-        <iframe src="https://www.youtube.com/embed/VFB0sy-IHjw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe loading="lazy" src="https://www.youtube.com/embed/VFB0sy-IHjw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
     </div>
 
     <div class="talk-card">
-      <div class="talk-title">Quantum Tech mas alla del hype</div>
+      <div class="talk-title">Quantum Tech más allá del hype</div>
       <div class="talk-video talk-video-link">
         <a href="https://x.com/i/broadcasts/1OyKAjAlrryGb" target="_blank" rel="noopener">
           <span class="play-icon">&#9654;</span>
@@ -52,12 +52,12 @@ description: "Charlas grabadas y presentaciones publicas de Matias Bilkis sobre 
 
     <div class="talk-item">
       <div class="talk-item-title">Quantum Tech explicado</div>
-      <div class="talk-item-desc">IA y computacion cuantica: geopolítica, modelos de negocio e introduccion accesible al quantum machine learning.</div>
+      <div class="talk-item-desc">IA y computación cuántica: geopolítica, modelos de negocio e introducción accesible al quantum machine learning.</div>
     </div>
 
     <div class="talk-item">
-      <div class="talk-item-title">Quantum en finanzas y logistica</div>
-      <div class="talk-item-desc">Impacto de la computacion cuantica en optimizacion de carteras, aceleracion de procesos y modelado en finanzas y logistica.</div>
+      <div class="talk-item-title">Quantum en finanzas y logística</div>
+      <div class="talk-item-desc">Impacto de la computación cuántica en optimización de carteras, aceleración de procesos y modelado en finanzas y logística.</div>
     </div>
 
     <div class="talk-item">
@@ -66,23 +66,23 @@ description: "Charlas grabadas y presentaciones publicas de Matias Bilkis sobre 
     </div>
 
     <div class="talk-item">
-      <div class="talk-item-title">Laboratorios cuanticos virtuales</div>
-      <div class="talk-item-desc">Computadoras cuanticas como laboratorios controlables para diseno de farmacos, catálisis, exploracion de recursos e imagen medica.</div>
+      <div class="talk-item-title">Laboratorios cuánticos virtuales</div>
+      <div class="talk-item-desc">Computadoras cuánticas como laboratorios controlables para diseño de fármacos, catálisis, exploración de recursos e imagen médica.</div>
     </div>
 
     <div class="talk-item">
       <div class="talk-item-title">IA e industria musical</div>
-      <div class="talk-item-desc">Adopcion de IA en entretenimiento: generacion de contenido, distribucion, logistica de festivales y consideraciones eticas.</div>
+      <div class="talk-item-desc">Adopción de IA en entretenimiento: generación de contenido, distribución, logística de festivales y consideraciones éticas.</div>
     </div>
 
     <div class="talk-item">
       <div class="talk-item-title">IA y salud mental infantil</div>
-      <div class="talk-item-desc">Como la tecnologia impacta la salud mental de ninos y adolescentes. Charla dada en hospitales y escuelas con profesionales de salud mental.</div>
+      <div class="talk-item-desc">Cómo la tecnología impacta la salud mental de niños y adolescentes. Charla dada en hospitales y escuelas con profesionales de salud mental.</div>
     </div>
 
     <div class="talk-item">
-      <div class="talk-item-title">Blockchain y amenaza cuantica</div>
-      <div class="talk-item-desc">Algoritmo de Shor, criptografia post-cuantica y tiempos de transicion hacia sistemas blockchain resistentes a quantum.</div>
+      <div class="talk-item-title">Blockchain y amenaza cuántica</div>
+      <div class="talk-item-desc">Algoritmo de Shor, criptografía post-cuántica y tiempos de transición hacia sistemas blockchain resistentes a quantum.</div>
     </div>
 
   </div>
@@ -93,12 +93,12 @@ description: "Charlas grabadas y presentaciones publicas de Matias Bilkis sobre 
 
     <div class="talk-item">
       <div class="talk-item-title">Quantum Ecosystem Argentina</div>
-      <div class="talk-item-desc">Mesa redonda con la Secretaria de Ciencia de la UNLP, embajador quantum de IBM y direccion de LIFIA. Evento CUANTOS.</div>
+      <div class="talk-item-desc">Mesa redonda con la Secretaría de Ciencia de la UNLP, embajador quantum de IBM y dirección de LIFIA. Evento CUANTOS.</div>
     </div>
 
     <div class="talk-item">
       <div class="talk-item-title">Quantum Tech &mdash; RAFA 2025</div>
-      <div class="talk-item-desc">Evento satelite de la Reunion Anual de la Asociacion Fisica Argentina sobre hojas de ruta publico-privadas en quantum.</div>
+      <div class="talk-item-desc">Evento satélite de la Reunión Anual de la Asociación Física Argentina sobre hojas de ruta público-privadas en quantum.</div>
     </div>
 
     <div class="talk-item">
@@ -108,7 +108,7 @@ description: "Charlas grabadas y presentaciones publicas de Matias Bilkis sobre 
 
     <div class="talk-item">
       <div class="talk-item-title">Amor Desclasificado</div>
-      <div class="talk-item-desc">Ciclo de tecnologia y sociedad en Max Nordau La Plata: archivos digitales, derechos humanos e impacto de la virtualidad.</div>
+      <div class="talk-item-desc">Ciclo de tecnología y sociedad en Max Nordau La Plata: archivos digitales, derechos humanos e impacto de la virtualidad.</div>
     </div>
 
     <div class="talk-item">

@@ -3,7 +3,7 @@ layout: default
 title: Blog
 permalink: /blog
 lang: es
-description: "Notas y ensayos de Matias Bilkis sobre tecnologias cuanticas, IA e impacto social."
+description: "Notas y ensayos de Matias Bilkis sobre tecnologías cuánticas, IA e impacto social."
 ---
 
 <div class="page-content blog-page">
@@ -25,6 +25,6 @@ description: "Notas y ensayos de Matias Bilkis sobre tecnologias cuanticas, IA e
     {% endfor %}
   </div>
   {% else %}
-  <p class="blog-intro">Todavia no hay posts. Agrega el primero en <code>_posts</code>.</p>
+  <p class="blog-intro">Todavía no hay posts. Agregá el primero en <code>_posts</code>.</p>
   {% endif %}
 </div>
