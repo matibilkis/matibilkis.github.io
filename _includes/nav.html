@@ -34,11 +34,13 @@
       </a>
     </li>
     {% endfor %}
+    <li class="sidebar-nav__contact">
+      <a href="mailto:matias@qutsur.com" class="sidebar-link">Email</a>
+    </li>
+    <li>
+      <a href="https://github.com/matibilkis" class="sidebar-link" target="_blank" rel="noopener">GitHub</a>
+    </li>
   </ul>
-  <div class="sidebar-contact">
-    <a href="mailto:matias@qutsur.com" class="sidebar-contact-link">Email</a>
-    <a href="https://github.com/matibilkis" class="sidebar-contact-link" target="_blank" rel="noopener">GitHub</a>
-  </div>
   <div class="lang-switcher">
     <a href="{{ es_url | relative_url }}" class="lang-link {% unless current_lang == 'en' %}active{% endunless %}">ES</a>
     <span class="lang-separator">|</span>
