@@ -9,5 +9,6 @@ links:
     url: /en/talks
   - title: Radio
     url: /en/radio
-  - title: Blog
-    url: /en/blog
+  # Blog hidden for now — uncomment to publish again
+  # - title: Blog
+  #   url: /en/blog

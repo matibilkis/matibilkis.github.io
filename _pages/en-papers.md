@@ -44,25 +44,25 @@ description: "Research papers and theses by Matias Bilkis in quantum machine lea
 
     <div class="paper">
       <div class="paper-title"><a href="https://arxiv.org/abs/2404.10726">Automatic re-calibration of quantum devices by reinforcement learning</a> <a class="pdf-link" href="https://arxiv.org/pdf/2404.10726" target="_blank" rel="noopener" onclick="openPdf('https://arxiv.org/pdf/2404.10726'); return false;">pdf</a></div>
-      <div class="paper-meta">T Crosta, L Rebon, F Vilarino, JM Matera, M Bilkis &middot; 2024</div>
-      <div class="paper-desc">RL-based automatic recalibration for drifting quantum devices. Supervised master thesis work awarded Mencion Masperi AFA 2024. Best master thesis in Physics in Argentina.</div>
+      <div class="paper-meta">T Crosta, L Rebón, F Vilariño, JM Matera, M Bilkis &middot; 2024</div>
+      <div class="paper-desc">RL-based automatic recalibration for drifting quantum devices. Supervised master thesis work awarded Mención Masperi AFA 2024. Best master thesis in Physics in Argentina.</div>
     </div>
 
     <div class="paper">
       <div class="paper-title"><a href="https://arxiv.org/abs/2407.06416">Hybrid classical-quantum architecture for vectorised image classification of hand-written sketches</a> <a class="pdf-link" href="https://arxiv.org/pdf/2407.06416" target="_blank" rel="noopener" onclick="openPdf('https://arxiv.org/pdf/2407.06416'); return false;">pdf</a></div>
-      <div class="paper-meta">Y Cordero, S Biswas, F Vilarino, M Bilkis &middot; 2024</div>
+      <div class="paper-meta">Y Cordero, S Biswas, F Vilariño, M Bilkis &middot; 2024</div>
       <div class="paper-desc">Vectorized sketch representations combined with hybrid classical/quantum models. Benchmarked on QuickDraw sketch recognition with small-qubit circuits. Supervised master thesis at CVC-UAB.</div>
     </div>
 
     <div class="paper">
       <div class="paper-title"><a href="https://arxiv.org/abs/2405.19243">Challenge-Device-Synthesis: social innovation competences for AI students</a> <a class="pdf-link" href="https://arxiv.org/pdf/2405.19243" target="_blank" rel="noopener" onclick="openPdf('https://arxiv.org/pdf/2405.19243'); return false;">pdf</a></div>
-      <div class="paper-meta">M Bilkis, JM Kohler, F Vilarino &middot; 2024</div>
+      <div class="paper-meta">M Bilkis, JM Kohler, F Vilariño &middot; 2024</div>
       <div class="paper-desc">A multi-disciplinary teaching methodology for AI students combining device-building with social impact analysis. Piloted at UAB with strong student reception. Published methodology for EDULEARN24.</div>
     </div>
 
     <div class="paper">
       <div class="paper-title"><a href="https://arxiv.org/abs/2410.04921">Music-triggered fashion design: from songs to the metaverse</a> <a class="pdf-link" href="https://arxiv.org/pdf/2410.04921" target="_blank" rel="noopener" onclick="openPdf('https://arxiv.org/pdf/2410.04921'); return false;">pdf</a></div>
-      <div class="paper-meta">M Delgado, M Llopart, E Sarabia, S Taboada, P Vierge, F Vilarino, ... &middot; 2024</div>
+      <div class="paper-meta">M Delgado, M Llopart, E Sarabia, S Taboada, P Vierge, F Vilariño, ... &middot; 2024</div>
       <div class="paper-desc">System linking Spotify songs to clothing pattern generation via color palette extraction. Uses k-means clustering and Rhino/Grasshopper for design. Part of the UAB-Cruilla Chair on AI and music.</div>
     </div>
 
@@ -74,14 +74,14 @@ description: "Research papers and theses by Matias Bilkis in quantum machine lea
 
     <div class="paper">
       <div class="paper-title"><a href="https://www.tdx.cat/handle/10803/690744">Decision-making in quantum environments: from model-free to model-aware learning of quantum controls</a> <a class="pdf-link" href="https://www.tdx.cat/bitstream/handle/10803/690744/mabi1de1.pdf" target="_blank" rel="noopener" onclick="openPdf('https://www.tdx.cat/bitstream/handle/10803/690744/mabi1de1.pdf'); return false;">pdf</a></div>
-      <div class="paper-meta">PhD thesis &middot; Universitat Autonoma de Barcelona &middot; 2023 &middot; Cum Laude</div>
+      <div class="paper-meta">PhD thesis &middot; Universitat Autònoma de Barcelona &middot; 2023 &middot; Cum Laude</div>
       <div class="paper-desc">Reinforcement learning methods for quantum control, from model-free to model-aware approaches. Directed by Prof. John Calsamiglia. Defended with grade 10/10 and Cum Laude distinction.</div>
     </div>
 
     <div class="paper">
-      <div class="paper-title"><a href="http://sedici.unlp.edu.ar/handle/10915/67996">Entropia condicional y correlaciones cuanticas</a> <a class="pdf-link" href="http://sedici.unlp.edu.ar/bitstream/handle/10915/67996/Documento_completo.pdf" target="_blank" rel="noopener" onclick="openPdf('http://sedici.unlp.edu.ar/bitstream/handle/10915/67996/Documento_completo.pdf'); return false;">pdf</a></div>
+      <div class="paper-title"><a href="http://sedici.unlp.edu.ar/handle/10915/67996">Entropía condicional y correlaciones cuánticas</a> <a class="pdf-link" href="http://sedici.unlp.edu.ar/bitstream/handle/10915/67996/Documento_completo.pdf" target="_blank" rel="noopener" onclick="openPdf('http://sedici.unlp.edu.ar/bitstream/handle/10915/67996/Documento_completo.pdf'); return false;">pdf</a></div>
       <div class="paper-meta">Licenciatura thesis &middot; Universidad Nacional de La Plata &middot; 2018</div>
-      <div class="paper-desc">Conditional entropy and quantum correlations in hybrid qudit-qubit systems. Directed by Prof. Raul Rossignoli and Prof. Norma Canosa. Defended with grade 10/10, graduated with honours.</div>
+      <div class="paper-desc">Conditional entropy and quantum correlations in hybrid qudit-qubit systems. Directed by Prof. Raúl Rossignoli and Prof. Norma Canosa. Defended with grade 10/10, graduated with honours.</div>
     </div>
 
   </div>

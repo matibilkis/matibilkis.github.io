@@ -51,6 +51,12 @@ description: "Selected coding projects by Matias Bilkis, including open-source r
       <div class="coding-item-desc">Markdown and plain notes to print-ready PDFs &mdash; wide annotation margins, LaTeX math, typeset for reading away from the screen.</div>
     </div>
 
+    <div class="coding-item">
+      <div class="coding-item-title"><a href="https://www.qutsur.com/LATAM-quantum-map/">LATAM quantum map</a></div>
+      <div class="coding-item-meta">QutSur &middot; <span class="coding-cites">live app</span></div>
+      <div class="coding-item-desc">Open, collaborative map of the LATAM quantum ecosystem &mdash; 100+ entities across 18 countries.</div>
+    </div>
+
   </div>
 
   <h2 class="coding-section-title">Educational</h2>

@@ -3,6 +3,8 @@ layout: default
 title: Blog
 lang: en
 permalink: /en/blog
+# blog hidden — set to true to publish again
+published: false
 description: "Notes and essays by Matias Bilkis on quantum technologies, AI, and social impact."
 ---
 

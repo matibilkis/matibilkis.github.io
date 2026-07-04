@@ -3,6 +3,8 @@ layout: default
 title: Blog
 permalink: /blog
 lang: es
+# blog oculto — cambiar a true para republicar
+published: false
 description: "Notas y ensayos de Matias Bilkis sobre tecnologías cuánticas, IA e impacto social."
 ---
 

@@ -111,5 +111,14 @@ description: "Episodios de Mundo Cuántico por Matias Bilkis, conectando ciencia
       </div>
     </div>
 
+    <div class="radio-card">
+      <div class="radio-video">
+        <iframe loading="lazy" src="https://www.youtube.com/embed/v6ZqTfybIEw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div class="radio-info">
+        <span class="radio-episode">Episodio 13 — ¿Habrá impacto cuántico en LATAM?</span>
+      </div>
+    </div>
+
   </div>
 </div>

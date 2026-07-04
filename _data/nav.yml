@@ -9,5 +9,6 @@ links:
     url: /talks
   - title: Radio
     url: /radio
-  - title: Blog
-    url: /blog
+  # Blog oculto por ahora — descomentar para volver a publicarlo
+  # - title: Blog
+  #   url: /blog

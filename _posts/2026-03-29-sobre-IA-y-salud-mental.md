@@ -1,4 +1,6 @@
 ---
+# post oculto junto con el blog — cambiar a true para republicar
+published: false
 layout: post
 title: Sobre IA, salud mental y DDHH
 summary: algunos comentarios e ideas que se me ocurrieron 

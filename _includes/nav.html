@@ -52,7 +52,7 @@
     class="mobile-menu-btn"
     aria-expanded="false"
     aria-controls="mobile-nav"
-    aria-label="{% if current_lang == 'en' %}Open menu{% else %}Abrir menu{% endif %}"
+    aria-label="{% if current_lang == 'en' %}Open menu{% else %}Abrir menú{% endif %}"
   >
     <span class="mobile-menu-btn__icon" aria-hidden="true"></span>
     <span class="mobile-menu-btn__label">{% if current_lang == 'en' %}Menu{% else %}Menú{% endif %}</span>
@@ -61,10 +61,10 @@
 
 <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
   <div class="mobile-nav__backdrop"></div>
-  <div class="mobile-nav__panel" role="dialog" aria-modal="true" aria-label="{% if current_lang == 'en' %}Site navigation{% else %}Navegacion del sitio{% endif %}">
+  <div class="mobile-nav__panel" role="dialog" aria-modal="true" aria-label="{% if current_lang == 'en' %}Site navigation{% else %}Navegación del sitio{% endif %}">
     <div class="mobile-nav__header">
       <span class="mobile-nav__title">{% if current_lang == 'en' %}Navigate{% else %}Navegar{% endif %}</span>
-      <button type="button" class="mobile-nav__close" aria-label="{% if current_lang == 'en' %}Close menu{% else %}Cerrar menu{% endif %}">&times;</button>
+      <button type="button" class="mobile-nav__close" aria-label="{% if current_lang == 'en' %}Close menu{% else %}Cerrar menú{% endif %}">&times;</button>
     </div>
     <ul class="mobile-nav__list">
       {% for item in nav_links %}

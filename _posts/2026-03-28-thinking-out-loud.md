@@ -1,4 +1,6 @@
 ---
+# post oculto junto con el blog — cambiar a true para republicar
+published: false
 layout: post
 title: ¿Por qué un blog?
 lang: es
