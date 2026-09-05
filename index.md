@@ -10,17 +10,15 @@ description: "Físico enfocado en tecnologías cuánticas y aprendizaje automát
     <h1 class="landing-name">Matias Bilkis</h1>
     <div class="landing-tagline">
       <p>
-      Buenas! Soy doctor en física, vivo en La Plata / Buenos Aires
-        Hola, soy Matias Bilkis, <strong>físico especializado en tecnologías cuánticas y aprendizaje automático</strong>. Mi trabajo combina profundidad de investigación con ejecución práctica, en entornos académicos e industriales.
+
+        Hola, soy Matias Bilkis, <strong>físico especializado en tecnologías cuánticas y aprendizaje automático</strong>. 
+      <p>
+        Tengo un <strong>doctorado en física</strong> por la Universidad Autónoma de Barcelona, realizado en el grupo <a href="https://giq.uab.cat">GIQ-UAB</a>. 
       </p>
       <p>
-        Tengo un <strong>doctorado en Quantum Machine Learning</strong> por la Universidad Autónoma de Barcelona, realizado en el grupo <a href="https://giq.uab.cat">GIQ-UAB</a>. También cofundé el <a href="https://qml.cvc.uab.es"><strong>QML-CVC research group</strong></a> en el <a href="https://www.cvc.uab.es">Computer Vision Center de Barcelona</a> (2023-2025).
+  Soy profe e investigador en UNLP, UAI, y UBA 
       </p>
       <p>
-        Más allá de la investigación, me interesa traducir ideas técnicas complejas en estrategia, productos y charlas claras para audiencias amplias. Si recién te estás acercando al tema, podés empezar con <a href="https://www.youtube.com/watch?v=OkHlyQxSkaU">esta charla introductoria</a>, o explorar <a href="https://www.youtube.com/watch?v=ELZt_7dH7Xw">esta serie de seminarios</a> sobre aplicaciones industriales. Actualmente vivo en La Plata, Argentina.
-      </p>
-      <p>
-        Hoy dirijo <a href="https://www.qutsur.com"><strong>QutSur</strong></a>, donde damos apoyo al ecosistema de tecnologías cuánticas desde el Sur. Podés explorar nuestro <a href="https://www.qutsur.com/LATAM-quantum-map/">mapa cuántico LATAM</a>.
       </p>
     </div>
   </div>
