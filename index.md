@@ -10,6 +10,7 @@ description: "Físico enfocado en tecnologías cuánticas y aprendizaje automát
     <h1 class="landing-name">Matias Bilkis</h1>
     <div class="landing-tagline">
       <p>
+      Buenas! Soy doctor en física, vivo en La Plata / Buenos Aires
         Hola, soy Matias Bilkis, <strong>físico especializado en tecnologías cuánticas y aprendizaje automático</strong>. Mi trabajo combina profundidad de investigación con ejecución práctica, en entornos académicos e industriales.
       </p>
       <p>
