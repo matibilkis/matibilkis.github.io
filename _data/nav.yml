@@ -1,14 +1,14 @@
-links:
-  - title: Sobre mi
-    url: /
-  - title: Papers
-    url: /papers
-  - title: Coding
-    url: /coding
-  - title: Charlas
-    url: /talks
-  - title: Radio
-    url: /radio
-  # Blog oculto por ahora — descomentar para volver a publicarlo
-  # - title: Blog
-  #   url: /blog
+- title: Cursos
+  url: /cursos/
+- title: Charlas
+  url: /charlas/
+- title: Investigación
+  url: /investigacion/
+- title: Start-ups
+  url: /startups/
+- title: Desarrollos
+  url: /desarrollos/
+- title: Arte
+  url: /arte/
+- title: Contacto
+  url: /#contacto

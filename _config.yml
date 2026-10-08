@@ -1,24 +1,18 @@
-title: Matias Bilkis
-description: "Personal website of Matias Bilkis: quantum technology, machine learning, research papers, talks, coding projects, and blog."
+title: Matías Bilkis
+description: "Página web personal de Matías Bilkis."
 author:
-  name: Matias Bilkis
+  name: Matías Bilkis
 lang: es
-default_lang: es
 url: "https://matiasbilkis.com"
 baseurl: ""
 google_analytics: "G-J5XJ3N46W1"
-image: "/assets/images/foto_lead.png"
+image: "/assets/img/foto_web.jpg"
 twitter:
   card: summary_large_image
 
 markdown: kramdown
 kramdown:
   input: GFM
-
-collections:
-  pages:
-    output: true
-    permalink: /:name
 
 plugins:
   - jekyll-seo-tag
@@ -27,16 +21,22 @@ plugins:
 defaults:
   - scope:
       path: ""
-      type: "posts"
     values:
-      lang: es
-      layout: post
-      permalink: /blog/:title/
-      image: "/assets/images/foto_lead.png"
-  - scope:
-      path: ""
-      type: "pages"
-    values:
-      lang: es
       layout: default
-      image: "/assets/images/foto_lead.png"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - re-doing
+  - AGENTS.md
+  - CLAUDE.md
+  - CLAUDE.local.md
+  - instructions.md
+  - prompt-dict.md
+  - tricks.txt
+  - casco.jpeg
+  - foto_web.jpeg
+  - conf
+  - curriculums
