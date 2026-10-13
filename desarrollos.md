@@ -1,16 +1,16 @@
 ---
-title: Desarrollos
+title: Projects
 permalink: /desarrollos/
 ---
 
 ## board-tex
 
-[Ver en GitHub](https://github.com/matibilkis/board-tex){: .go}
+[View on GitHub](https://github.com/matibilkis/board-tex){: .go}
 
 ## diapo
 
-[Ver en GitHub](https://github.com/matibilkis/diapo){: .go}
+[View on GitHub](https://github.com/matibilkis/diapo){: .go}
 
-## IA documental para la justicia
+## AI for judicial documents
 
-Diseñamos e implementamos un sistema de microservicios que procesa grandes volúmenes de documentos judiciales por día. Desarrollado en el CID-UBA para el sistema judicial, hoy en producción.
+We designed and built a microservices system that processes large volumes of court documents every day. Built at CID-UBA for the judicial system, currently in production.

@@ -1,19 +1,19 @@
 ---
-title: Investigación
+title: Research
 permalink: /investigacion/
 ---
 
 ## Quantum
 
-Contenido pendiente
+Content coming soon
 {: .pendiente}
 
 ## Machine Learning
 
-Contenido pendiente
+Content coming soon
 {: .pendiente}
 
-## ¿Qué es la transdisciplinariedad y qué hacer con ella?
+## What is transdisciplinarity, and what to do with it?
 
-Contenido pendiente
+Content coming soon
 {: .pendiente}

@@ -1,15 +1,30 @@
 <!doctype html>
-<html lang="{{ site.lang }}">
+<html lang="{{ page.lang | default: site.lang }}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% if page.url == '/' %}{{ site.title }}{% else %}{{ page.title }} · {{ site.title }}{% endif %}</title>
+  {% assign home = false %}{% if page.url == '/' or page.url == '/es/' %}{% assign home = true %}{% endif %}
+  {% if page.lang == 'es' %}
+    {% assign other_lang = 'en' %}
+    {% assign other_path = page.url | remove_first: '/es' %}
+    {% if other_path == '' %}{% assign other_path = '/' %}{% endif %}
+  {% else %}
+    {% assign other_lang = 'es' %}
+    {% if page.url == '/' %}
+      {% assign other_path = '/es/' %}
+    {% else %}
+      {% assign other_path = '/es' | append: page.url %}
+    {% endif %}
+  {% endif %}
+  <title>{% if home %}{{ site.title }}{% else %}{{ page.title }} · {{ site.title }}{% endif %}</title>
   <meta name="description" content="{{ page.description | default: site.description }}">
+  <link rel="alternate" hreflang="{% if page.lang == 'es' %}es{% else %}en{% endif %}" href="{{ page.url | absolute_url }}">
+  <link rel="alternate" hreflang="{{ other_lang }}" href="{{ other_path | absolute_url }}">
+  <link rel="alternate" hreflang="x-default" href="{% if page.lang == 'es' %}{{ other_path | absolute_url }}{% else %}{{ page.url | absolute_url }}{% endif %}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&amp;family=Albert+Sans:ital,wght@0,300..700;1,300..700&amp;display=swap">
   <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
-  {% seo %}
   {% if site.google_analytics %}
   <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
   <script>
@@ -21,21 +36,22 @@
   {% endif %}
 </head>
 <body>
-  <a class="skip" href="#contenido">Saltar al contenido</a>
+  <a class="skip" href="#contenido">{% if page.lang == 'es' %}Saltar al contenido{% else %}Skip to content{% endif %}</a>
   <div class="wrap">
-    {% comment %} En la portada el nombre ya está en el título y las secciones en el índice: el header deja solo los enlaces a anclas (Contacto). {% endcomment %}
-    {% assign portada = false %}{% if page.url == '/' %}{% assign portada = true %}{% endif %}
-    <header class="top{% if portada %} top-home{% endif %}">
-      {% unless portada %}<a class="brand" href="{{ '/' | relative_url }}">Matías Bilkis</a>{% endunless %}
-      <nav aria-label="Secciones">
-        {% for item in site.data.nav %}
-        {% if portada %}{% unless item.url contains '#' %}{% continue %}{% endunless %}{% endif %}
+    {% comment %} En la portada el nombre ya está en el título y las secciones en el índice: el header deja solo los enlaces a anclas (Contacto) y el selector de idioma. {% endcomment %}
+    {% assign navdata = site.data.nav %}{% if page.lang == 'es' %}{% assign navdata = site.data.nav_es %}{% endif %}
+    <header class="top{% if home %} top-home{% endif %}">
+      {% unless home %}<a class="brand" href="{% if page.lang == 'es' %}{{ '/es/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}">Matías Bilkis</a>{% endunless %}
+      <nav aria-label="{% if page.lang == 'es' %}Secciones{% else %}Sections{% endif %}">
+        {% for item in navdata %}
+        {% if home %}{% unless item.url contains '#' %}{% continue %}{% endunless %}{% endif %}
         <a href="{{ item.url | relative_url }}"{% if item.url == page.url %} aria-current="page"{% endif %}>{{ item.title }}</a>
         {% endfor %}
+        <a class="lang-switch" href="{{ other_path | relative_url }}" hreflang="{{ other_lang }}" lang="{{ other_lang }}">{{ other_lang | upcase }}</a>
       </nav>
     </header>
     <main id="contenido">
-      {% if page.url == '/' %}
+      {% if home %}
       {{ content }}
       {% else %}
       <h1 class="page-title">{{ page.title }}</h1>

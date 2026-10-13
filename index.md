@@ -1,18 +1,18 @@
 ---
 title: Matías Bilkis
-description: "Página web personal de Matías Bilkis."
+description: "Personal website of Matías Bilkis."
 permalink: /
 ---
 
 <section class="hero">
   <div>
-    <h1><span class="eyebrow">Página web personal de</span><span>Matías</span><span>Bilkis</span></h1>
-    <p class="lede">Bienvenidx a mi página web personal, y muchas gracias por tu interés. Mi intención con la página web es poder plasmar algunas de las cosas que estoy orgulloso tanto profesionales, de hobbies, y todas las combinaciones que se me ocurran entre medio.</p>
+    <h1><span class="eyebrow">Personal website of</span><span>Matías</span><span>Bilkis</span></h1>
+    <p class="lede">Welcome to my personal website, and thanks for your interest. My intention with this website is to put together some of the things I'm proud of — professional, hobbies, and every combination of the two I can think of.</p>
   </div>
   <img class="hero-photo" src="{{ '/assets/img/foto_web.jpg' | relative_url }}" alt="Matías Bilkis" width="900" height="1060" fetchpriority="high">
 </section>
 
-<nav class="index" aria-label="Índice de secciones">
+<nav class="index" aria-label="Section index">
   <ol>
     {%- for item in site.data.nav -%}
     {%- unless item.url contains '#' %}
@@ -26,33 +26,33 @@ permalink: /
 
 ## ¿Who am ai??
 
-Soy Matías Bilkis, oriundo de la ciudad de La Plata, Argentina. Me formé en diferentes lugares, tanto en la UNLP, como en el [Max Nordau](https://www.maxnordau.com.ar/).
+I'm Matías Bilkis, originally from the city of La Plata, Argentina. I trained in a number of places, including the UNLP and [Max Nordau](https://www.maxnordau.com.ar/).
 
-Estudié Licenciatura en Física entre 2013 y 2023, e hice [una tesis](https://sedici.unlp.edu.ar/handle/10915/67996) dirigida por el Dr. Rossignoli y la Dra. Canosa, sobre teoría de la información y física cuántica.
+I studied a Licenciatura in Physics between 2013 and 2023, and wrote [a thesis](https://sedici.unlp.edu.ar/handle/10915/67996) supervised by Dr. Rossignoli and Dr. Canosa, on information theory and quantum physics.
 {: data-when="2013 – 2023"}
 
-Entre 2018 y 2023 hice mi doctorado en física, en el [giq-UAB](https://webs.uab.cat/giq/) Universidad Autónoma de Barcelona, <em lang="ca">i he apregut a parlar una mica de catalá!</em> Mi tesis doctoral, dirigida por el Dr. Calsamiglia Costa, se titula ["Toma de decisiones en entornos cuánticos"](https://www.tdx.cat/handle/10803/690744#page=1).
+Between 2018 and 2023 I did my PhD in physics at [giq-UAB](https://webs.uab.cat/giq/), Universitat Autònoma de Barcelona, <em lang="ca">i he apregut a parlar una mica de catalá!</em> My doctoral thesis, supervised by Dr. Calsamiglia Costa, is titled ["Decision-making in quantum environments"](https://www.tdx.cat/handle/10803/690744#page=1).
 {: data-when="2018 – 2023"}
 
-Entre 2023 y 2025 estuve apoyando la creación de un grupo de investigación en el [Centro de Visión por Computador](https://www.cvc.uab.es/), junto al Dr. Vilariño, donde co-dirigimos el ["Quantum Machine Learning group"](https://qml.cvc.uab.es/). Entre las actividades académicas del grupo, está reflejada una fuerte componente interdisciplinar, en fuerte colaboración con grupos de artistas y entidades de gobernanza, como por ejemplo Fundación Épica Fura dels Baus.
+Between 2023 and 2025 I helped set up a research group at the [Computer Vision Center](https://www.cvc.uab.es/), together with Dr. Vilariño, where we co-directed the ["Quantum Machine Learning group"](https://qml.cvc.uab.es/). The group's academic activities reflect a strong interdisciplinary streak, with close collaboration with groups of artists and governance bodies, such as Fundació Épica Fura dels Baus.
 {: data-when="2023 – 2025"}
 
-Durante 2025 me radiqué nuevamente en Argentina, e intento apoyar la creación de un ecosistema local de tecnologías cuánticas e IA a través de mi empresa [QutSur](https://qutsur.com/). Además, he creado una [diplomatura en Tecnologías Cuánticas y sus aplicaciones](https://noticias.uai.edu.ar/facultades/tecnolog%C3%ADa-inform%C3%A1tica/2026/ia-y-computaci%C3%B3n-cu%C3%A1ntica-la-convergencia-tecnol%C3%B3gica-que-comienza-a-redefinir-la-industria/) en la Universidad Abierta Interamericana, donde actualmente me desempeño como profesor titular. Asimismo soy profesor visitante en Exactas-UBA, donde dicto la materia optativa ["Introducción teórico-práctica al Aprendizaje por Refuerzo"](https://www.dc.uba.ar/profesores-visitantes/) y donde colaboro estrechamente con el [Laboratorio de Inteligencia Artificial Aplicada](https://www.liaa.dc.uba.ar/personas-que-hacen-posible-el-liaa/) (LIAA). También soy miembro del [Departamento de Física de la Universidad Nacional de La Plata](https://www.fisica.unlp.edu.ar/).
-{: data-when="Desde 2025"}
+During 2025 I moved back to Argentina, where I'm trying to help build a local ecosystem for quantum technologies and AI through my company [QutSur](https://qutsur.com/). I've also created a [diploma program in Quantum Technologies and their applications](https://noticias.uai.edu.ar/facultades/tecnolog%C3%ADa-inform%C3%A1tica/2026/ia-y-computaci%C3%B3n-cu%C3%A1ntica-la-convergencia-tecnol%C3%B3gica-que-comienza-a-redefinir-la-industria/) at Universidad Abierta Interamericana, where I currently work as a part-time professor. I'm also a visiting professor at Exactas-UBA, where I teach the elective course ["Introduction to Reinforcement Learning: Theory and Practice"](https://www.dc.uba.ar/profesores-visitantes/) and work closely with the [Applied Artificial Intelligence Laboratory](https://www.liaa.dc.uba.ar/personas-que-hacen-posible-el-liaa/) (LIAA). I'm also a member of the [Physics Department of the Universidad Nacional de La Plata](https://www.fisica.unlp.edu.ar/).
+{: data-when="Since 2025"}
 
-Seguramente me dejo cosas en el tintero: si estás interesadx en mi recorrido profesional, este es mi [CV resumido](https://drive.google.com/drive/u/0/folders/1I2b9ReY_RXwT3RSx2ZiNq_Mbb-X6O6rk) y [CV extendido](https://drive.google.com/drive/u/0/folders/1I2b9ReY_RXwT3RSx2ZiNq_Mbb-X6O6rk).
+I'm sure I'm leaving things out: if you're interested in my professional background, here's my [short CV](https://drive.google.com/drive/u/0/folders/1I2b9ReY_RXwT3RSx2ZiNq_Mbb-X6O6rk) and [extended CV](https://drive.google.com/drive/u/0/folders/1I2b9ReY_RXwT3RSx2ZiNq_Mbb-X6O6rk).
 
-Tengo una fuerte convicción de que el futuro tanto académico, negocios, industrial, social, y por sobre todo político estará escrito por equipos que logren articular saberes y prácticas genuinamente interdisciplinares. Es de mi interés fomentar, pensar y ayudar a direccionar esta clase de colaboraciones, tanto a nivel regional (Buenos Aires, Argentina, Sudamérica), como global (en colaboración con equipos de trabajo, empresas, organismos de gobierno y amigos del resto del mundo). En particular, me interesa disponer de los avances tecnológicos (en una obviamente ebullición constante) al apoyo de la resolución de problemas complejos de índole política y social.
+I have a strong conviction that the future — academic, business, industrial, social, and above all political — will be written by teams that manage to bring together genuinely interdisciplinary knowledge and practice. I'm interested in fostering, thinking through, and helping steer this kind of collaboration, both regionally (Buenos Aires, Argentina, South America) and globally (working with teams, companies, government bodies, and friends from the rest of the world). In particular, I'm interested in putting technological advances — which are obviously in constant flux — to work on complex problems of a political and social nature.
 {: .statement}
 
 </section>
 
-<section class="section" id="contacto">
-  <h2>Contacto</h2>
+<section class="section" id="contact">
+  <h2>Contact</h2>
   <div class="contact-grid">
     <div>
-      <p>Si querés contactarme, <span class="mail">matiasbilkis[at]gmail.com</span> es la casilla que reviso usualmente.</p>
-      <p class="label">Otros correos institucionales</p>
+      <p>If you'd like to get in touch, <span class="mail">matiasbilkis[at]gmail.com</span> is the inbox I check most often.</p>
+      <p class="label">Other institutional emails</p>
       <ul class="mails">
         <li>matias[at]qutsur.com</li>
         <li>matias.bilkis[at]fisica.unlp.edu.ar</li>
@@ -61,13 +61,13 @@ Tengo una fuerte convicción de que el futuro tanto académico, negocios, indust
       </ul>
     </div>
     <div>
-      <p>También podés escribir acá (re cool)</p>
-      <!-- Sin backend todavía: al enviar se abre el cliente de correo con el mensaje armado. -->
+      <p>You can also write here (pretty cool)</p>
+      <!-- No backend yet: submitting opens the user's email client with the message drafted. -->
       <form class="form" id="form-contacto">
-        <label>Nombre <input type="text" name="nombre" autocomplete="name" required></label>
+        <label>Name <input type="text" name="nombre" autocomplete="name" required></label>
         <label>Email <input type="email" name="email" autocomplete="email" required></label>
-        <label>Mensaje <textarea name="mensaje" rows="5" required></textarea></label>
-        <button type="submit">Enviar</button>
+        <label>Message <textarea name="mensaje" rows="5" required></textarea></label>
+        <button type="submit">Send</button>
       </form>
     </div>
   </div>
@@ -78,7 +78,7 @@ Tengo una fuerte convicción de que el futuro tanto académico, negocios, indust
     event.preventDefault();
     var data = new FormData(event.target);
     var to = ['matiasbilkis', 'gmail.com'].join('@');
-    var subject = 'Contacto desde la web: ' + data.get('nombre');
+    var subject = 'Contact from the website: ' + data.get('nombre');
     var body = data.get('mensaje') + '\n\n' + data.get('nombre') + ' <' + data.get('email') + '>';
     window.location.href = 'mailto:' + to + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
   });

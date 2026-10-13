@@ -1,24 +1,24 @@
 ---
-title: Cursos
+title: Courses
 permalink: /cursos/
 ---
 
-## Introducción a la Computación Cuántica + IA con enfoque en aplicaciones
+## Introduction to Quantum Computing + AI, with a focus on applications
 
-En este curso – que actualmente dicto en la UAI, [como diplomatura](https://uai.edu.ar/ciiti/2025/buenos-aires/downloads/B4/Matias%20Bilkis.pdf) – está dividido en cuatro módulos: Overview de aplicaciones en tecnologías cuánticas, fundamentos de física y computación cuántica, programación y software cuántico, herramientas de vigilancia tecnológica. El objetivo del curso es que una persona interesada en tecnologías cuánticas pueda finalizar teniendo una noción básica de "qué son y para qué sirven las quantum tech", así como herramientas fundamentales a la hora de programar. Para ello, nos aferramos a un tema muy actual, llamado "deep learning cuántico", y nos preguntamos cómo se podría definir, programar y entrenar una red neuronal con un circuito cuántico si quisiéramos aplicarlo a un problema específico. En el camino, estudiamos tanto posibilidades, como inconvenientes a la hora de ejecutar esta tarea en la práctica.
+This course — which I currently teach at UAI, [as a diploma program](https://uai.edu.ar/ciiti/2025/buenos-aires/downloads/B4/Matias%20Bilkis.pdf) — is split into four modules: an overview of applications in quantum technologies, foundations of quantum physics and computing, quantum programming and software, and technology-watch tools. The goal is for anyone interested in quantum technologies to come away with a basic sense of "what quantum tech is and what it's for", along with the fundamental tools for programming it. To get there, we hold on to a very current topic, "quantum deep learning", and ask how you'd define, program, and train a neural network with a quantum circuit if you wanted to apply it to a specific problem. Along the way, we look at both the possibilities and the practical drawbacks of actually doing this.
 
-## Introducción teórico-práctica al aprendizaje por refuerzo
+## Theoretical and practical introduction to reinforcement learning
 
-Este curso de 16 clases de 2hs tiene como objetivo enseñar los fundamentos del Aprendizaje por Refuerzo, yendo desde bandit theory hasta PPO, y pasando por Q-learning, REINFORCE así como los fundamentos de Markov Decision Processes. En cada instancia, hacemos un énfasis en aplicaciones algorítmicas sobre problemas concretos, y tiene un carácter accesible para gente interesada en machine learning, sin un background matemático particularmente fuerte como requisito. El curso culmina con un repaso sobre las aplicaciones modernas del deep reinforcement learning, entre ellas RLHF, RLVR, breakthroughs como Jev, y la relación con world models.
+This course runs for 16 classes of 2 hours each and aims to teach the fundamentals of Reinforcement Learning, from bandit theory to PPO, passing through Q-learning, REINFORCE, and the fundamentals of Markov Decision Processes. Throughout, we emphasize algorithmic applications to concrete problems, and the course is accessible to anyone interested in machine learning, with no particularly strong math background required. It wraps up with a review of modern applications of deep reinforcement learning, including RLHF, RLVR, breakthroughs like Jev, and the relationship with world models.
 
-## El impacto de las tecnologías cuánticas en la industria
+## The impact of quantum technologies on industry
 
-Este curso de tres encuentros de dos horas – que armé en colaboración con [Practia Global](https://practia.global/) – constituye una perspectiva autocontenida, crítica y general sobre las aplicaciones de tecnologías cuánticas (computación, sensado, simulación, comunicaciones) en la industria. Se hace foco en diferentes esquemas de negocios, y su potencial impacto en economías emergentes.
+This course runs over three two-hour sessions — put together with [Practia Global](https://practia.global/) — and offers a self-contained, critical, general view of quantum technology applications (computing, sensing, simulation, communications) in industry. It focuses on different business models and their potential impact on emerging economies.
 
-## IA para la investigación científica
+## AI for scientific research
 
-Este curso provee las herramientas y conocimientos fundamentales para incorporar IA en la investigación científica. En la primera parte (conceptos fundamentales) partimos de modelos pequeños y tabulares para distinguir diferentes primitivas (supervisado, no supervisado, aprendizaje por refuerzo), luego deep learning y arquitecturas más populares (MLPs, CNNs, RNNs, transformers, U-nets, diffusion models), hasta poder programar un LLM y por último un agente. En la segunda parte, de herramientas, incorporamos técnicas de vigilancia tecnológica para que el estudiante pueda estar al día en cuanto a nuevos avances refiere; en la versión 2026 del curso repasamos conceptos fundamentales de IA agéntica, tanto claude-code como Hermes, y prompt & context engineering y esquemas de coordinación y orquestación multi-agentes para tareas repetitivas.
+This course provides the fundamental tools and knowledge to bring AI into scientific research. In the first part (foundational concepts), we start from small, tabular models to tell apart different primitives (supervised, unsupervised, reinforcement learning), then move on to deep learning and the most popular architectures (MLPs, CNNs, RNNs, transformers, U-nets, diffusion models), up to programming an LLM and, finally, an agent. In the second part, on tools, we bring in technology-watch techniques so students can keep up with new developments; in the 2026 edition of the course we cover the fundamentals of agentic AI, both claude-code and Hermes, as well as prompt & context engineering and multi-agent coordination and orchestration schemes for repetitive tasks.
 
-## IA para la vida cotidiana
+## AI for everyday life
 
-En esta capacitación – armada en colaboración con LIAA y Anthropic a través del acuerdo "Anthropic ambassadors" – brindamos las herramientas fundamentales para incorporar inteligencia artificial a diferentes procesos (tanto del cotidiano personal, como de negocios). Vemos cómo diseñar un asistente digital de manera criteriosa (y habiendo identificado las necesidades concretas de hacerlo anteriormente), así como programar automatizaciones tanto en N8N, integración API y modelos de evaluación sobre rentabilidad obtenida por la automatización.
+This training — put together with LIAA and Anthropic through the "Anthropic ambassadors" program — provides the fundamental tools for bringing artificial intelligence into different processes, both personal and business. We look at how to design a digital assistant thoughtfully (after first identifying the actual need for one), as well as how to build automations in N8N, API integrations, and models for evaluating the return on automation.

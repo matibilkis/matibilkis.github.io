@@ -1,14 +1,14 @@
-- title: Cursos
+- title: Courses
   url: /cursos/
-- title: Charlas
+- title: Talks
   url: /charlas/
-- title: Investigación
+- title: Research
   url: /investigacion/
 - title: Start-ups
   url: /startups/
-- title: Desarrollos
+- title: Projects
   url: /desarrollos/
-- title: Arte
+- title: Art
   url: /arte/
-- title: Contacto
-  url: /#contacto
+- title: Contact
+  url: /#contact
