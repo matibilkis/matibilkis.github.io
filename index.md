@@ -26,7 +26,7 @@ permalink: /
 
 ## ¿Who am ai??
 
-I'm Matías Bilkis, originally from the city of La Plata, Argentina. I trained in a number of places, including the UNLP and [Max Nordau](https://www.maxnordau.com.ar/).
+I'm Matías Bilkis, originally from the city of La Plata, Argentina. I trained in a number of places, including the UNLP.
 
 I studied a Licenciatura in Physics between 2013 and 2023, and wrote [a thesis](https://sedici.unlp.edu.ar/handle/10915/67996) supervised by Dr. Rossignoli and Dr. Canosa, on information theory and quantum physics.
 {: data-when="2013 – 2023"}

@@ -27,7 +27,7 @@ permalink: /es/
 
 ## ¿Who am ai??
 
-Soy Matías Bilkis, oriundo de la ciudad de La Plata, Argentina. Me formé en diferentes lugares, tanto en la UNLP, como en el [Max Nordau](https://www.maxnordau.com.ar/).
+Soy Matías Bilkis, oriundo de la ciudad de La Plata, Argentina. Me formé en diferentes lugares, entre ellos la UNLP.
 
 Estudié Licenciatura en Física entre 2013 y 2023, e hice [una tesis](https://sedici.unlp.edu.ar/handle/10915/67996) dirigida por el Dr. Rossignoli y la Dra. Canosa, sobre teoría de la información y física cuántica.
 {: data-when="2013 – 2023"}
